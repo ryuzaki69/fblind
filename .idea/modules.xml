@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://E:\fblind\app\app.iml" filepath="E:\fblind\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/fblind.iml" filepath="$PROJECT_DIR$/fblind.iml" />
+      <module fileurl="file://E:\fblind\fblind.iml" filepath="E:\fblind\fblind.iml" />
     </modules>
   </component>
 </project>
