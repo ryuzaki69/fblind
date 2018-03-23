@@ -22,12 +22,6 @@
 	<string name="mainContacts">Contacts</string>
     <string name="mainMusicPlayer">Music</string>
     <string name="mainBrowser">Internet</string>
-    <string name="mainAlarms">Alarms</string>
-    <string name="mainAlarmsNoAlarms">Alarms. No alarms for today.</string>
-    <string name="mainAlarmsOneAlarm">Alarms. One alarm for today.</string>
-    <string name="mainAlarmsForToday">&#160;alarms for today.</string>
-	<string name="mainVoiceRecorder">Voice recorder</string>
-	<string name="mainApplications">Applications</string>
     <string name="mainSettings">Settings</string>
     <string name="mainStatus">Device status</string>
 	<string name="mainCarrierIs">, the carrier is&#160;</string>
@@ -98,85 +92,8 @@
 	
 	<string name="layoutAlarmsNotifierShutdown">Slide up or down to shutdown alarm</string>
 	
-	<string name="layoutAlarmsList">Alarm list</string>
-	<string name="layoutAlarmsCreate">Create alarm</string>
-	<string name="layoutAlarmsAlarmCreated">The alarm was created and now you are at the alarms menu</string>
-	<string name="layoutAlarmsOnResume">Now you are at the alarms menu</string>
-	
-	<string name="layoutAlarmsCreateMessage">- input message -</string>
-	<string name="layoutAlarmsCreateMessage2">Alarm message. Slide right to input.</string>
-	<string name="layoutAlarmsCreateMessage3">Alarm message:\n</string>
-	<string name="layoutAlarmsCreateMessage4">Alarm message.&#160;</string>
-	<string name="layoutAlarmsCreateCreate">Create alarm</string>
-	<string name="layoutAlarmsCreateDay">Day alarm:&#160;</string>
-	<string name="layoutAlarmsCreateDay2">Day alarm.&#160;</string>
-	<string name="layoutAlarmsCreateTimeHour">Alarm hours:&#160;</string>
-	<string name="layoutAlarmsCreateTimeHour2">Alarm hours.&#160;</string>
-	<string name="layoutAlarmsCreateTimeMinute">Alarm minutes:&#160;</string>
-	<string name="layoutAlarmsCreateTimeMinute2">Alarm minutes.&#160;</string>
-	<string name="layoutAlarmsCreateHours">&#160;hours</string>
-	<string name="layoutAlarmsCreateMinutes">&#160;minutes</string>
-	<string name="layoutAlarmsCreateErrorNoMessage">Error. You must input a message.</string>
-	<string name="layoutAlarmsCreateErrorAlarmConflict">Error. Another alarm has been set for that day and time.</string>
-	<string name="layoutAlarmsCreateOnResume">Now you are at the create alarm menu</string>
-	
-	<string name="layoutAlarmsListNoAlarms">There are no alarms</string>
-	<string name="layoutAlarmsListList">Alarms</string>
-	<string name="layoutAlarmsListAlarmAlarmsCount">&#160;alarms has been set</string>
-	<string name="layoutAlarmsListAt">&#160;at&#160;</string>
-	<string name="layoutAlarmsListForToday">&#160;for today. Slide right or left to hear each one.</string>
-	<string name="layoutAlarmsListDelete">Delete selected alarm</string>
-	<string name="layoutAlarmsListDeleted">The alarm was deleted and now you are at the alarms list menu</string>
-	<string name="layoutAlarmsListDeleteSelectError">First you must select an alarm</string>
-	<string name="layoutAlarmsListOnResume">Now you are at the alarm list menu</string>
-	<string name="layoutAlarmsListOnResume2">All alarms were deleted successfully and now you are at the alarm list menu</string>
-	
-	<string name="layoutAlarmsDeleteSelected">Selected alarm for deletion.&#160;</string>
-	<string name="layoutAlarmsDeleteDelete">Confirm delete</string>
-	<string name="layoutAlarmsDeleteOnResume">Now you are at the delete alarm menu</string>
 
-	<string name="layoutAlarmsDeleteAllDelete">Delete all alarms. Slide right to confirm.</string>
-	<string name="layoutAlarmsDeleteAllDeleteDelete">Delete all alarms</string>
-	<string name="layoutAlarmsDeleteAllOnResume">Now you are at the delete all alarms menu</string>
-		
-	<string name="layoutVoiceRecorderList">List voice records</string>
-	<string name="layoutVoiceRecorderCreate">Create voice record</string>
-	<string name="layoutVoiceRecorderOnResume">Now you are at the voice recorder menu</string>
-	<string name="layoutVoiceRecorderOnResume2">The voice record has been saved and now you are at the voice recorder menu</string>
-	
-	<string name="layoutVoiceRecorderCreateCreate">Create voice record</string>
-	<string name="layoutVoiceRecorderCreateCreate2">Create voice record. Slide right to start recording and slide again in the same direction to stop recording.</string>
-	<string name="layoutVoiceRecorderCreateError">Error. Please check if you have a memory card in your device.</string>
-	<string name="layoutVoiceRecorderCreateOnResume">Now you are at the create voice record menu</string>
-	
-	<string name="layoutVoiceRecorderListList">Voice records</string>
-	<string name="layoutVoiceRecorderListList2">Voice records. Slide right or left to select each one.</string>
-	<string name="layoutVoiceRecorderListPlay">Play voice record</string>
-	<string name="layoutVoiceRecorderListPlay2">Play selected voice record. Slide right to play and slide left to stop.</string>
-	<string name="layoutVoiceRecorderListDelete">Delete voice record</string>
-	<string name="layoutVoiceRecorderListDelete2">Delete selected voice record</string>
-	<string name="layoutVoiceRecorderListItem">Voice record&#160;</string>
-	<string name="layoutVoiceRecorderListItemOf">&#160;of&#160;</string>
-	<string name="layoutVoiceRecorderListNoVoiceRecords">There are no voice records</string>
-	<string name="layoutVoiceRecorderListPleaseWait">Please try again in a few moments when all the voice records has been processed.</string>
-	<string name="layoutVoiceRecorderListError">First you must select a voice record</string>
-	<string name="layoutVoiceRecorderListOnResume">Now you are at the list voice records menu</string>
-	<string name="layoutVoiceRecorderListOnResume2">The voice record was deleted and now you are at the list voice records menu</string>
-	
-	<string name="layoutVoiceRecorderDeleteDelete">Selected voice record for deletion. Voice record&#160;</string>
-	<string name="layoutVoiceRecorderDeleteDelete2">. Slide right to play and slide left to stop.</string>
-	<string name="layoutVoiceRecorderDeleteToDelete">Voice record&#160;</string>
-	<string name="layoutVoiceRecorderDeleteConfirm">Confirm delete</string>
-	<string name="layoutVoiceRecorderDeleteOnResume">Now you are at the delete voice record menu</string>
-	
-	<string name="layoutApplicationsList">Applications</string>
-	<string name="layoutApplicationsList2">Applications. Slide right or left to hear each one.</string>
-	<string name="layoutApplicationsListPleaseWait">Please try again in a few moments when all the applications has been processed.</string>
-	<string name="layoutApplicationsLaunch">Launch selected application</string>
-	<string name="layoutApplicationsLaunchError">First you must select an application</string>
-	<string name="layoutApplicationsNoApps">There are no applications</string>
-	<string name="layoutApplicationsOnResume">Now you are at the applications menu</string>
-	
+
 	<string name="layoutSettingsReadingSpeed">Reading speed:&#160;</string>
 	<string name="layoutSettingsReadingSpeed2">Reading speed.&#160;</string>
 	<string name="layoutSettingsScreenTimeout">Screen timeout:\n</string>
@@ -263,77 +180,7 @@
 	<string name="layoutContactsDeleteDelete">Confirm deletion</string>
 	<string name="layoutContactsDeleteOnResume">Now you are at the delete contact menu</string>
 	
-	<string name="layoutMusicPlayerNowPlaying">Now playing</string>
-	<string name="layoutMusicPlayerNowPlaying2">Now playing</string>
-	<string name="layoutMusicPlayerNowPlaying3">&#160;song&#160;</string>
-	<string name="layoutMusicPlayerNowPlaying4">&#160;of&#160;</string>
-	<string name="layoutMusicPlayerNowPlaying5">&#160;by&#160;</string>
-	<string name="layoutMusicPlayerNowPlayingError1">First you must select an artist with an album</string>
-	<string name="layoutMusicPlayerNowPlayingError2">No music is now playing</string>
-	<string name="layoutMusicPlayerPlay">Play</string>
-	<string name="layoutMusicPlayerStop">Stop</string>
-	<string name="layoutMusicPlayerPreviousTrack">P. Track</string>
-	<string name="layoutMusicPlayerPreviousTrack2">Previous track</string>
-	<string name="layoutMusicPlayerNextTrack">N. track</string>
-	<string name="layoutMusicPlayerNextTrack2">Next track</string>
-	<string name="layoutMusicPlayerLowerVolume">Lower Vol.</string>
-	<string name="layoutMusicPlayerLowerVolume2">Lower volume</string>
-	<string name="layoutMusicPlayerHigherVolume">Higher Vol.</string>
-	<string name="layoutMusicPlayerHigherVolume2">Higher volume</string>
-	<string name="layoutMusicPlayerArtists">Artists</string>
-	<string name="layoutMusicPlayerAlbums">Albums</string>
-	<string name="layoutMusicPlayerUnknown">Unknown</string>
-	<string name="layoutMusicPlayerOnResume">Now you are at the music player menu</string>
-	
-	<string name="layoutMusicPlayerArtistsList">Artists</string>
-	<string name="layoutMusicPlayerArtistsList2">Artists. Slide right or left to hear each one.</string>
-	<string name="layoutMusicPlayerArtistsNoArtists">There are no artists.</string>
-	<string name="layoutMusicPlayerArtistsAlbumsList">Albums</string>
-	<string name="layoutMusicPlayerArtistsAlbumsList2">Albums. Slide right or left to hear each one.</string>
-	<string name="layoutMusicPlayerArtistsAlbumsList3">First you must select an artist.</string>
-	<string name="layoutMusicPlayerArtisrsAlbumsNoAlbums">There are no albums.</string>
-	<string name="layoutMusicPlayerArtistsPleaseWait">Please try again in a few moments when the music player has filtered all the artist albums.</string>
-	<string name="layoutMusicPlayerArtistsPlayAlbum">Play album</string>
-	<string name="layoutMusicPlayerArtistsPlayError">First you must select an album.</string>
-	<string name="layoutMusicPlayerArtistsPlayError2">Error. Unable to open the music file.</string>
-	<string name="layoutMusicPlayerArtistsOnResume">Now you are at the artists menu</string>
-	
-	<string name="layoutBrowserSearchInGoogle">Search in Google</string>
-	<string name="layoutBrowserListBookmarks">Go to Bookmarks</string>
-	<string name="layoutBrowserAWebPageItsBeenLoading">. Please wait until the requested web page is been loaded.</string>
-	<string name="layoutBrowserErrorPendingRequest">ERROR. A web page it\'s been loading, please wait until it\'s finish.</string>
-	<string name="layoutBrowserLoadingPagePleaseWait">Loading page, please wait</string>
-	<string name="layoutBrowserPageNotFound">Page not found. Please check your Internet connection and the web address.</string>
-	<string name="layoutBrowserOnResume">Now you are at the web browser menu</string>
-	
-	<string name="layoutBrowserPageViewerReadTitle">Read Page Title</string>
-	<string name="layoutBrowserPageViewerReadTitle2">The web page title is&#160;</string>
-	<string name="layoutBrowserPageViewerReadText">Read Page Text</string>
-	<string name="layoutBrowserPageViewerPageLinks">Web Page Links</string>
-	<string name="layoutBrowserPageViewerPageLinks2">Web Page Links. Slide right or left to hear each one.</string>
-	<string name="layoutBrowserPageViewerPageLinks3">Link&#160;</string>
-	<string name="layoutBrowserPageViewerPageLinks3Of">&#160;of&#160;</string>
-	<string name="layoutBrowserPageViewerPageLinks4">The current web page doesn\'t have any links.</string>
-	<string name="layoutBrowserPageViewerPageLinkSelectError">First you must select a link.</string>
-	<string name="layoutBrowserPageViewerGoToLink">Go to selected link</string>
-	<string name="layoutBrowserPageViewerAddToBookmarks">Add current page to Bookmarks</string>
-	<string name="layoutBrowserPageViewerAddToBookmarksAdded">The bookmark has been added</string>
-	<string name="layoutBrowserPageViewerAddToBookmarksRepeated">The bookmark already exists</string>
-	<string name="layoutBrowserPageViewerOnResume">Now you are at the webpage menu of the browser</string>
-	
-	<string name="layoutBookmarksListList">Bookmarks List</string>
-	<string name="layoutBookmarksListList2">Bookmarks List. Slide right or left to hear each one.</string>
-	<string name="layoutBookmarksListList3">There are no bookmarks</string>
-	<string name="layoutBookmarksListGoToLink">Go to selected bookmark</string>
-	<string name="layoutBookmarksListDelete">Delete selected bookmark</string>
-	<string name="layoutBookmarksListDeleted">The bookmark was deleted and now you are at the bookmarks list menu</string>
-	<string name="layoutBookmarksListSelectError">First you must select a bookmark</string>
-	<string name="layoutBookmarksListOnResume">Now you are at the bookmarks list menu</string>
-	
-	<string name="layoutBookmarksDeleteToDelete">Selected bookmark for deletion.&#160;</string>
-	<string name="layoutBookmarksDeleteDelete">Confirm delete</string>
-	<string name="layoutBookmarksDeleteOnResume">Now you are at the delete bookmark menu</string>
-	
+
 	<string name="layoutCallsMissedCallsList">Call logs</string>
 	<string name="layoutCallsDeleteCallLogs">Delete logs</string>
 	<string name="layoutCallsDeleteCallLogs2">Delete all call logs</string>
