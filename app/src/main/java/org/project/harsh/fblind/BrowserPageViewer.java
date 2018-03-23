@@ -8,7 +8,7 @@ import android.widget.*;
 public class BrowserPageViewer extends Activity
 	{
 	private TextView pagetitle;
-	
+
 	private TextView pagetext;
 	private TextView pagelinks;
 	private TextView linksgoto;
