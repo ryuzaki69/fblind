@@ -63,6 +63,7 @@
             </intent-filter>        
         </activity>
 
+
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"

@@ -63,7 +63,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 
 		GlobalVars.alarmAlarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 		GlobalVars.openAndLoadAlarmFile();
-		GlobalVars.setText(alarms,false, getResources().getString(R.string.mainAlarms) + " (" + GlobalVars.getPendingAlarmsForTodayCount() + ")");
+		//GlobalVars.setText(alarms,false, getResources().getString(R.string.mainAlarms) + " (" + GlobalVars.getPendingAlarmsForTodayCount() + ")");
 		
 		//LIST EVERY MUSIC FILE WITH THE MEDIA INFORMATION TO USE IT WITH THE MUSIC PLAYER
 		new MusicPlayerThreadRefreshDatabase().execute("");
