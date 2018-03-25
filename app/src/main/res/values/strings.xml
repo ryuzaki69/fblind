@@ -257,7 +257,7 @@
 	<string name="layoutMessagesSentDeleteAllDelete">Delete all sent messages. Slide right to confirm.</string>
 	<string name="layoutMessagesSentDeleteAllDeleteDelete">Delete all sent messages</string>
 	<string name="layoutMessagesSentDeleteAllOnResume">Now you are at the delete all sent messages menu</string>
-		
+	<string name="language">Language</string>
 	<string name="layoutMessagesInboxInbox">Inbox</string>
 	<string name="layoutMessagesInboxInbox2">Inbox. Slide right or left to hear each message.</string>
 	<string name="layoutMessagesInboxReply">Compose message</string>

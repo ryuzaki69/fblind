@@ -26,6 +26,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 	private TextView applications;
 	private TextView settings;
 	private TextView status;
+	private  TextView language;
 	private boolean okToFinish = false;
 	
     @Override protected void onCreate(Bundle savedInstanceState)
@@ -40,10 +41,10 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 		music = (TextView) findViewById(R.id.music);
 		internet = (TextView) findViewById(R.id.browser);
 		alarms = (TextView) findViewById(R.id.alarms);
-		voicerecorder = (TextView) findViewById(R.id.voicerecorder);
 		applications = (TextView) findViewById(R.id.apps);
 		settings = (TextView) findViewById(R.id.settings);
 		status = (TextView) findViewById(R.id.status);
+		language =(TextView)findViewById(R.id.language);
 		GlobalVars.activityItemLocation=0;
 		GlobalVars.activityItemLimit=10;
 		
@@ -282,7 +283,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 		try{GlobalVars.alarmVibrator.cancel();}catch(NullPointerException e){}catch(Exception e){}
 		GlobalVars.lastActivity = Main.class;
 		GlobalVars.activityItemLocation=0;
-		GlobalVars.activityItemLimit=6;
+		GlobalVars.activityItemLimit=7;
 		GlobalVars.selectTextView(messages,false);
 		GlobalVars.selectTextView(calls,false);
 		GlobalVars.selectTextView(contacts,false);
@@ -496,19 +497,25 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			GlobalVars.talk(getResources().getString(R.string.mainMusicPlayer));
 			break;
 
-				case 5: //STATUS
-					GlobalVars.selectTextView(status,true);
-					GlobalVars.selectTextView(messages,false);
-					GlobalVars.selectTextView(music,false);
-					GlobalVars.talk(getResources().getString(R.string.mainStatus));
-					break;
-				case 6: //INTERNET
+				case 5: //INTERNET
 					GlobalVars.selectTextView(internet,true);
 					GlobalVars.selectTextView(status,false);
-					GlobalVars.selectTextView(messages,false);
+					GlobalVars.selectTextView(music,false);
+
 					GlobalVars.talk("Youtube");
 					break;
+				case 6: //STATUS
+					GlobalVars.selectTextView(status,true);
+					GlobalVars.selectTextView(internet,false);
+					GlobalVars.selectTextView(language,false);
+					GlobalVars.talk(getResources().getString(R.string.mainStatus));
+					break;
 
+				case 7:
+					GlobalVars.selectTextView(language,true);
+					GlobalVars.selectTextView(status,false);
+					GlobalVars.selectTextView(messages,false);
+					break;
 			}
 		}
 		
@@ -561,6 +568,8 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 				//case 5: //INTERNET
 					GlobalVars.startActivity(Browser.class);
 					break;
+				case 7:
+					GlobalVars.startActivity(language.class);
 
 			}
 		}

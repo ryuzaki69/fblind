@@ -8,13 +8,7 @@
         </LinearLayout>
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
         <LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:scaleType="fitCenter"
-                android:src="@drawable/call" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="fitCenter" android:src="@drawable/calls" />
             <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="#FFFFFF" android:id="@+id/calls" android:text="@string/layoutMainCalls"/>
         </LinearLayout>
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
@@ -35,22 +29,59 @@
         </LinearLayout>
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
     </LinearLayout>
+
     <FrameLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="1"/>
 
     <LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="3" android:layout_gravity="center">
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
         <LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
-            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="fitCenter" android:src="@drawable/status"/>
-            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="#FFFFFF"  android:id="@+id/status" android:text="Status"/>
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="fitCenter" android:src="@drawable/browser"/>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="#FFFFFF"  android:id="@+id/browser" android:text="@string/layoutMainBrowser"/>
         </LinearLayout>
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
         <LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
-            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="fitCenter" android:src="@drawable/browser"/>
-            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="#FFFFFF" android:id="@+id/browser" android:text="Youtube"/>
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="fitCenter" android:src="@drawable/status"/>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="#FFFFFF"  android:id="@+id/alarms" android:text="@string/layoutMainStatus"/>
         </LinearLayout>
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
     </LinearLayout>
 
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="1"/>
 
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="3" android:layout_gravity="center">
+        <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
+        <LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="fitCenter" android:src="@drawable/voicerecorder"/>
+
+            <TextView
+                android:id="@+id/language"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/language"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
+        <LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
+
+        </LinearLayout>
+        <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
+    </LinearLayout>
+
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="1"/>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="3" android:layout_gravity="center">
+        <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
+        <LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
+
+        </LinearLayout>
+        <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
+        <LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
+
+        </LinearLayout>
+        <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
+    </LinearLayout>
+
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="0.5"/>
 
 </LinearLayout>
