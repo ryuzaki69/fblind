@@ -2,6 +2,8 @@ package org.project.harsh.fblind;
 
 import android.app.*;
 import android.content.*;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.media.*;
 import android.net.Uri;
@@ -9,6 +11,8 @@ import android.os.*;
 import android.speech.tts.*;
 import android.speech.tts.TextToSpeech.OnUtteranceCompletedListener;
 import android.telephony.*;
+import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.*;
 import android.widget.*;
 import java.util.*;
@@ -28,8 +32,8 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 	private TextView status;
 	private  TextView language;
 	private boolean okToFinish = false;
-	
-    @Override protected void onCreate(Bundle savedInstanceState)
+		Locale myLocale;
+		@Override protected void onCreate(Bundle savedInstanceState)
     	{
     	super.onCreate(savedInstanceState);
     	setContentView(R.layout.main);
@@ -745,4 +749,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			return getResources().getString(R.string.mainCarrierNotAvailable);
 			}
 		}
+
+
+
 	}

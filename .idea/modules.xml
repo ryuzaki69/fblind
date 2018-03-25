@@ -3,12 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\MEHUL\Desktop\fblind124\app\app.iml" filepath="C:\Users\MEHUL\Desktop\fblind124\app\app.iml" />
       <module fileurl="file://C:\Users\carry'\AndroidStudioProjects\fb1\app\app.iml" filepath="C:\Users\carry'\AndroidStudioProjects\fb1\app\app.iml" />
       <module fileurl="file://E:\fblind\app\app.iml" filepath="E:\fblind\app\app.iml" />
       <module fileurl="file://F:\fblind\fb1.iml" filepath="F:\fblind\fb1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fblind.iml" filepath="$PROJECT_DIR$/fblind.iml" />
+      <module fileurl="file://C:\Users\MEHUL\Desktop\fblind124\fblind.iml" filepath="C:\Users\MEHUL\Desktop\fblind124\fblind.iml" />
       <module fileurl="file://C:\Users\carry'\AndroidStudioProjects\fb1\fblind.iml" filepath="C:\Users\carry'\AndroidStudioProjects\fb1\fblind.iml" />
       <module fileurl="file://E:\fblind\fblind.iml" filepath="E:\fblind\fblind.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/fblind124.iml" filepath="$PROJECT_DIR$/.idea/fblind124.iml" />
     </modules>
   </component>
 </project>
