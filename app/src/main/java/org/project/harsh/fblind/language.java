@@ -41,7 +41,7 @@ public class language extends Activity {
         lan.add("Punjabi");
         code.add("es");
         lan.add("Hindi");
-        code.add("fr");
+        code.add("hi");
         lan.add("Bengali");
         code.add("id");
         lan.add("Marathi");

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="menu_settings">setings</string>
+    <string name="mainWelcome">pranaalee mein aapaka svaagat hai </string>
+    <string name="mainMessages">sandesh</string>
+    <string name="mainMessagesNew">nae sandesh</string>
+    <string name="mainMessagesNoNew">sandesh. koi naya sandesh nahi.</string>
+    <string name="mainMessagesOneNew">sandesh. ek naya sandesh</string>
+    <string name="mainMessagesNewFromContact">&#160;se naya sandesh </string>
+    <string name="mainMessagesNewFromUnknown">agyaat nambar se naya sandesh</string>
+    <string name="mainMessagesNotAvailable">sandesh. is upakaran mein upalabdh nahin hai.</string>
+    <string name="mainCalls">kol</string>
+    <string name="mainCallsMissed">misd kol</string>
+    <string name="mainCallsNoMissed">kol. koee misd kol nahin.</string>
+    <string name="mainCallsOneMissed">kol. ek misd kol.</string>
+    <string name="mainCallsNotAvailable">kol. is upakaran mein upalabdh nahin hai.</string>
+    <string name="mainNotAvailable">yah vikalp is upakaran mein upalabdh nahin hai.</string>
+    <string name="mainContacts">sampark</string>
+    <string name="mainMusicPlayer">sangeet</string>
+    <string name="mainBrowser">intaranet</string>
+    <string name="mainSettings">Setings</string>
+    <string name="mainStatus">upakaran kee sthiti</string>
+    <string name="mainCarrierIs">, vaahak hai&#160;</string>
+    <string name="mainProfileIsNormal">, profail saamaany hai&#160;</string>
+    <string name="mainProfileIsSilent">, profail saant hai&#160;</string>
+    <string name="mainProfileIsVibrate">, profail vibrait hai&#160;</string>
+    <string name="mainNoSignal">,phon mein koee sanket nahin hai &#160;</string>
+    <string name="mainBatteryChargedAt">baitaree chaarj hai&#160;</string>
+    <string name="mainPercentAndTime">&#160;pratishat, samay hai&#160;</string>
+    <string name="mainHours">&#160;ghante&#160;</string>
+    <string name="mainMinutesAndDate">&#160;minat aur taareekh hai&#160;</string>
+    <string name="mainOf">&#160;ka&#160;</string>
+    <string name="mainCarrierNotAvailable">aagyat</string>
+    <string name="mainWifiOnWithNetwork">aur vaeefaee chaaloo hai aur &#160; naamit ek vaeephaee netavark se juda hai</string>
+    <string name="mainWifiOnWithoutNetwork">aur vaeefaee chaalo hai aur kisi bhi vaeephaee netavark se nahi juda hai.</string>
+    <string name="mainWifiOff">aur vaeefaee band hai.</string>
+    <string name="mainMusicPlayerPleaseTryAgain">krpaya kuchh kshanon mein punah prayaas karen jab sangeet khilaadee ne aapakee sabhee sangeet failon ko sansaadhit kiya ho.
+.</string>
+    <string name="mainNoTTSInstalledTitle">truti</string>
+    <string name="mainNoTTSInstalledMessage">teeteees sophtaveyar nahin mila. \ n krpaya kaam karane ke lie is aip ke lie googlai tts app (nihshulk aip) daunalod karen.</string>
+    <string name="mainNoTTSInstalledButton">Download Google TTS</string>
+    <string name="mainPressBack">aip ko band karane ke lie vaapas phir se dabaen.</string>
+    <string name="volumeMaximum">adhikatam aawaz</string>
+    <string name="volumeHigher">uchchatar aawaz</string>
+    <string name="volumeLower">kum volume</string>
+    <string name="deviceCharged">upakaran pura charge hai</string>
+    <string name="deviceChargedStatus">, upakaran pura charge hai,&#160;</string>
+    <string name="deviceCharging">upakaran charge hora hai</string>
+    <string name="deviceChargingStatus">, upakaran charge hora hai,&#160;</string>
+    <string name="deviceUnplugged">upakaran ab anaplag ho gaya hai</string>
+    <string name="screenOn">skreen ab on hai</string>
+    <string name="screenOff">skreen ab off hai</string>
+    <string name="screenPortrait">skreen abhivinyaas ab portret mod mein hai</string>
+    <string name="screenLandscape">skreen abhivinyaas ab laindaskep mod mein hai</string>
+    <string name="wifiConnectedToNetwork">&#160; naamit ek vaeephaee netavark se kanekt kiya gaya</string>
+    <string name="wifiDisconnectedFromNetwork">vaeephaee netavark se diskanekt kiya gaya</string>
+    <string name="layoutMainMessages">sandesh</string>
+    <string name="layoutMainCalls">kol</string>
+    <string name="layoutMainContacts">sampark</string>
+    <string name="layoutMainMusic">sangeet</string>
+    <string name="layoutMainBrowser">Internet</string>
+
+    <string name="layoutMainSettings">Setings</string>
+    <string name="layoutMainStatus">Status</string>
+
+    <string name="layoutMainOnResume">ab aap mukhy menoo par hain</string>
+    <string name="layoutAlarmsNotifierShutdown">shatadaun alaarm par oopar ya neeche slaid karen</string>
+    <string name="layoutSettingsReadingSpeed">pathan gati:&#160;</string>
+    <string name="layoutSettingsReadingSpeed2">pathan gati:&#160;</string>
+    <string name="layoutSettingsScreenTimeout">skreen taimaut:\n</string>
+    <string name="layoutSettingsScreenTimeout2">skreen taimaut &#160;</string>
+    <string name="layoutSettingsToneNotAvailable">upalabdh nahin hai</string>
+    <string name="layoutSettingsAlarmTone">Alarm tone:\n</string>
+    <string name="layoutSettingsAlarmTone2">Alarm tone.&#160;</string>
+    <string name="layoutSettingsAlarmToneNotAvailable">Alarm tone. Not available in this device</string>
+    <string name="layoutSettingsNotifyTone">soochit tone:\n</string>
+    <string name="layoutSettingsNotifyTone2">soochit tone.&#160;</string>
+    <string name="layoutSettingsNotifyToneNotAvailable">soochit tone. is upakaran mei uplabadh nahi hai</string>
+    <string name="layoutSettingsCallTone">kol tone:\n</string>
+    <string name="layoutSettingsCallTone2">kol tone.&#160;</string>
+    <string name="layoutSettingsCallToneNotAvailable">kol tone: -</string>
+    <string name="layoutSettingsCallToneNotAvailable2">kol tone. is upakaran mei uplabadh nahi hai</string>
+    <string name="layoutSettingsProfileNormal">prophail: samanay</string>
+    <string name="layoutSettingsProfileNormal2">prophail. samanay</string>
+    <string name="layoutSettingsProfileSilent">prophail: Sant</string>
+    <string name="layoutSettingsProfileSilent2">prophail. sant</string>
+    <string name="layoutSettingsProfileVibrate">prophail: Vibrate</string>
+    <string name="layoutSettingsProfileVibrate2">prophail. Vibrate</string>
+    <string name="layoutSettingsWifiOn">Wifi: On</string>
+    <string name="layoutSettingsWifiOn2">Wifi On hai</string>
+    <string name="layoutSettingsWifiOn2WithoutNetwork">Wifi. wifi on hai aur kisi network se juda hai</string>
+    <string name="layoutSettingsWifiOn2WithNetwork">Wifi. wifi on hai aur &#160; network se juda hai</string>
+    <string name="layoutSettingsWifiOff">Wifi: Off</string>
+    <string name="layoutSettingsWifiOff2">Wifi.Wifi Off hai</string>
+    <string name="layoutSettingsWifiOff3">Wifi Off hai</string>
+    <string name="layoutSettingsBluetoothOn">Bluetooth: On</string>
+    <string name="layoutSettingsBluetoothOn2"> Bluetooth on hai</string>
+    <string name="layoutSettingsBluetoothOff">Bluetooth: Off</string>
+    <string name="layoutSettingsBluetoothOff2">Bluetooth Off hai</string>
+    <string name="layoutSettingsInputMode">inaput mod:&#160;</string>
+    <string name="layoutSettingsInputMode2">inaput tekst se&#160;</string>
+    <string name="layoutSettingsInputModeKeyboard">Keyboard</string>
+    <string name="layoutSettingsInputModeKeyboard2">bhautik keebord aur tachaskreen</string>
+    <string name="layoutSettingsInputModeVoice">aavaaz</string>
+    <string name="layoutSettingsInputModeVoice2">aavaaj kee pahachaan. intaranet kanekshan kee aavashyakata ho sakatee hai.</string>
+    <string name="layoutSettingsInputModeKeyboardTalkback">talkbachk ke saath keebord</string>
+    <string name="layoutSettingsInputModeKeyboardTalkback2">tokabaik ke saath maanak endroid keebord tokabaik sakriy hona chaahie..</string>
+    <string name="layoutSettingsSystemSettings">pranaalee settings</string>
+    <string name="layoutSettingsSeconds">&#160;secs</string>
+    <string name="layoutSettingsSeconds2">nishkriyata ka seconds &#160;</string>
+    <string name="layoutSettingsMinute">&#160;min</string>
+    <string name="layoutSettingsMinute2">nishkriyata ka minutes &#160;</string>
+    <string name="layoutSettingsMinutes">&#160;mins</string>
+    <string name="layoutSettingsMinutes2">nishkriyata ka minutes &#160;</string>
+    <string name="layoutSettingsPrivacyPolicy">gopaneeyata neeti</string>
+
+    <string name="layoutSettingsOnResume">ab aap setings menu mai hai</string>
+    <string name="layoutContactsList">sampark</string>
+    <string name="layoutContactsCreate">naya samparak bnaye</string>
+    <string name="layoutContactsOnResumeCreated">naya sampark ban gya hai aur aap ab sampark menu mai hai</string>
+    <string name="layoutContactsOnResume">ab aap sampark menu mai hai</string>
+    <string name="layoutContactsCreateName">- naam dale-</string>
+    <string name="layoutContactsCreateName2">sampark ka naam. naam dalne ke liye daiyn slide kare</string>
+    <string name="layoutContactsCreateName3">sampark ka naam.&#160;</string>
+    <string name="layoutContactsCreatePhone">- phone number dale -</string>
+    <string name="layoutContactsCreatePhone2">phone number. phone number dalne ke liye daiyn slide kare</string>
+    <string name="layoutContactsCreatePhone3">Phone number.&#160;</string>
+    <string name="layoutContactsCreateCreate">naya sampark bnaye.</string>
+    <string name="layoutContactsCreateErrorComplete">truti. kripya sare options sahi se bhare</string>
+    <string name="layoutContactsCreateOnResume">ab aap naye sampark bnane wale menu mai hai</string>
+    <string name="layoutContactsListContactsList">sampark</string>
+    <string name="layoutContactsListContactsList2">sampark. naam sunne ke liye daiyn aur baiyn slide kare.</string>
+    <string name="layoutContactsListNoContacts">koi bhi sampark nahi hai</string>
+    <string name="layoutContactsListWithThePhoneNumber">&#160;phone number ke sath&#160;</string>
+    <string name="layoutContactsListCall">kol</string>
+    <string name="layoutContactsListCall2">chaiynit kiye hue sampark ko kol kare</string>
+    <string name="layoutContactsListSendMessage">sandesh bheje</string>
+    <string name="layoutContactsListSendMessage2">chaiynit kiye hue sampark ko sandesh bheje</string>
+    <string name="layoutContactsListDelete">sampark hataaye</string>
+    <string name="layoutContactsListDelete2">chaiynit sampark hataaye</string>
+    <string name="layoutContactsListError">pehle sampark ka chayan kare</string>
+    <string name="layoutContactsListPleaseWait">kuchh palon mein phir se prayaas karen jab sabhee samparkon par kaarravaee kee gaee hai.</string>
+    <string name="layoutContactsListOnResumeContactDeleted">sampark hata diya gaya tha aur ab aap sampark soochee menoo par hain</string>
+    <string name="layoutContactsListOnResume">ab aap sampark soochee menoo par hain</string>
+    <string name="layoutContactsListOnResume2">sandesh bheja gaya tha aur ab aap sampark soochee menoo par hain</string>
+    <string name="layoutContactsDeleteSelected">vilopan ke lie chayanit sampark.&#160;</string>
+    <string name="layoutContactsDeleteDelete">mitaane kee pushti</string>
+    <string name="layoutContactsDeleteOnResume">ab aap hataana sampark menoo par hain</string>
+    <string name="layoutCallsMissedCallsList">Call log</string>
+    <string name="layoutCallsDeleteCallLogs">log hataana</string>
+    <string name="layoutCallsDeleteCallLogs2">sabhee kol log hataen</string>
+    <string name="layoutCallsMakeCall">kol karen</string>
+    <string name="layoutCallsOnResume">ab aap kol menoo par hain</string>
+    <string name="layoutCallsOnResume2">sabhee kol log saphalataapoorvak hata die gae hain aur ab aap kol menoo par hain</string>
+    <string name="layoutCallsMakeCallPhone">- input phone number -</string>
+    <string name="layoutCallsMakeCallPhone2">Phone number. number dalne ke liye daiyn slide karein.</string>
+    <string name="layoutCallsMakeCallPhone3">Phone number.&#160;</string>
+    <string name="layoutCallsMakeCallCall">Call</string>
+    <string name="layoutCallsMakeCallCallError">sabase pahale aapako ek fon nambar inaput karana hoga</string>
+    <string name="layoutCallsMakeCallOnResume">ab aap kol lagane wale menu mai hai</string>
+    <string name="layoutCallsLogsLogs">Call logs</string>
+    <string name="layoutCallsLogsLogs2">Call logs. sare log sunne ke liye daiyn aur baiyn slide karein.</string>
+    <string name="layoutCallsLogsAddToNewContact">nae sampark mein joden</string>
+    <string name="layoutCallsLogsCall">Call</string>
+    <string name="layoutCallsLogsCall2">chayanit nambar par kol karen</string>
+    <string name="layoutCallsLogsSendMessage">Sandesh bheje</string>
+    <string name="layoutCallsLogsSendMessage2">chaiynit sampark ko sandesh bheje</string>
+    <string name="layoutCallsLogsNoLogs">koi kol log nahi</string>
+    <string name="layoutCallsLogsOutgoingCall">Outgoing call</string>
+    <string name="layoutCallsLogsIncomingCall">aane vaalee kol</string>
+    <string name="layoutCallsLogsMissedCall">Missed call</string>
+    <string name="layoutCallsLogsLogItem">Log&#160;</string>
+    <string name="layoutCallsLogsOfNumber">&#160;ka&#160;</string>
+    <string name="layoutCallsLogsAt">&#160;par&#160;</string>
+    <string name="layoutCallsLogsHours">&#160;ghante&#160;</string>
+    <string name="layoutCallsLogsMinutes">&#160;minutes&#160;</string>
+    <string name="layoutCallsLogsSeconds">&#160;seconds.</string>
+    <string name="layoutCallsLogsCallTo">&#160;se&#160;</string>
+    <string name="layoutCallsLogsCallFrom">&#160;se&#160;</string>
+    <string name="layoutCallsLogsError">pahale aapako ek log chunana hoga</string>
+    <string name="layoutCallsLogsPleaseTryAgain">sabhee kol log sansaadhit kie gae hain, krpaya kuchh palon mein punah prayaas karen.</string>
+    <string name="layoutCallsLogsOnResume">ab aap kol logs menoo par hain</string>
+    <string name="layoutCallsLogsOnResume2">sandesh bheja gaya tha aur ab aap kol logs menoo par hain</string>
+    <string name="layoutCallsLogsDelete">kol log hataen, pushti karane ke lie daiyn slaid karen.</string>
+    <string name="layoutCallsLogsDeleteOnResume">ab aap  kol logs hatane wale menoo par hain</string>
+    <string name="layoutMessagesInbox">Inbox</string>
+    <string name="layoutMessagesInboxNew">naye sandesh</string>
+    <string name="layoutMessagesInboxNoNew">Inbox. koi naya sandesh nahi</string>
+    <string name="layoutMessagesInboxOneNew">Inbox. ek naya sandesh</string>
+    <string name="layoutMessagesSent">bhej diya</string>
+    <string name="layoutMessagesMessageLogs">sandesh logs</string>
+    <string name="layoutMessagesMessageLogsDelete">logs hataye</string>
+    <string name="layoutMessagesMessageLogsDelete2">saare sandesh logs hataye</string>
+    <string name="layoutMessagesNew">likhein</string>
+    <string name="layoutMessagesNew2">sandesh likhein</string>
+    <string name="layoutMessagesOnResume">ab aap sandesh menu mai hai</string>
+    <string name="layoutMessagesOnResume2">sandesh bhej diya aur ab aap sandesh menu par hai</string>
+    <string name="layoutMessagesDeleteNameFrom">&#160; number dwara bheja gya sandesh hataye</string>
+    <string name="layoutMessagesDeleteNameTo">&#160;number dwara bheja gya sandesh hataye</string>
+    <string name="layoutMessagesDeleteDelete">hataane kee pushti karen</string>
+    <string name="layoutMessagesDeleteOnResume">ab aap hataana sandesh menoo par hain</string>
+    <string name="layoutMessagesSentSent">bhej diya</string>
+    <string name="layoutMessagesSentSent2">sandesh bheje. saare sandesh sunne ke liye daiyn baiyn slide kare.</string>
+    <string name="layoutMessagesSentDelete">sandesh hataye</string>
+    <string name="layoutMessagesSentMessageItem">sandesh&#160;</string>
+    <string name="layoutMessagesSentMessageOf">&#160;ka&#160;</string>
+    <string name="layoutMessagesSentMessageSent">&#160; ko bhej diya</string>
+    <string name="layoutMessagesSentMessageMessageBody">sandesh kehta hai,&#160;</string>
+    <string name="layoutMessagesSentTryAgain">kuchh palon mein phir se prayaas karen jab sabhee bheje gae sandesh sansaadhit ho jaenge.</string>
+    <string name="layoutMessagesSentNoMessages">koi sandesh nahi</string>
+    <string name="layoutMessagesSentError">kripya pehle sandesh chune</string>
+    <string name="layoutMessagesSentOnResume">ab aap bheje gae sandesh menoo par hain</string>
+    <string name="layoutMessagesSentOnResume2">sandesh hata diya gaya tha aur ab aap bheje gae sandesh menoo par hain</string>
+    <string name="layoutMessagesSentOnResume3">sabhee bheje gae sandesh saphalataapoorvak nasht kie gae the aur ab aap bheje gae sandesh menoo par hain</string>
+    <string name="layoutMessagesSentDeleteAllDelete">sabhee bheje gae sandesh hataen pushti karane ke lie daiyn slaid karen</string>
+    <string name="layoutMessagesSentDeleteAllDeleteDelete">sabhi bheje gaye sandesh hataye</string>
+    <string name="layoutMessagesSentDeleteAllOnResume">ab aap sabhee bheje gae sandesh menoo ko hata sakate hain</string>
+    <string name="layoutMessagesInboxInbox">Inbox</string>
+    <string name="layoutMessagesInboxInbox2">Inbox.saare sandesh sunne ke liye daiyn aur baiyn slide karein.</string>
+    <string name="layoutMessagesInboxReply">sandesh likhein</string>
+    <string name="layoutMessagesInboxDelete">sandesh hataye</string>
+    <string name="layoutMessagesInboxDeleteAll">sabhi praapt sandeshon ko hataye</string>
+    <string name="layoutMessagesInboxCallTo">sampark ko kol karein</string>
+    <string name="layoutMessagesInboxAddToNewContact">naye sampark mai jode</string>
+    <string name="layoutMessagesInboxMessageReceived">&#160; se praapt kiya</string>
+    <string name="layoutMessagesInboxMessageOn">&#160;par&#160;</string>
+    <string name="layoutMessagesInboxMessageItem">sandesh&#160;</string>
+    <string name="layoutMessagesInboxMessageOf">&#160;ka&#160;</string>
+    <string name="layoutMessagesInboxMessageAt">&#160;par&#160;</string>
+    <string name="layoutMessagesInboxMessageHours">&#160;ghante&#160;</string>
+    <string name="layoutMessagesInboxMessageMinutes">&#160;minutes&#160;</string>
+    <string name="layoutMessagesInboxMessageSeconds">&#160;seconds.&#160;</string>
+    <string name="layoutMessagesInboxMessageMessageBody">sandesh kehta hai,&#160;</string>
+    <string name="layoutMessagesInboxTryAgain">sabhee inaboks sandeshon par sansaadhit hone par kuchh palon mein punah prayaas karen.</string>
+    <string name="layoutMessagesInboxError">kripya pehle sandesh chune</string>
+    <string name="layoutMessagesInboxNoMessages">koi sandesh nahi</string>
+    <string name="layoutMessagesInboxOnResume">ab aap sandesh ke inbox menu mai hai</string>
+    <string name="layoutMessagesInboxOnResume2">sandesh bhej diya gaya aur ab aap sandesh ke inbox menu mai hai</string>
+    <string name="layoutMessagesInboxOnResume3">sandesh bhej diya gaya aur ab aap sandesh ke inbox menu mai hai</string>
+    <string name="layoutMessagesInboxOnResume4">sabhi praapt sandesh hata diye gaye aur ab aap sandesh ke inbox menu mai hai</string>
+    <string name="layoutMessagesInboxDeleteAllDelete">sabhi praapt sandeshon ko hatane ke liye daiyn slide karein.</string>
+    <string name="layoutMessagesInboxDeleteAllDeleteDelete">sabhi prapat sandeshon ko hataye</string>
+    <string name="layoutMessagesInboxDeleteAllOnResume">ab aap sandesh hataye menu mai hai</string>
+    <string name="layoutMessagesComposeAddressee">patr paanevaala</string>
+    <string name="layoutMessagesComposeAddressee2">patr paanevaala. saare sampark sunne ke liye daiyn aur baiyn slide karein.</string>
+    <string name="layoutMessagesComposeAddressee3">patr paanevaala.&#160;</string>
+    <string name="layoutMessagesComposeMessage">sandesh</string>
+    <string name="layoutMessagesComposeMessage2">sandesh. sandesh likhne ke liye daiyn slide karein.</string>
+    <string name="layoutMessagesComposeMessage3">sandesh.&#160;</string>
+    <string name="layoutMessagesComposeSend">sandesh bheje</string>
+    <string name="layoutMessagesComposeSending">sandesh bheja ja rha kripya pratiksha karein</string>
+    <string name="layoutMessagesComposeSendingError">aapaka sandesh bheja ja raha hai, krpaya prateeksha karen ...</string>
+    <string name="layoutMessagesComposeSendingError2">sandesh bheja nahin ja saka, apana vaahak sthiti jaanchen aur baad mein punah prayaas karen.</string>
+    <string name="layoutMessagesComposeErrorComplete">truti. ek sandesh bhejane ke lie aapako pratyek feeld ko poora karana hoga.</string>
+    <string name="layoutMessagesComposeOnResume">ab aap rachana sandesh menoo par hain</string>
+    <string name="layoutInputKeysOnResume">ab aap bhautik keebord ya tachaskreen ka upayog kar inaput tekst mod mein hain yadi aap tachaskreen ka upayog karenge, to ek charitr ya kunjee ka chayan karane ke lie oopar aur neeche slaid karen, varn ya kunjee kee pushti karane ke lie daen slaid karen aur agale ek par jaen aur aakhiree visheshata ko hataane ke lie baen slaid karenr.</string>
+    <string name="layoutInputKeysTips">inaput paath mod \ n \ n * charitr ka chayan karane ke lie oopar aur neeche slaid karen \ n \ n * varn ya kunjee kee pushti karane ke lie daeen or slaid karen aur agale ek par jaen \ n \ n * antim varn ko hataane ke lie baen slaid karen \ n \ n * bhautik keebord sangat</string>
+    <string name="layoutInputKeysKeyEnter">[darj]</string>
+    <string name="layoutInputKeysKeyEnter2">darj</string>
+    <string name="layoutInputKeysKeyRead">padhe</string>
+    <string name="layoutInputKeysKeyReadText">paath padhen</string>
+    <string name="layoutInputKeysKeyReadNumber">number padhe</string>
+    <string name="layoutInputKeysKeySpace">jagah</string>
+    <string name="layoutInputKeysNothingToRead">kuch padhne ke liye nahi hai</string>
+    <string name="layoutInputKeysEmptyField">likhne ki jagah khali hai</string>
+    <string name="layoutInputKeysEntered">&#160;darj kar diya gaya</string>
+    <string name="layoutInputVoiceOnResume">ab aap aavaaj pahachaan menoo ka upayog karake inaput tekst mod par hain</string>
+    <string name="layoutInputVoiceStartRecognition">aavaaj pahachaan praarambh karen</string>
+    <string name="layoutInputVoiceStartRecognition2">aavaaj kee pahachaan. daen slaid karen aur phir bolen</string>
+    <string name="layoutInputVoicePossibleResult">parinam&#160;</string>
+    <string name="layoutInputVoicePossibleResults">parinam (</string>
+    <string name="layoutInputVoicePossibleResults2">sambhav parinaam.&#160;</string>
+    <string name="layoutInputVoicePossibleResults3">. saare sunne ke liye daen slide karein</string>
+    <string name="layoutInputVoiceEnterSelectedResult">chaiynit parinaam ko darj karein</string>
+    <string name="layoutInputVoiceNoResultToSelect">kripya pehle parinaam ka chayan karein</string>
+    <string name="layoutInputVoiceNoRecognition">sambhav parinaam nahin krpaya, punah prayaas karen ya jaanch karen ki aapake divais par voyas maanyata ke lie intaranet kanekshan kee aavashyakata hai ya nahin. yadi haan, to apane intaranet kanekshan kee sthiti kee jaanch karen.</string>
+    <string name="layoutInputVoiceSystemError">sistam mein gadabadee. aavaaj kee pahachaan ko nishpaadit nahin kiya ja sakata hai</string>
+    <string name="layoutInputVoiceCancelAndGoBack">radd karen aur pichhale menoo par vaapas jaen</string>
+    <string name="layoutInputKeyboardTalkbackOnResume">ab aap talkbachk ke saath maanak endroid keebord ka upayog karake inaput tekst mod par hain. is vidhi ka upayog karane ke lie aapake paas tokabaik saksham hona chaahie ek tekstaboks abhee chuna gaya hai aur maanak endroid keebord skreen ke neeche upalabdh hai. likhie ki aap kya chaahate hain aur deta darj karane ke lie keebord mein entar kee dabaen. radd karane ke lie vaapas batan dabaen aur pichhale menoo par vaapas jaen.</string>
+
+
+    <string name="callFrom">&#160; se kol</string>
+    <string name="callFromUnknown">aagyat number se kol</string>
+    <string name="callingTo">&#160; ko kolling </string>
+    <string name="callingToUnknown">apanjeekrt number ko call </string>
+    <string name="callEnded">kol khatam hua</string>
+    <string name="backToPreviousMenu">pichle menu par wapas jaye</string>
+    <string name="backToMainMenu">main menu par wapas jaye</string>
+
+
+
+
+
+    <string name="app_name">Fblind</string>
+    <string name="title_activity_main">Fblind</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+
+    <string-array name="keysAll">
+        <item>क</item>
+        <item>ख</item>
+        <item>ग</item>
+        <item>घ</item>
+        <item>ङ</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>.</item>
+        <item>,</item>
+        <item>:</item>
+        <item>;</item>
+        <item>!</item>
+        <item>\?</item>
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>#</item>
+        <item>%</item>
+        <item>&amp;</item>
+        <item>$</item>
+        <item>/</item>
+        <item>"\\"</item>
+        <item>(</item>
+        <item>)</item>
+        <item>{</item>
+        <item>}</item>
+        <item>\"</item>
+        <item>\@</item>
+        <item>[READ]</item>
+        <item>[ENTER]</item>
+        <item>_</item>
+    </string-array>
+
+
+
+    <string-array name="keysOnlyNumbers">
+        <item>#</item>
+        <item>*</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>[READ]</item>
+        <item>[ENTER]</item>
+    </string-array>
+
+    <integer-array name="screenTimeOutSeconds">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+        <item>600</item>
+    </integer-array>
+
+    <string-array name="timeHourValues">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+
+    <string-array name="timeMinutesValues">
+        <item>00</item>
+        <item>05</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+    </string-array>
+</resources>
