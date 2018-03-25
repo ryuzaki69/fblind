@@ -185,4 +185,8 @@ public class language extends Activity {
         Intent refresh = new Intent(this, language.class);
         startActivity(refresh);
     }
+
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(LocaleHelper.onAttach(base));
+    }
 }
