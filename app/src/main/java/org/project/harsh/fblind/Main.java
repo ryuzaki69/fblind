@@ -565,10 +565,10 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			break;
 
 
-				case 5: //STATUS
+				case 6: //STATUS
 					GlobalVars.talk(getDeviceStatus());
 					break;
-				case 6:
+				case 5:
 				//case 5: //INTERNET
 					GlobalVars.startActivity(Browser.class);
 					break;
@@ -640,116 +640,116 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 		return super.onKeyUp(keyCode, event);
 		}
 
-	private String getDeviceStatus()
+
+		private String getDeviceStatus()
 		{
-		String year = GlobalVars.getYear();
-		String month = GlobalVars.getMonthName(Integer.valueOf(GlobalVars.getMonth()));
-		String day = Integer.toString(Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
-		String dayname = GlobalVars.getDayName(Calendar.getInstance().get(Calendar.DAY_OF_WEEK));
-		String hour = Integer.toString(Calendar.getInstance().get(Calendar.HOUR_OF_DAY));
-		String minutes = Integer.toString(Calendar.getInstance().get(Calendar.MINUTE));
+			String year = GlobalVars.getYear();
+			String month = GlobalVars.getMonthName(Integer.valueOf(GlobalVars.getMonth()));
+			String day = Integer.toString(Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
+			String dayname = GlobalVars.getDayName(Calendar.getInstance().get(Calendar.DAY_OF_WEEK));
+			String hour = Integer.toString(Calendar.getInstance().get(Calendar.HOUR_OF_DAY));
+			String minutes = Integer.toString(Calendar.getInstance().get(Calendar.MINUTE));
 
-		String textStatus = "";
+			String textStatus = "";
 
-		textStatus = textStatus +
-					 getResources().getString(R.string.mainBatteryChargedAt) +
-					 String.valueOf(batteryLevel() +
-					 getResources().getString(R.string.mainPercentAndTime) +
-					 hour + getResources().getString(R.string.mainHours) +
-					 minutes + getResources().getString(R.string.mainMinutesAndDate) +
-					 dayname + " " + day + getResources().getString(R.string.mainOf) +
-					 month + getResources().getString(R.string.mainOf) + year);
+			textStatus = textStatus +
+					getResources().getString(R.string.mainBatteryChargedAt) +
+					String.valueOf(batteryLevel() +
+							getResources().getString(R.string.mainPercentAndTime) +
+							hour + getResources().getString(R.string.mainHours) +
+							minutes + getResources().getString(R.string.mainMinutesAndDate) +
+							dayname + " " + day + getResources().getString(R.string.mainOf) +
+							month + getResources().getString(R.string.mainOf) + year);
 
-		if (GlobalVars.batteryAt100==true)
+			if (GlobalVars.batteryAt100==true)
 			{
-			textStatus = textStatus + getResources().getString(R.string.deviceChargedStatus);
+				textStatus = textStatus + getResources().getString(R.string.deviceChargedStatus);
 			}
-		else if (GlobalVars.batteryIsCharging==true)
+			else if (GlobalVars.batteryIsCharging==true)
 			{
-			textStatus = textStatus + getResources().getString(R.string.deviceChargingStatus);
+				textStatus = textStatus + getResources().getString(R.string.deviceChargingStatus);
 			}
 
-		if (GlobalVars.deviceIsAPhone()==true)
+			if (GlobalVars.deviceIsAPhone()==true)
 			{
-			if (GlobalVars.deviceIsConnectedToMobileNetwork()==true)
+				if (GlobalVars.deviceIsConnectedToMobileNetwork()==true)
 				{
-				textStatus = textStatus + getResources().getString(R.string.mainCarrierIs) + getCarrier();
+					textStatus = textStatus + getResources().getString(R.string.mainCarrierIs) + getCarrier();
 				}
 				else
 				{
-				textStatus = textStatus + getResources().getString(R.string.mainNoSignal);
+					textStatus = textStatus + getResources().getString(R.string.mainNoSignal);
 				}
 			}
-		
-		AudioManager audioManager = (AudioManager)getSystemService(AUDIO_SERVICE);
-		switch(audioManager.getRingerMode())
+
+			AudioManager audioManager = (AudioManager)getSystemService(AUDIO_SERVICE);
+			switch(audioManager.getRingerMode())
 			{
-			case AudioManager.RINGER_MODE_NORMAL:
-			textStatus = textStatus + getResources().getString(R.string.mainProfileIsNormal);
-			break;
+				case AudioManager.RINGER_MODE_NORMAL:
+					textStatus = textStatus + getResources().getString(R.string.mainProfileIsNormal);
+					break;
 
-			case AudioManager.RINGER_MODE_SILENT:
-			textStatus = textStatus + getResources().getString(R.string.mainProfileIsSilent);
-			break;
+				case AudioManager.RINGER_MODE_SILENT:
+					textStatus = textStatus + getResources().getString(R.string.mainProfileIsSilent);
+					break;
 
-			case AudioManager.RINGER_MODE_VIBRATE:
-			textStatus = textStatus + getResources().getString(R.string.mainProfileIsVibrate);
-			break;
+				case AudioManager.RINGER_MODE_VIBRATE:
+					textStatus = textStatus + getResources().getString(R.string.mainProfileIsVibrate);
+					break;
 			}
-			
-		if (GlobalVars.isWifiEnabled())
+
+			if (GlobalVars.isWifiEnabled())
 			{
-			String name = GlobalVars.getWifiSSID();
-			if (name=="")
+				String name = GlobalVars.getWifiSSID();
+				if (name=="")
 				{
-				textStatus = textStatus + getResources().getString(R.string.mainWifiOnWithoutNetwork);
+					textStatus = textStatus + getResources().getString(R.string.mainWifiOnWithoutNetwork);
 				}
 				else
 				{
-				textStatus = textStatus + getResources().getString(R.string.mainWifiOnWithNetwork) + name + ".";
+					textStatus = textStatus + getResources().getString(R.string.mainWifiOnWithNetwork) + name + ".";
 				}
 			}
 			else
 			{
-			textStatus = textStatus + getResources().getString(R.string.mainWifiOff);
+				textStatus = textStatus + getResources().getString(R.string.mainWifiOff);
 			}
-		return textStatus;
+			return textStatus;
 		}
-		
-	private int batteryLevel()
+
+		private int batteryLevel()
 		{
-    	Intent batteryIntent = registerReceiver(null, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
-    	int level = batteryIntent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
-    	int scale = batteryIntent.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
-    	if(level == -1 || scale == -1)
+			Intent batteryIntent = registerReceiver(null, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
+			int level = batteryIntent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
+			int scale = batteryIntent.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
+			if(level == -1 || scale == -1)
 			{
-    		return (int)50.0f;
+				return (int)50.0f;
 			}
-    	return (int)(((float)level / (float)scale) * 100.0f); 
+			return (int)(((float)level / (float)scale) * 100.0f);
 		}
-		
-	private String getCarrier()
+
+		private String getCarrier()
 		{
-		try
+			try
 			{
-			TelephonyManager telephonyManager = ((TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE));
-			String carrier;
-			carrier = telephonyManager.getSimOperatorName();
-			if (carrier==null | carrier=="")
+				TelephonyManager telephonyManager = ((TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE));
+				String carrier;
+				carrier = telephonyManager.getSimOperatorName();
+				if (carrier==null | carrier=="")
 				{
-				return getResources().getString(R.string.mainCarrierNotAvailable);
+					return getResources().getString(R.string.mainCarrierNotAvailable);
 				}
 				else
 				{
-				return carrier;
+					return carrier;
 				}
 			}
 			catch(Exception e)
 			{
-			return getResources().getString(R.string.mainCarrierNotAvailable);
+				return getResources().getString(R.string.mainCarrierNotAvailable);
 			}
 		}
-
 
 
 	}
