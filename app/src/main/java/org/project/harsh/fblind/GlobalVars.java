@@ -884,16 +884,17 @@ public class GlobalVars extends Application
 			return false;
 		}
 
+		public static void voice()
+		{
+			GlobalVars.startActivity(InputVoice.class);
+		}
 	public static void startInputActivity()
 		{
 		if (GlobalVars.inputMode==GlobalVars.INPUT_KEYBOARD | GlobalVars.inputModeKeyboardOnlyNumbers==true)
 			{
 			GlobalVars.startActivity(InputKeyboard.class);
 			}
-		else if(GlobalVars.inputMode==GlobalVars.INPUT_VOICE)
-			{
-			GlobalVars.startActivity(InputVoice.class);
-			}
+
 		else if(GlobalVars.inputMode==GlobalVars.INPUT_KEYBOARDTALKBACK)
 			{
 			GlobalVars.startActivity(InputKeyboardTalkback.class);
