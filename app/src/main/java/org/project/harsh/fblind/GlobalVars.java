@@ -466,7 +466,8 @@ public class GlobalVars extends Application
     	try
     		{
     		Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse(a));
-    		context.startActivity(intent);
+
+    			context.startActivity(intent);
     		}
     		catch(NullPointerException e)
     		{
@@ -1314,7 +1315,7 @@ public class GlobalVars extends Application
 			}
 		}
 
-	public static void musicPlayerPlayStop()
+	/*public static void musicPlayerPlayStop()
 		{
 		try
 			{
@@ -1374,7 +1375,7 @@ public class GlobalVars extends Application
 			GlobalVars.talk(GlobalVars.context.getResources().getString(R.string.layoutMusicPlayerNowPlayingError1));
 			}
 		}
-		
+	*/
 	public static void musicPlayerPlayFile()
 		{
 		try
@@ -1395,14 +1396,14 @@ public class GlobalVars extends Application
 
 			try
 				{
-				MusicPlayer.playstopicon.setImageResource(R.drawable.playerstop);
+				//MusicPlayer.playstopicon.setImageResource(R.drawable.playerstop);
 				if (GlobalVars.activityItemLocation==2)
 					{
-					GlobalVars.setText(MusicPlayer.playstop,true,GlobalVars.context.getResources().getString(R.string.layoutMusicPlayerStop));
+				//	GlobalVars.setText(MusicPlayer.playstop,true,GlobalVars.context.getResources().getString(R.string.layoutMusicPlayerStop));
 					}
 					else
 					{
-					GlobalVars.setText(MusicPlayer.playstop,false,GlobalVars.context.getResources().getString(R.string.layoutMusicPlayerStop));
+				//	GlobalVars.setText(MusicPlayer.playstop,false,GlobalVars.context.getResources().getString(R.string.layoutMusicPlayerStop));
 					}
 				}
 				catch(Exception e)

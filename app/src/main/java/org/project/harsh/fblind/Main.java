@@ -57,7 +57,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 		GlobalVars.context = this;
 		GlobalVars.startTTS(GlobalVars.tts);
 		GlobalVars.tts = new TextToSpeech(this,this);
-		GlobalVars.tts.setPitch((float) 1.0);
+		GlobalVars.tts.setPitch((float) 1.2);
 		
 		//SETS THE ALARM VIBRATOR VARIABLE
 		GlobalVars.alarmVibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
@@ -363,7 +363,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 					{
 					try
    						{
-						GlobalVars.musicPlayer.setVolume(1f,1f);
+						GlobalVars.musicPlayer.setVolume(1.5f,1.5f);
    						}
 						catch(NullPointerException e)
 						{
@@ -458,7 +458,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 				}
 			GlobalVars.selectTextView(messages,true);
 			GlobalVars.selectTextView(calls,false);
-			GlobalVars.selectTextView(status,false);
+			GlobalVars.selectTextView(language,false);
 			break;
 			
 			case 2: //CALLS
@@ -497,7 +497,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			case 4: //MUSIC
 			GlobalVars.selectTextView(music,true);
 			GlobalVars.selectTextView(contacts,false);
-			GlobalVars.selectTextView(status,false);
+			GlobalVars.selectTextView(internet,false);
 			GlobalVars.talk(getResources().getString(R.string.mainMusicPlayer));
 			break;
 
@@ -515,12 +515,14 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 					GlobalVars.talk(getResources().getString(R.string.mainStatus));
 					break;
 
+
 				case 7:
 					GlobalVars.selectTextView(language,true);
 					GlobalVars.selectTextView(status,false);
 					GlobalVars.selectTextView(messages,false);
 					break;
 			}
+
 		}
 		
 	public void execute()
@@ -556,7 +558,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			case 4: //MUSIC
 			if (GlobalVars.musicPlayerDatabaseReady==true)
 				{
-//				GlobalVars.startActivity(MusicPlayer.class);
+				GlobalVars.startActivity(MusicPlayer.class);
 				}
 				else
 				{

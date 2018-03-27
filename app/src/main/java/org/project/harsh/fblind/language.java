@@ -39,7 +39,7 @@ public class language extends Activity {
         lan.add("English");
         code.add("pt");
         lan.add("Punjabi");
-        code.add("pa-rIN");
+        code.add("pa");
         lan.add("Hindi");
         code.add("hi");
         lan.add("Bengali");
@@ -186,7 +186,4 @@ public class language extends Activity {
         startActivity(refresh);
     }
 
-    protected void attachBaseContext(Context base) {
-        super.attachBaseContext(LocaleHelper.onAttach(base));
-    }
 }
