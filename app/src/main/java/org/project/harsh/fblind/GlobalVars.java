@@ -15,6 +15,7 @@ import android.speech.tts.*;
 import android.telephony.*;
 import android.text.*;
 import android.text.style.*;
+import android.util.Log;
 import android.view.*;
 import android.widget.*;
 import java.io.*;
@@ -29,6 +30,7 @@ import android.bluetooth.*;
 public class GlobalVars extends Application
 	{
 	//SYSTEM VARIABLES FOR GENERAL PURPOSES
+		public static String j="";
 	public static TextToSpeech 				tts;
 	public static int 						TTS_MAX_INPUT_LENGTH = 4000;
 	public static Context 					context;
@@ -148,7 +150,11 @@ public class GlobalVars extends Application
 	
 	//VARIABLE FOR BLUETOOTH
 	public static boolean					bluetoothEnabled = false;
-	
+
+			public static void g(String b)
+			{
+				j=b;
+			}
 	//GLOBAL FUNCTIONS REQUIRED BY ACTIVITIES
 	public static String getLanguage()
 		{
@@ -184,6 +190,10 @@ public class GlobalVars extends Application
 			{
 			return "in"; //TO WORK IN INDONESIAN
 			}
+		else if (Locale.getDefault().getLanguage().startsWith("hi"))
+		{
+			return "hi"; //TO WORK IN INDONESIAN
+		}
 		else
 			{
 			return "en"; //TO WORK IN ENGLISH AS DEFAULT
@@ -194,7 +204,7 @@ public class GlobalVars extends Application
 		{
     	try
 			{
-			Locale loc = new Locale(getLanguage(), "","");
+				Locale loc = new Locale(getLanguage(), "","");
 			
     		if(myTTS.isLanguageAvailable(loc)>=TextToSpeech.LANG_AVAILABLE)
 				{
@@ -205,83 +215,91 @@ public class GlobalVars extends Application
 			{
 			}
 		}
-	
-    public static void talk(String a)
-    	{
-		try{GlobalVars.alarmVibrator.cancel();}catch(NullPointerException e){}catch(Exception e){}
-    	try
-    		{
-    		if (toastMode==true)
-    			{
-    			if (firstToast==true)
-					{
-    				mToast1 = Toast.makeText(context,a,Toast.LENGTH_SHORT);
-    				mToast1.show();
-    				try
-						{
-    					mToast2.cancel();
-    					mToast2 = null;
-						}
-						catch(Exception e)
-						{
-						}
-    				firstToast=false;
-					}
-					else
-					{
-					mToast2 = Toast.makeText(context,a,Toast.LENGTH_SHORT);
-					mToast2.show();
-					try
-						{
-						mToast1.cancel();
-						mToast1 = null;
-						}
-						catch(Exception e)
-						{
-						}
-					firstToast=true;
-					}
-    			}
-				else
-				{
-				GlobalVars.tts.stop();
-				try
-					{
-					musicPlayer.setVolume(0.1f, 0.1f);
-					}
-					catch(NullPointerException e)
-					{
-					}
-					catch(Exception e)
-					{
-					}
-				try
-					{
-					AudioManager mAudioManager = (AudioManager) GlobalVars.context.getSystemService(GlobalVars.context.AUDIO_SERVICE);
-					if (mAudioManager.getRingerMode()==AudioManager.RINGER_MODE_NORMAL)
-						{
-						if (a.length()>TTS_MAX_INPUT_LENGTH)
-							{
-							a = a.substring(0, TTS_MAX_INPUT_LENGTH - 1);
-							}
-						HashMap<String, String> params = new HashMap<String, String>();
-						params.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID,"stringId");
-						tts.speak(a, TextToSpeech.QUEUE_FLUSH, params);
-						}
-					}
-					catch(Exception e)
-					{
-					}
-				}
-    		}
-    		catch(NullPointerException e)
-    		{
-    		}
-    		catch(Exception e)
-    		{
-    		}
-    	}
-    
+
+
+        public static void talk(String a)
+        {
+            try{GlobalVars.alarmVibrator.cancel();}catch(NullPointerException e){}catch(Exception e){}
+            try
+            {
+                if (toastMode==true)
+                {
+                    if (firstToast==true)
+                    {
+                        mToast1 = Toast.makeText(context,a,Toast.LENGTH_SHORT);
+                        mToast1.show();
+                        try
+                        {
+                            mToast2.cancel();
+                            mToast2 = null;
+                        }
+                        catch(Exception e)
+                        {
+                        }
+                        firstToast=false;
+                    }
+                    else
+                    {
+                        mToast2 = Toast.makeText(context,a,Toast.LENGTH_SHORT);
+                        mToast2.show();
+                        try
+                        {
+                            mToast1.cancel();
+                            mToast1 = null;
+                        }
+                        catch(Exception e)
+                        {
+                        }
+                        firstToast=true;
+                    }
+                }
+                else
+                {
+                    GlobalVars.tts.stop();
+                    try
+                    {
+                        musicPlayer.setVolume(0.1f, 0.1f);
+                    }
+                    catch(NullPointerException e)
+                    {
+                    }
+                    catch(Exception e)
+                    {
+                    }
+                    try
+                    {
+                        AudioManager mAudioManager = (AudioManager) GlobalVars.context.getSystemService(GlobalVars.context.AUDIO_SERVICE);
+                        if (mAudioManager.getRingerMode()==AudioManager.RINGER_MODE_NORMAL)
+                        {
+                            if (a.length()>TTS_MAX_INPUT_LENGTH)
+                            {
+                                a = a.substring(0, TTS_MAX_INPUT_LENGTH - 1);
+                            }
+                            HashMap<String, String> params = new HashMap<String, String>();
+                            params.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID,"stringId");
+                            if(j.equals("hi")){
+                                tts.setLanguage(new Locale ("hi","IN"));
+                                tts.speak(a, TextToSpeech.QUEUE_FLUSH, null);
+                            }
+                            else{
+                                Log.e("English","Bola");
+                                tts.speak(a, TextToSpeech.QUEUE_FLUSH, null);}
+
+                        }
+                    }
+                    catch(Exception e)
+                    {
+                    }
+                }
+            }
+            catch(NullPointerException e)
+            {
+            }
+            catch(Exception e)
+            {
+            }
+        }
+
 	public static int detectMovement(MotionEvent event)
 		{
 		switch(event.getAction())

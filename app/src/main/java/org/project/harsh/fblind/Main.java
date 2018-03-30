@@ -283,6 +283,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 		
 	@Override public void onResume()
 		{
+			Log.e("Language  Konsi hai  = ",LocaleHelper.getLanguage(this));
 		super.onResume();
 		try{GlobalVars.alarmVibrator.cancel();}catch(NullPointerException e){}catch(Exception e){}
 		GlobalVars.lastActivity = Main.class;
@@ -430,7 +431,8 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			{
 			}
 		}
-		
+
+
 	public void select()
 		{
 		switch (GlobalVars.activityItemLocation)
@@ -485,6 +487,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 			GlobalVars.selectTextView(calls, true);
 			GlobalVars.selectTextView(messages,false);
 			GlobalVars.selectTextView(contacts,false);
+			Log.e("Langggg",LocaleHelper.getLanguage(this));
 			break;
 			
 			case 3: //CONTACTS

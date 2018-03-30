@@ -28,9 +28,12 @@ public class language extends Activity {
     ArrayList <String> code=new ArrayList<String>();
     int init=0;
     Locale myLocale;
+    String ll="en";
+
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.language);
+
         lang=(TextView)findViewById(R.id.language);
         select=(TextView)findViewById(R.id.select);
         gobacklang=(TextView)findViewById(R.id.gobacklanguage);
@@ -48,6 +51,7 @@ public class language extends Activity {
         code.add("in");
         lan.add("German");
         code.add("de");
+        Log.e("sfdgvsdgvdxvgdxg",ll);
     }
     @Override public void onResume()
     {
@@ -102,8 +106,12 @@ public class language extends Activity {
 
             case 2: //select
                 Main onj=new Main();
-                Log.e("dasdas",code.get(init));
+                //Log.e("dasdas",code.get(init));
+                GlobalVars.g(code.get(init));
+                Log.e("dfsvfxvxvdxvxcvcx",code.get(init));
                 updateViews(code.get(init));
+
+
                 break;
 
             case 3: //GO BACK
@@ -175,7 +183,9 @@ public class language extends Activity {
     {
         return GlobalVars.detectKeyDown(keyCode);
     }
+
     public void updateViews(String languageCode) {
+
         myLocale = new Locale(languageCode);
         Resources res = getResources();
         DisplayMetrics dm = res.getDisplayMetrics();
@@ -184,6 +194,7 @@ public class language extends Activity {
         res.updateConfiguration(conf, dm);
         Intent refresh = new Intent(this, language.class);
         startActivity(refresh);
+
     }
 
 }

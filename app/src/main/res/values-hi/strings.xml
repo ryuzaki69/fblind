@@ -3,15 +3,15 @@
 
 
     <string name="menu_settings">setings</string>
-    <string name="mainWelcome">pranaalee mein aapaka svaagat hai </string>
-    <string name="mainMessages">sandesh</string>
-    <string name="mainMessagesNew">nae sandesh</string>
-    <string name="mainMessagesNoNew">sandesh. koi naya sandesh nahi.</string>
-    <string name="mainMessagesOneNew">sandesh. ek naya sandesh</string>
+    <string name="mainWelcome">हमारे सिस्टम में आपका स्वागत है </string>
+    <string name="mainMessages">संदेश</string>
+    <string name="mainMessagesNew">नए संदेश</string>
+    <string name="mainMessagesNoNew">संदेश। कोई नया संदेश नहीं</string>
+    <string name="mainMessagesOneNew">संदेश। एक नया संदेश</string>
     <string name="mainMessagesNewFromContact">&#160;se naya sandesh </string>
     <string name="mainMessagesNewFromUnknown">agyaat nambar se naya sandesh</string>
     <string name="mainMessagesNotAvailable">sandesh. is upakaran mein upalabdh nahin hai.</string>
-    <string name="mainCalls">kol</string>
+    <string name="mainCalls">कॉल</string>
     <string name="mainCallsMissed">misd kol</string>
     <string name="mainCallsNoMissed">kol. koee misd kol nahin.</string>
     <string name="mainCallsOneMissed">kol. ek misd kol.</string>
