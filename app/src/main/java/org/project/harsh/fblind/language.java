@@ -46,7 +46,7 @@ public class language extends Activity {
         lan.add("Hindi");
         code.add("hi");
         lan.add("Bengali");
-        code.add("id");
+        code.add("bn-rIN");
         lan.add("Marathi");
         code.add("in");
         lan.add("German");
@@ -107,6 +107,7 @@ public class language extends Activity {
             case 2: //select
                 Main onj=new Main();
                 //Log.e("dasdas",code.get(init));
+
                 GlobalVars.g(code.get(init));
                 Log.e("dfsvfxvxvdxvxcvcx",code.get(init));
                 updateViews(code.get(init));

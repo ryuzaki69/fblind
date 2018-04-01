@@ -190,10 +190,7 @@ public class GlobalVars extends Application
 			{
 			return "in"; //TO WORK IN INDONESIAN
 			}
-		else if (Locale.getDefault().getLanguage().startsWith("hi"))
-		{
-			return "hi"; //TO WORK IN INDONESIAN
-		}
+
 		else
 			{
 			return "en"; //TO WORK IN ENGLISH AS DEFAULT
@@ -281,7 +278,12 @@ public class GlobalVars extends Application
                                 tts.setLanguage(new Locale ("hi","IN"));
                                 tts.speak(a, TextToSpeech.QUEUE_FLUSH, null);
                             }
-                            else{
+								else if(j.equals("bn-rIN")){
+								tts.setLanguage(new Locale ("bn","IN"));
+								tts.speak(a, TextToSpeech.QUEUE_FLUSH, null);
+							}
+
+							else{
                                 Log.e("English","Bola");
                                 tts.speak(a, TextToSpeech.QUEUE_FLUSH, null);}
 
