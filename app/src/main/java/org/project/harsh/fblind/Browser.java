@@ -10,24 +10,30 @@ import android.view.*;
 import android.widget.*;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 
 public class Browser extends Activity
 	{
-	private TextView browsergoogle;
-	private TextView bookmarks;
-	private TextView goback;
-	
-    @Override protected void onCreate(Bundle savedInstanceState)
+	private TextView input;
+	private TextView select;
+	private TextView result;
+	private TextView gback;
+	HashMap<String,String> hash;
+	private List<VideoItem> searchResults;
+	int init=0;
+		@Override protected void onCreate(Bundle savedInstanceState)
     	{
     	super.onCreate(savedInstanceState);
     	setContentView(R.layout.browser);
 		GlobalVars.lastActivity = Browser.class;
-		browsergoogle = (TextView) findViewById(R.id.browsergoogle);
-		bookmarks = (TextView) findViewById(R.id.bookmarks);
-		goback = (TextView) findViewById(R.id.goback);
+		input=(TextView)findViewById(R.id.input);
+		select = (TextView) findViewById(R.id.select);
+		result = (TextView) findViewById(R.id.result);
+		gback = (TextView) findViewById(R.id.goback);
 		GlobalVars.activityItemLocation=0;
-		GlobalVars.activityItemLimit=3;
+		GlobalVars.activityItemLimit=4;
     	}
     
 	@Override public void onResume()
@@ -37,9 +43,10 @@ public class Browser extends Activity
 		GlobalVars.lastActivity = Browser.class;
 		GlobalVars.activityItemLocation=0;
 		GlobalVars.activityItemLimit=3;
-		GlobalVars.selectTextView(browsergoogle,false);
-		GlobalVars.selectTextView(bookmarks,false);
-		GlobalVars.selectTextView(goback,false);
+		GlobalVars.selectTextView(input,false);
+		GlobalVars.selectTextView(result,false);
+		GlobalVars.selectTextView(gback,false);
+		GlobalVars.selectTextView(select,false);
 		if (GlobalVars.inputModeResult!=null)
 			{
 			if (GlobalVars.browserRequestInProgress==false)
@@ -64,9 +71,9 @@ public class Browser extends Activity
 		switch (GlobalVars.activityItemLocation)
 			{
 			case 1: //SEARCH IN GOOGLE
-			GlobalVars.selectTextView(browsergoogle,true);
-			GlobalVars.selectTextView(bookmarks,false);
-			GlobalVars.selectTextView(goback,false);
+			GlobalVars.selectTextView(input,true);
+			GlobalVars.selectTextView(result,false);
+			GlobalVars.selectTextView(gback,false);
 			if (GlobalVars.browserRequestInProgress==true)
 				{
 				GlobalVars.talk("Searching in Youtube" +
@@ -78,17 +85,24 @@ public class Browser extends Activity
 				}
 			break;
 
-			case 2: //LIST BOOKMARKS
-			GlobalVars.selectTextView(bookmarks, true);
-			GlobalVars.selectTextView(browsergoogle,false);
-			GlobalVars.selectTextView(goback,false);
-			GlobalVars.talk(getResources().getString(R.string.layoutBrowserListBookmarks));
-			break;
+				case 2: //LIST BOOKMARKS
+					GlobalVars.selectTextView(result, true);
+					GlobalVars.selectTextView(input,false);
+					GlobalVars.selectTextView(select,false);
+					GlobalVars.talk(getResources().getString(R.string.layoutBrowserListBookmarks));
+					break;
 
-			case 3: //GO BACK TO THE MAIN MENU
-			GlobalVars.selectTextView(goback,true);
-			GlobalVars.selectTextView(bookmarks,false);
-			GlobalVars.selectTextView(browsergoogle,false);
+				case 3: //LIST BOOKMARKS
+					GlobalVars.selectTextView(select, true);
+					GlobalVars.selectTextView(result,false);
+					GlobalVars.selectTextView(gback,false);
+					GlobalVars.talk(getResources().getString(R.string.layoutBrowserListBookmarks));
+					break;
+
+				case 4: //GO BACK TO THE MAIN MENU
+			GlobalVars.selectTextView(gback,true);
+			GlobalVars.selectTextView(input,false);
+			GlobalVars.selectTextView(select,false);
 			GlobalVars.talk(getResources().getString(R.string.backToMainMenu));
 			break;
 			}
@@ -133,6 +147,16 @@ public class Browser extends Activity
 
 			}
 		}
+	public void calling(String keyword){
+		YoutubeConnector yc = new YoutubeConnector(Browser.this);
+		searchResults = yc.search(keyword);
+		hash=new HashMap<String,String>();
+		for(int i=0;i<searchResults.size();i++){
+			VideoItem temp=searchResults.get(i);
+			hash.put(temp.getTitle(),temp.getId());
+			//Log.e("hash",temp.getTitle()+temp.getId());
+		}
+	}
 	public void execute()
 		{
 		switch (GlobalVars.activityItemLocation)
@@ -140,12 +164,9 @@ public class Browser extends Activity
 			case 1: //SEARCH IN GOOGLE
 			if (GlobalVars.browserRequestInProgress==false)
 				{
-					GlobalVars gg=new GlobalVars();
-					if(gg.isOnline(this)){
-						promptSpeechInput();
-					}
-						else{
-							GlobalVars.startInputActivity();}
+					GlobalVars.voice();
+					String key=GlobalVars.inputModeResult;
+					calling(key);
 				}
 				else
 				{
@@ -153,11 +174,17 @@ public class Browser extends Activity
 				}
 			break;
 
-			case 2: //LIST BOOKMARKS
-			//GlobalVars.startActivity(BookmarksList.class);
+			case 2: //result
+				if(init+1>hash.size()-1){
+					init=0;
+				}
+				else
+					init=init+1;
+
+
 			break;
 
-			case 3:
+			case 4:
 			this.finish();
 			break;
 			}

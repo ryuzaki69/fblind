@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/32.iml" filepath="$PROJECT_DIR$/32.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://F:\fblind\fblind3\app\app.iml" filepath="F:\fblind\fblind3\app\app.iml" />
-      <module fileurl="file://C:\Users\carry'\AndroidStudioProjects\32\app\app.iml" filepath="C:\Users\carry'\AndroidStudioProjects\32\app\app.iml" />
       <module fileurl="file://F:\fblind\fblind3\fblind.iml" filepath="F:\fblind\fblind3\fblind.iml" />
-      <module fileurl="file://C:\Users\carry'\AndroidStudioProjects\32\fblind3.iml" filepath="C:\Users\carry'\AndroidStudioProjects\32\fblind3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fblind3.iml" filepath="$PROJECT_DIR$/fblind3.iml" />
     </modules>
   </component>
 </project>
