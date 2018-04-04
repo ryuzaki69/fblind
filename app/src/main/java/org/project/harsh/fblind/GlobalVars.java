@@ -49,14 +49,14 @@ public class GlobalVars extends Application
 	public static Toast 					mToast2 = null;
 	public static boolean 					firstToast = true;
 	public static boolean 					toastMode = false; //FOR TESTING
-	public static Class 					lastActivity; //IN ANDROID 2.X, AFTER A CALL ENDS, THE SYSTEM POPUPS THE CALL LOG ACTIVITY. BECAUSE OF THAT, THE APP SETS THE LAST ACTIVITY IN ORDER TO POPUP IT AFTER THE CALL. 
+	public static Class 					lastActivity; //IN ANDROID 2.X, AFTER A CALL ENDS, THE SYSTEM POPUPS THE CALL LOG ACTIVITY. BECAUSE OF THAT, THE APP SETS THE LAST ACTIVITY IN ORDER TO POPUP IT AFTER THE CALL.
 	public static boolean 					batteryIsCharging = false;
 	public static boolean 					batteryAt100 = false;
 	public static int 						inputMode = -1;
 	public static String 					inputModeResult = null;
 	public static boolean 					inputModeKeyboardOnlyNumbers = false;
 	public static Activity                  inputModeKeyboardTalkbackActivity = null;
-	
+
 	//VARIABLES FOR CONTACTS
 	public static boolean 					contactListReady = false;
 	public static List<String>				contactDataBase = new ArrayList<String>();
@@ -64,12 +64,12 @@ public class GlobalVars extends Application
 	public static String 					contactToDeletePhone;
 	public static boolean 					contactWasDeleted = false;
 	public static boolean					contactWasCreated = false;
-	
+
 	//VARIABLES FOR CALL LOGS
 	public static boolean 					callLogsReady = false;
 	public static List<String>				callLogsDataBase = new ArrayList<String>();
 	public static boolean 					callLogsDeleted = false;
-	
+
 	//VARIABLES FOR MEDIA PLAYER
 	public static MediaPlayer 				musicPlayer = null;
 	public static boolean 					musicPlayerDatabaseReady = false;
@@ -82,14 +82,14 @@ public class GlobalVars extends Application
 	public static List<String>				musicPlayerDatabaseAlbums = new ArrayList<String>();
 	public static List<String> 				musicPlayerDatabaseAlbumsByArtist = new ArrayList<String>();
 	public static List<String> 				musicPlayerDatabasePlayList = new ArrayList<String>();
-	
+
 	//VARIABLES FOR VOICE RECORDER
 	public static boolean 					voiceRecorderAudioWasSaved = false;
 	public static boolean 					voiceRecorderAudioWasDeleted = false;
 	public static int 						voiceRecorderToDelete = -1;
 	public static boolean 					voiceRecorderListReady = false;
 	public static List<String> 				voiceRecorderListFiles = new ArrayList<String>();
-	
+
 	//VARIABLES FOR SETTINGS
 	public static List<String>				settingsToneAlarmTitle = new ArrayList<String>();
 	public static List<String> 				settingsToneAlarmUri = new ArrayList<String>();
@@ -105,7 +105,7 @@ public class GlobalVars extends Application
 	public static int 						settingsTTSReadingSpeedLimit = 5;
 	public static int 						settingsScreenTimeOut = -1;
 	public static List<String> 				settingsScreenTimeOutValues = new ArrayList<String>();
-	
+
 	//VARIABLES FOR ALARMS
 	public static List<String> 				alarmTimeHoursValues = new ArrayList<String>();
 	public static List<String> 				alarmTimeMinutesValues = new ArrayList<String>();
@@ -121,7 +121,7 @@ public class GlobalVars extends Application
 	public static AlarmManager 				alarmAlarmManager;
 	public static ArrayList<PendingIntent> 	alarmPendingIntentArray = new ArrayList<PendingIntent>();
 	public static Vibrator 					alarmVibrator;
-	
+
 	//VARIABLES FOR WEB BROWSER
 	public static boolean 					bookmarkWasDeleted = false;
 	public static int 						bookmarkToDeleteIndex = -1;
@@ -131,7 +131,7 @@ public class GlobalVars extends Application
 	public static String 					browserWebText = null;
 	public static List<String> 				browserWebLinks = new ArrayList<String>();
 	public static List<String> 				browserBookmarks = new ArrayList<String>();
-	
+
 	//VARIABLES FOR MESSAGES
 	public static final int					TYPE_INBOX = 1;
 	public static final int					TYPE_SENT = 2;
@@ -143,11 +143,11 @@ public class GlobalVars extends Application
 	public static boolean 					messagesSentDatabaseReady = false;
 	public static List<String> 				messagesInboxDataBase = new ArrayList<String>();
 	public static List<String> 				messagesSentDataBase = new ArrayList<String>();
-	
+
 	//VARIABLES FOR APPLICATIONS
 	public static List<String> 				applicationsList = new ArrayList<String>();
 	public static boolean 					applicationsListReady = false;
-	
+
 	//VARIABLE FOR BLUETOOTH
 	public static boolean					bluetoothEnabled = false;
 
@@ -196,13 +196,13 @@ public class GlobalVars extends Application
 			return "en"; //TO WORK IN ENGLISH AS DEFAULT
 			}
 		}
-	
+
     public static void startTTS(TextToSpeech myTTS)
 		{
     	try
 			{
 				Locale loc = new Locale(getLanguage(), "","");
-			
+
     		if(myTTS.isLanguageAvailable(loc)>=TextToSpeech.LANG_AVAILABLE)
 				{
     			myTTS.setLanguage(loc);
@@ -344,7 +344,7 @@ public class GlobalVars extends Application
 						activityItemLocation=activityItemLocation+1;
 						}
 					}
-					else 
+					else
 					{
 					if (activityItemLocation-1<1)
 						{
@@ -361,7 +361,7 @@ public class GlobalVars extends Application
 			}
 		return -1;
 		}
-		
+
 	public static int detectKeyUp(int keyCode)
 		{
 		try
@@ -415,7 +415,7 @@ public class GlobalVars extends Application
 			}
 		return -1;
 		}
-	
+
 	public static boolean detectKeyDown(int keyCode)
 		{
 		if (keyCode == KeyEvent.KEYCODE_BACK)
@@ -424,14 +424,14 @@ public class GlobalVars extends Application
 			}
 		return false;
 		}
-	
+
 	public static void volumeUp()
 		{
 		AudioManager mAudioManager = (AudioManager) GlobalVars.context.getSystemService(Context.AUDIO_SERVICE);
 		int currentvolume = mAudioManager.getStreamVolume (AudioManager.STREAM_RING);
 		int maxvolume = mAudioManager.getStreamMaxVolume (AudioManager.STREAM_RING);
 		String toSay = "";
-		
+
 		if (currentvolume==maxvolume)
 			{
 			toSay = toSay + context.getResources().getString(R.string.volumeMaximum);
@@ -440,7 +440,7 @@ public class GlobalVars extends Application
 			{
 			toSay = toSay + context.getResources().getString(R.string.volumeHigher);
 			}
-		
+
 		switch(mAudioManager.getRingerMode())
 			{
 			case AudioManager.RINGER_MODE_NORMAL:
@@ -455,14 +455,14 @@ public class GlobalVars extends Application
 			toSay = toSay + context.getResources().getString(R.string.mainProfileIsVibrate);
 			break;
 			}
-		
+
 		GlobalVars.talk(toSay);
 		}
-		
+
 	public static void volumeDown()
 		{
 		String toSay = context.getResources().getString(R.string.volumeLower);
-		
+
 		AudioManager mAudioManager = (AudioManager) GlobalVars.context.getSystemService(Context.AUDIO_SERVICE);
 		switch(mAudioManager.getRingerMode())
 			{
