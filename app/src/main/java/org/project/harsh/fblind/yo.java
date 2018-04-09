@@ -156,6 +156,7 @@ public class yo extends Activity
                         YoutubeConnector yc = new YoutubeConnector(yo.this);
                         hash = yc.search(mm);
                         Log.e("fhgv",hash.get(0).getId());
+                        GlobalVars.h=hash.get(0).getId();
                         GlobalVars.startActivity(Main.class);
 
 

@@ -32,6 +32,7 @@ public class GlobalVars extends Application
 	//SYSTEM VARIABLES FOR GENERAL PURPOSES
 		public static String j="";
 		public static  String h=null;
+
 	public static TextToSpeech 				tts;
 	public static int 						TTS_MAX_INPUT_LENGTH = 4000;
 	public static Context 					context;
