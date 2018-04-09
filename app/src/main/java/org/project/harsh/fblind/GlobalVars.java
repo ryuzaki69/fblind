@@ -909,7 +909,9 @@ public class GlobalVars extends Application
 		{
 			GlobalVars.startActivity(InputVoice.class);
 		}
-	public static void startInputActivity()
+
+
+		public static void startInputActivity()
 		{
 		if (GlobalVars.inputMode==GlobalVars.INPUT_KEYBOARD | GlobalVars.inputModeKeyboardOnlyNumbers==true)
 			{
