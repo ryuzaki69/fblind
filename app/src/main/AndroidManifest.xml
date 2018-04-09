@@ -66,6 +66,13 @@
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
+            android:name="org.project.harsh.fblind.carry"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+
+        <activity
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.MusicPlayer"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>

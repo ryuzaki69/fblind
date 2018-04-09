@@ -157,7 +157,7 @@ public class yo extends Activity
                         hash = yc.search(mm);
                         Log.e("fhgv",hash.get(0).getId());
                         GlobalVars.h=hash.get(0).getId();
-                        GlobalVars.startActivity(Main.class);
+                        GlobalVars.startActivity(carry.class);
 
 
 
