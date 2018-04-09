@@ -3,13 +3,6 @@ package org.project.harsh.fblind;
 import android.content.Context;
 import android.util.Log;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
-import android.content.Context;
-import android.util.Log;
-
 import com.google.api.client.http.HttpRequest;
 import com.google.api.client.http.HttpRequestInitializer;
 import com.google.api.client.http.javanet.NetHttpTransport;
@@ -26,7 +19,7 @@ public class YoutubeConnector {
     private YouTube youtube;
     private YouTube.Search.List query;
 
-    public static final String KEY = "AIzaSyB_dM2wgv_IH82_vsSjIUue1joiLhZD_z4";
+    public static final String KEY = "AIzaSyDL2ZqeB3uGYmqv8jJgITwS4N9eFyBz4IA";
 
     public YoutubeConnector(Context context) {
         youtube = new YouTube.Builder(new NetHttpTransport(), new JacksonFactory(), new HttpRequestInitializer() {
@@ -38,7 +31,6 @@ public class YoutubeConnector {
         try {
             query = youtube.search().list("id,snippet");
             query.setKey(KEY);
-            query.setMaxResults((long)10);
             query.setType("video");
             query.setFields("items(id/videoId,snippet/title,snippet/description,snippet/thumbnails/default/url)");
         } catch (IOException e) {
