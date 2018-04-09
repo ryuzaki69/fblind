@@ -199,7 +199,7 @@
     <string name="layoutMessagesInboxNew">नए संदेश</string>
     <string name="layoutMessagesInboxNoNew">इनबॉक्स। कोई नया संदेश नहीं</string>
     <string name="layoutMessagesInboxOneNew">इनबॉक्स। एक नया संदेश</string>
-    <string name="layoutMessagesSent">भेजा</string>
+    <string name="layoutMessagesSent">संदेश भेजें</string>
     <string name="layoutMessagesMessageLogs">संदेश लॉग</string>
     <string name="layoutMessagesMessageLogsDelete">लॉग हटाएं</string>
     <string name="layoutMessagesMessageLogsDelete2">सभी संदेश लॉग हटाएं</string>
@@ -265,7 +265,7 @@
     <string name="layoutMessagesComposeMessage">संदेश</string>
     <string name="layoutMessagesComposeMessage2">संदेश. इनपुट करने के लिए दाय स्लाइड करे.</string>
     <string name="layoutMessagesComposeMessage3">संदेश.&#160;</string>
-    <string name="layoutMessagesComposeSend">मेसेज भेजें</string>
+    <string name="layoutMessagesComposeSend">संदेश भेजें</string>
     <string name="layoutMessagesComposeSending">संदेश भेजा जा रहा है, कृपया प्रतीक्षा करें।..</string>
     <string name="layoutMessagesComposeSendingError">आपका संदेश भेजा जा रहा है, कृपया प्रतीक्षा करें ..</string>
     <string name="layoutMessagesComposeSendingError2">संदेश भेजा नहीं जा सका, अपना वाहक स्थिति जांचें और बाद में पुनः प्रयास करें.</string>
