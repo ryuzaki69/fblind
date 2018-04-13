@@ -67,14 +67,14 @@
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.carry"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
 
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.MusicPlayer"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
 
 
@@ -82,153 +82,153 @@
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.language"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
 
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.BrowserPageViewer"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.yo"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
 
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.Settings"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
 
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.MusicPlayerArtists"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.Messages"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.MessagesInbox"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.MessagesSent"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.MessagesSentDeleteAll"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.MessagesCompose"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.MessagesDelete"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.MessagesInboxDeleteAll"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.Calls"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.CallsMake"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
 
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.CallsLogs"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
 
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.CallsLogsDelete"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.Contacts"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.ContactsCreate"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
 
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.ContactsDelete"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         
         <activity
             android:launchMode="singleTask"
             android:label="Project"
             android:name="org.project.harsh.fblind.ContactsList"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.InputKeyboard"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.InputKeyboardTalkback"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateVisible"/>
         
@@ -236,7 +236,7 @@
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.InputVoice"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
 
         <service android:enabled="true" android:name="org.project.harsh.fblind.BlindCommunicatorService"/>
