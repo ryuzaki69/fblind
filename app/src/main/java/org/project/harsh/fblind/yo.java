@@ -27,9 +27,11 @@ public class yo extends Activity
     private int selectedContact = -1;
     private boolean sending = false;
     List<VideoItem> hash;
+    List<VideoItem> hash2;
     ArrayList<Pair<String,String >> ans;
     String messageBody="";
     String mm="";
+    int j=0;
 
     @Override protected void onCreate(Bundle savedInstanceState)
     {
@@ -61,6 +63,21 @@ public class yo extends Activity
             messageBody = GlobalVars.inputModeResult;
             GlobalVars.setText(body, false, messageBody);
             GlobalVars.inputModeResult = null;
+            new Thread(){
+                @Override
+                public void run() {
+                    YoutubeConnector yc = new YoutubeConnector(yo.this);
+                    hash = yc.search(mm);
+                    Log.e("fhgv",hash.get(0).getDescription());
+
+
+                    //GlobalVars.startActivity(carry.class);
+
+
+
+                }
+            }.start();
+
         }
 
         GlobalVars.lastActivity = MessagesCompose.class;
@@ -147,6 +164,16 @@ public class yo extends Activity
                 break;
 
             case 2: //BODY
+
+
+                if(j+1>hash.size()-1){
+                    j=0;
+                }
+                else
+
+                body.setText(hash.get(j).getTitle());
+                Log.e("ID:-",hash.get(j).getId());
+                j=j+1;
                 break;
 
             case 3: //SEND
@@ -155,8 +182,9 @@ public class yo extends Activity
                     public void run() {
                         YoutubeConnector yc = new YoutubeConnector(yo.this);
                         hash = yc.search(mm);
-                        Log.e("fhgv",hash.get(0).getId());
-                        GlobalVars.h=hash.get(0).getId();
+                        Log.e("fhgv",hash.get(0).getDescription());
+                        GlobalVars.h=hash.get(j-1).getId();
+
                         GlobalVars.startActivity(carry.class);
 
 
