@@ -36,11 +36,11 @@ public class yo extends Activity
     @Override protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.messagescompose);
+        setContentView(R.layout.yo);
         GlobalVars.lastActivity = MessagesCompose.class;
-        addresse = (TextView) findViewById(R.id.messagesaddresse);
-        body = (TextView) findViewById(R.id.messagesbody);
-        send = (TextView) findViewById(R.id.messagessent);
+        addresse = (TextView) findViewById(R.id.input);
+        body = (TextView) findViewById(R.id.results);
+        send = (TextView) findViewById(R.id.enter);
         goback = (TextView) findViewById(R.id.goback);
         GlobalVars.activityItemLocation=0;
         GlobalVars.activityItemLimit=4;

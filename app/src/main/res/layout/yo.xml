@@ -5,14 +5,20 @@
     <LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="3" android:layout_gravity="center">
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
         <LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
-            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="fitCenter" android:src="@drawable/inputvoice"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/voicerecorder" />
 
             <TextView
                 android:id="@+id/input"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Voice Input"
+                android:text="Slide Right"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
@@ -23,14 +29,20 @@
     <LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="3" android:layout_gravity="center">
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
         <LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
-            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="fitCenter" android:src="@drawable/browserpagelinks"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="76dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/options" />
 
             <TextView
                 android:id="@+id/results"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/layoutInputVoicePossibleResults"
+                android:text="Select one"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
@@ -41,8 +53,21 @@
     <LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="3" android:layout_gravity="center">
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
         <LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
-            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="fitCenter" android:src="@drawable/voiceselect"/>
-            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="#FFFFFF"  android:id="@+id/enter" android:text="@string/layoutInputVoiceEnterSelectedResult"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/swiperight" />
+
+            <TextView
+                android:id="@+id/enter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Swipe to play"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
     </LinearLayout>
