@@ -121,7 +121,7 @@ public class yo extends Activity
                                     getResources().getString(R.string.layoutContactsListWithThePhoneNumber) +
                                     GlobalVars.divideNumbersWithBlanks(GlobalVars.contactsGetPhoneNumberFromListValue(GlobalVars.contactDataBase.get(selectedContact))));
                         }
-                    } 
+                    }
                 }
                 break;
 
