@@ -1,209 +1,205 @@
 package org.project.harsh.fblind;
 
-import android.Manifest;
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.ContentResolver;
-import android.content.ContentUris;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.graphics.Color;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
-import android.net.Uri;
-import android.os.Build;
-import android.provider.MediaStore;
-import android.provider.Settings;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.app.*;
+import android.content.*;
+import android.net.*;
+import android.os.*;
+import android.telephony.*;
 import android.util.Log;
 import android.util.Pair;
-import android.view.KeyEvent;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.view.*;
+import android.widget.*;
 
-import junit.framework.Test;
+import com.google.api.services.youtube.YouTube;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-import javax.microedition.khronos.opengles.GL;
-
-import static org.project.harsh.fblind.GlobalVars.musicPlayerPlayFile;
-
-public class yo extends Activity {
-    private Context mContext;
-    private Activity mActivity;
-
-    int init = 0;
-    private LinearLayout mRootLayout;
-    private Button mButtonSearch;
-    private Button mButtonStop;
-    private ListView mListView;
-    private TextView mStats;
-    // TEEKAR
-    TextView input;
-    TextView results;
-    TextView enter;
-    TextView goback ;
+public class yo extends Activity
+{
+    public static TextView addresse;
+    private TextView body;
+    private TextView send;
+    private TextView goback;
+    public static String messageToPhoneNumberValue = "";
+    public static String messageToContactNameValue = "";
+    //public static String messageBody = "";
+    private int selectedContact = -1;
+    private boolean sending = false;
     List<VideoItem> hash;
-    ArrayList<Pair<String,String > > ans;
+    List<VideoItem> hash2;
+    ArrayList<Pair<String,String >> ans;
     String messageBody="";
-//HARSH METHOD
+    String mm="";
+    int j=0;
 
-    ArrayList<String> a = new ArrayList<String>();
-    private MediaPlayer mPlayer;
-
-    private static final int MY_PERMISSION_REQUEST_CODE = 123;
-
-    private HashMap<Long,String> mAudioMap = new HashMap<>();
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    @Override protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.yo);
-
-        // int init=0;
-        // Get the application context
-        mContext = getApplicationContext();
-        mActivity = yo.this;
-
-        // Get the widget reference from xml layout
-        // mRootLayout = findViewById(R.id.root_layout);
-        // mButtonSearch = findViewById(R.id.btn_search);
-        // mButtonStop = findViewById(R.id.btn_stop);
-        // mListView = findViewById(R.id.list_view);
-        // mStats = findViewById(R.id.stats);
-
-
-        input=(TextView)findViewById(R.id.input);
-        results=(TextView)findViewById(R.id.results);
-        enter=(TextView)findViewById(R.id.enter);
-        goback = (TextView)findViewById(R.id.goback) ;
-        // Custom method to check permission at run time
-        checkPermission();
-
-
-
-        // Set a click listener for button
+        setContentView(R.layout.messagescompose);
+        GlobalVars.lastActivity = MessagesCompose.class;
+        addresse = (TextView) findViewById(R.id.messagesaddresse);
+        body = (TextView) findViewById(R.id.messagesbody);
+        send = (TextView) findViewById(R.id.messagessent);
+        goback = (TextView) findViewById(R.id.goback);
+        GlobalVars.activityItemLocation=0;
+        GlobalVars.activityItemLimit=4;
+        GlobalVars.messagesWasSent = false;
+        if (messageToContactNameValue!="")
+        {
+            GlobalVars.setText(addresse, false, messageToContactNameValue);
+        }
+        new ContactsListThread().execute("");
 
     }
 
     @Override public void onResume()
     {
         super.onResume();
-        // GlobalVars.lastActivity = language.class;
+        try{GlobalVars.alarmVibrator.cancel();}catch(NullPointerException e){}catch(Exception e){}
         if (GlobalVars.inputModeResult!=null)
         {
+                mm=     GlobalVars.inputModeResult;
             messageBody = GlobalVars.inputModeResult;
-            //GlobalVars.setText(body, false, messageBody);
+            GlobalVars.setText(body, false, messageBody);
             GlobalVars.inputModeResult = null;
+            new Thread(){
+                @Override
+                public void run() {
+                    YoutubeConnector yc = new YoutubeConnector(yo.this);
+                    hash = yc.search(mm);
+                    Log.e("fhgv",hash.get(0).getDescription());
+
+
+                    //GlobalVars.startActivity(carry.class);
+
+
+
+                }
+            }.start();
+
         }
+
+        GlobalVars.lastActivity = MessagesCompose.class;
         GlobalVars.activityItemLocation=0;
         GlobalVars.activityItemLimit=4;
-        GlobalVars.selectTextView(input,false);
-        GlobalVars.selectTextView(results,false);
-        GlobalVars.selectTextView(enter,false);
+        GlobalVars.selectTextView(addresse,false);
+        GlobalVars.selectTextView(body,false);
+        GlobalVars.selectTextView(send,false);
         GlobalVars.selectTextView(goback,false);
-
-        GlobalVars.talk(getResources().getString(R.string.welcometomusic));
+        GlobalVars.talk(getResources().getString(R.string.layoutMessagesComposeOnResume));
     }
-
 
 
     public void select()
     {
         switch (GlobalVars.activityItemLocation)
         {
-            case 1: // PLAYING AUDIO
-                GlobalVars.selectTextView(input,true);
-                GlobalVars.selectTextView(results,false);
-                GlobalVars.selectTextView(enter,false);
+            case 1: //ADDRESSE
+                GlobalVars.selectTextView(addresse,true);
+                GlobalVars.selectTextView(body,false);
                 GlobalVars.selectTextView(goback,false);
-                GlobalVars.talk(getResources().getString(R.string.musicselect));
+                if (selectedContact==-1 && messageToContactNameValue=="")
+                {
+                    GlobalVars.talk(getResources().getString(R.string.layoutMessagesComposeAddressee2));
+                }
+                else
+                {
+                    if (messageToContactNameValue!="")
+                    {
+                        GlobalVars.talk(getResources().getString(R.string.layoutMessagesComposeAddressee3) + messageToContactNameValue);
+                    }
+                    else if (selectedContact>-1)
+                    {
+                        if (GlobalVars.contactListReady==false)
+                        {
+                            GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
+                        }
+                        else
+                        {
+                            GlobalVars.talk(GlobalVars.contactsGetNameFromListValue(GlobalVars.contactDataBase.get(selectedContact)) +
+                                    getResources().getString(R.string.layoutContactsListWithThePhoneNumber) +
+                                    GlobalVars.divideNumbersWithBlanks(GlobalVars.contactsGetPhoneNumberFromListValue(GlobalVars.contactDataBase.get(selectedContact))));
+                        }
+                    }
+                }
                 break;
 
-            case 2: // PLAY
-                GlobalVars.selectTextView(input,false);
-                GlobalVars.selectTextView(results,true);
-                GlobalVars.selectTextView(enter,false);
-                GlobalVars.selectTextView(goback,false);
-                GlobalVars.talk(getResources().getString(R.string.musicplay));
+            case 2: //BODY
+                GlobalVars.selectTextView(body, true);
+                GlobalVars.selectTextView(addresse,false);
+                GlobalVars.selectTextView(send,false);
+                if (messageBody=="")
+                {
+                    GlobalVars.talk(getResources().getString(R.string.layoutMessagesComposeMessage2));
+                }
+                else
+                {
+                    GlobalVars.talk(getResources().getString(R.string.layoutMessagesComposeMessage3) + messageBody);
+                }
                 break;
 
-            case 3:
-                GlobalVars.selectTextView(input,false);
-                GlobalVars.selectTextView(results,false);
-                GlobalVars.selectTextView(enter,true);
+            case 3: //SEND
+                GlobalVars.selectTextView(send, true);
+                GlobalVars.selectTextView(body,false);
                 GlobalVars.selectTextView(goback,false);
-                GlobalVars.talk(getResources().getString(R.string.musicstop));
+                GlobalVars.talk(getResources().getString(R.string.layoutMessagesComposeSend));
                 break;
 
-            case 4: //goback language
-                GlobalVars.selectTextView(input,false);
-                GlobalVars.selectTextView(results,false);
-                GlobalVars.selectTextView(enter,false);
+            case 4: //GO BACK TO THE PREVIOUS MENU
                 GlobalVars.selectTextView(goback,true);
+                GlobalVars.selectTextView(send,false);
+                GlobalVars.selectTextView(addresse,false);
+                GlobalVars.talk(getResources().getString(R.string.backToPreviousMenu));
                 break;
         }
     }
 
     public void execute()
-
     {
-        // Ids array for music map
-
-
-        //HashMap<Long,String> mAudioMap ;
         switch (GlobalVars.activityItemLocation)
         {
-            case 1: //input
-                Log.e("backc","safsfs");
-                GlobalVars.voice();
-                Log.e("dsad",messageBody);
-                //Log.e("dsad",GlobalVars.inputModeResult);
-                 /*YoutubeConnector yc= new YoutubeConnector(this);
-                Log.e("dsad",GlobalVars.inputModeResult);
-                //jis variable me input voice ka result aa rha hai voh chahiye buss
-                hash=yc.search(GlobalVars.inputModeResult);
-                ans=new ArrayList<Pair<String, String>>();
-                for(int i=0;i<hash.size();i++){
-                    VideoItem temp=hash.get(i);
-                    ans.add(new Pair(temp.getTitle(),temp.getId()));
-                }*/
+            case 1: //ADDRESSE
+               GlobalVars.voice();
                 break;
 
-            case 2: //results
-                /*if(init+1>ans.size()-1){
-                    init=0;
+            case 2: //BODY
+
+
+                if(j+1>hash.size()-1){
+                    j=0;
                 }
                 else
-                    init=init+1;*/
-                //Pair<String,String> t=ans.get(init);
-                //results.setText(t.first+t.second+ GlobalVars.inputModeResult);
+
+                body.setText(hash.get(j).getTitle());
+                Log.e("ID:-",hash.get(j).getId());
+                j=j+1;
                 break;
 
-            case 3: //enter
-                String v_id=ans.get(init).second;
-                Log.e("v_id",v_id);
+            case 3: //SEND
+                new Thread(){
+                    @Override
+                    public void run() {
+                        YoutubeConnector yc = new YoutubeConnector(yo.this);
+                        hash = yc.search(mm);
+                        Log.e("fhgv",hash.get(0).getDescription());
+                        GlobalVars.h=hash.get(j-1).getId();
+
+                        GlobalVars.startActivity(carry.class);
+
+
+
+                    }
+                }.start();
+
                 break;
 
-
-            case 4: //GO BACK
-                  this.finish();
+            case 4: //GO BACK TO THE PREVIOUS MENU
+                messageToPhoneNumberValue = "";
+                messageToContactNameValue = "";
+                messageBody = "";
+                selectedContact = -1;
+                this.finish();
                 break;
         }
     }
@@ -212,61 +208,36 @@ public class yo extends Activity {
     {
         switch (GlobalVars.activityItemLocation)
         {
-            case 2: //results
-                if (init-1<0)
+            case 1: //ADDRESSE
+                if (GlobalVars.contactListReady==false)
                 {
-                    init = ans.size()-1;
+                    GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
                 }
                 else
                 {
-                    init = init -1;
+                    if (GlobalVars.contactDataBase.size()>0)
+                    {
+                        if (selectedContact-1<0)
+                        {
+                            selectedContact = GlobalVars.contactDataBase.size();
+                        }
+                        selectedContact = selectedContact - 1;
+                        GlobalVars.setText(addresse, true, GlobalVars.contactsGetNameFromListValue(GlobalVars.contactDataBase.get(selectedContact)) + "\n" +
+                                GlobalVars.contactsGetPhoneNumberFromListValue(GlobalVars.contactDataBase.get(selectedContact)));
+                        GlobalVars.talk(GlobalVars.contactsGetNameFromListValue(GlobalVars.contactDataBase.get(selectedContact)) +
+                                getResources().getString(R.string.layoutContactsListWithThePhoneNumber) +
+                                GlobalVars.divideNumbersWithBlanks(GlobalVars.contactsGetPhoneNumberFromListValue(GlobalVars.contactDataBase.get(selectedContact))));
+                        messageToPhoneNumberValue = GlobalVars.contactDataBase.get(selectedContact).substring(GlobalVars.contactDataBase.get(selectedContact).lastIndexOf("|") + 1,GlobalVars.contactDataBase.get(selectedContact).length());
+                        messageToContactNameValue = GlobalVars.contactsGetNameFromListValue(GlobalVars.contactDataBase.get(selectedContact));
+                    }
+                    else
+                    {
+                        GlobalVars.talk(getResources().getString(R.string.layoutContactsListNoContacts));
+                    }
                 }
-                Pair<String,String> t=ans.get(init);
-                results.setText(t.first);
                 break;
         }
     }
-
-    // Custom method to get all audio files list from external storage
-    protected HashMap getMediaFileList(){
-        // Get the content resolver
-        ContentResolver contentResolver = mContext.getContentResolver();
-
-        // Get the external storage uri of media store audio
-        Uri uri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
-
-        Cursor cursor = contentResolver.query(
-                uri, // Uri
-                null, // Projection
-                null, // Selection
-                null, // Selection args
-                null // Sor order
-        );
-
-        if (cursor == null) {
-            // Query failed, handle error
-        } else if (!cursor.moveToFirst()) {
-            // No media on the device
-        } else {
-
-            int title = cursor.getColumnIndex(MediaStore.Audio.Media.TITLE);
-            int id = cursor.getColumnIndex(MediaStore.Audio.Media._ID);
-            // Loop through the musics
-            do {
-                // Get the current audio file id
-                long thisId = cursor.getLong(id);
-
-                // Get the current audio title
-                String thisTitle = cursor.getString(title);
-                // Process current music here
-                a.add(thisTitle);
-                mAudioMap.put(thisId,thisTitle);
-            } while (cursor.moveToNext());
-        }
-
-        return mAudioMap;
-    }
-
 
     @Override public boolean onTouchEvent(MotionEvent event)
     {
@@ -286,45 +257,6 @@ public class yo extends Activity {
                 break;
         }
         return super.onTouchEvent(event);
-    }
-
-
-
-
-
-    protected void checkPermission(){
-        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.M){
-            if(checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED){
-                if(shouldShowRequestPermissionRationale(Manifest.permission.READ_EXTERNAL_STORAGE)){
-                    // Show an alert dialog
-                    AlertDialog.Builder builder = new AlertDialog.Builder(mActivity);
-                    builder.setMessage("Read external storage permission is required.");
-                    builder.setTitle("Please grant permission");
-                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            ActivityCompat.requestPermissions(
-                                    mActivity,
-                                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
-                                    MY_PERMISSION_REQUEST_CODE
-                            );
-                        }
-                    });
-                    builder.setNeutralButton("Cancel",null);
-                    AlertDialog dialog = builder.create();
-                    dialog.show();
-                }else {
-                    // Request permission
-                    ActivityCompat.requestPermissions(
-                            mActivity,
-                            new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
-                            MY_PERMISSION_REQUEST_CODE
-                    );
-                }
-            }else {
-                // Permission already granted
-            }
-        }
     }
 
     public boolean onKeyUp(int keyCode, KeyEvent event)
@@ -347,42 +279,107 @@ public class yo extends Activity {
         return super.onKeyUp(keyCode, event);
     }
 
-
     public boolean onKeyDown(int keyCode, KeyEvent event)
     {
         return GlobalVars.detectKeyDown(keyCode);
     }
 
+    public void sendSMS(final String phone, final String message)
+    {
+        sending = true;
+        GlobalVars.talk(GlobalVars.context.getResources().getString(R.string.layoutMessagesComposeSending));
 
-    // Custom method to stop music playing
-    protected void stopPlaying(){
-        if(mPlayer!=null){
-            mPlayer.stop();
-            mPlayer.release();
-            mPlayer = null;
-            Toast.makeText(mContext,"Stop playing",Toast.LENGTH_SHORT).show();
-            //mStats.setBackgroundColor(Color.RED);
-        }
-    }
+        try
+        {
+            String SENT = "SMS_SENT";
+            String DELIVERED = "SMS_DELIVERED";
+            PendingIntent sentPI = PendingIntent.getBroadcast(GlobalVars.context, 0, new Intent(SENT), 0);
+            PendingIntent deliveredPI = PendingIntent.getBroadcast(GlobalVars.context, 0, new Intent(DELIVERED), 0);
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults){
-        switch(requestCode){
-            case MY_PERMISSION_REQUEST_CODE:{
-                if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
-                    // Permission granted
-                }else {
-                    // Permission denied
+            // ---when the SMS has been sent---
+            GlobalVars.context.registerReceiver(new BroadcastReceiver()
+            {
+                @Override public void onReceive(Context arg0, Intent arg1)
+                {
+                    switch (getResultCode())
+                    {
+                        case Activity.RESULT_OK:
+                            //THE MESSAGE WAS SENT
+                            break;
+
+                        case SmsManager.RESULT_ERROR_GENERIC_FAILURE:
+                            GlobalVars.talk(GlobalVars.context.getResources().getString(R.string.layoutMessagesComposeSendingError2));
+                            sending = false;
+                            break;
+
+                        case SmsManager.RESULT_ERROR_NO_SERVICE:
+                            GlobalVars.talk(GlobalVars.context.getResources().getString(R.string.layoutMessagesComposeSendingError2));
+                            sending = false;
+                            break;
+
+                        case SmsManager.RESULT_ERROR_NULL_PDU:
+                            GlobalVars.talk(GlobalVars.context.getResources().getString(R.string.layoutMessagesComposeSendingError2));
+                            sending = false;
+                            break;
+
+                        case SmsManager.RESULT_ERROR_RADIO_OFF:
+                            GlobalVars.talk(GlobalVars.context.getResources().getString(R.string.layoutMessagesComposeSendingError2));
+                            sending = false;
+                            break;
+                    }
                 }
-            }
-        }
-    }
+            }, new IntentFilter(SENT));
 
-    @Override
-    public void onDestroy(){
-        if(mPlayer!=null){
-            mPlayer.release();
+            // ---when the SMS has been delivered---
+            GlobalVars.context.registerReceiver(new BroadcastReceiver()
+            {
+                @Override public void onReceive(Context arg0, Intent arg1)
+                {
+                    switch (getResultCode())
+                    {
+                        case Activity.RESULT_OK:
+                            //THE MESSAGE WAS DELIVERED
+                            GlobalVars.messagesWasSent = true;
+                            //CREATES THE MESSAGE INTO THE SYSTEM DATABASE
+                            try
+                            {
+                                ContentValues values = new ContentValues();
+                                values.put("address", phone);
+                                values.put("body", message);
+                                GlobalVars.context.getContentResolver().insert(Uri.parse("content://sms/sent"), values);
+                            }
+                            catch(Exception e)
+                            {
+                            }
+                            try
+                            {
+                                messageToPhoneNumberValue = "";
+                                messageToContactNameValue = "";
+                                messageBody = "";
+                            }
+                            catch(Exception e)
+                            {
+                            }
+                            sending = false;
+                            finish();
+                            break;
+
+                        case Activity.RESULT_CANCELED:
+                            GlobalVars.talk(GlobalVars.context.getResources().getString(R.string.layoutMessagesComposeSendingError2));
+                            sending = false;
+                            break;
+                    }
+                }
+            }, new IntentFilter(DELIVERED));
+
+            SmsManager sms = SmsManager.getDefault();
+            sms.sendTextMessage(phone, null, message, sentPI, deliveredPI);
         }
-        super.onDestroy();
+        catch(NullPointerException e)
+        {
+        }
+        catch(Exception e)
+        {
+        }
     }
 }

@@ -187,7 +187,7 @@ public class language extends Activity {
 
     public void updateViews(String languageCode) {
 
-        myLocale = new Locale(languageCode);
+        Locale myLocale = new Locale(languageCode);
         Resources res = getResources();
         DisplayMetrics dm = res.getDisplayMetrics();
         Configuration conf = res.getConfiguration();
@@ -195,7 +195,7 @@ public class language extends Activity {
         res.updateConfiguration(conf, dm);
         Intent refresh = new Intent(this, language.class);
         startActivity(refresh);
-
+        finish();
     }
 
 }
