@@ -19,7 +19,8 @@ import android.Manifest;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.util.Log;
-        import android.view.KeyEvent;
+import android.util.Pair;
+import android.view.KeyEvent;
         import android.view.MotionEvent;
         import android.view.View;
         import android.widget.AdapterView;
@@ -62,6 +63,7 @@ public class MusicPlayer extends Activity {
 
         private static final int MY_PERMISSION_REQUEST_CODE = 123;
 
+        public ArrayList<Long> arr=new ArrayList<Long>();
         private HashMap<Long,String> mAudioMap = new HashMap<>();
 
 
@@ -90,10 +92,14 @@ public class MusicPlayer extends Activity {
             // Custom method to check permission at run time
             checkPermission();
 
-
+            //GlobalVars.ff=mAudioMap.keySet().toArray(new Long[mAudioMap.size()]);
 
             // Set a click listener for button
+            mAudioMap=getMediaFileList();
+            for(Long n:mAudioMap.keySet())
+            {
 
+            }
         }
 
     @Override public void onResume()
@@ -157,6 +163,7 @@ public class MusicPlayer extends Activity {
         // Ids array for music map
 
         mAudioMap =  getMediaFileList();
+
         //HashMap<Long,String> mAudioMap ;
        switch (GlobalVars.activityItemLocation)
         {
@@ -167,42 +174,27 @@ public class MusicPlayer extends Activity {
                 else {
                     init = init + 1;
 
-                    Log.e("zdfzxfxzgfvxdzgvx",a.get(init) );
+
+
+
+                //    Log.e("Titlee  hai", String.valueOf(titles));
+                  //  Log.e("zdfzxfxzgfvxdzgvx",a.get(init) );
 
                     lang.setText(a.get(init));
                     GlobalVars.talk(a.get(init));
 
                 }
 
-/*
-                // ArrayAdapter from titles array
-                ArrayAdapter<String> titlesAdapter = new ArrayAdapter<String>(
-                        mContext,
-                        android.R.layout.simple_list_item_1
-                        ,titles
-                );
-                // Data bind list view with adapter
-                mListView.setAdapter(titlesAdapter);
-                // int i;
-
-*/
-                break;
+               break;
 
             case 2: //select
                 if(mPlayer != null )mPlayer.pause();
                 Main onj=new Main();
-       //         Log.e("dasdas",code.get(init));
-         //       updateViews(code.get(init));
 
-                final Long[] ids = mAudioMap.keySet().toArray(new Long[mAudioMap.size()]);
+                Log.e("Id ki value", String.valueOf(arr.get(init)));
+                Uri contentUri = ContentUris.withAppendedId(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,arr.get(init));
 
-                // Titles array from music map
-                String[] titles = mAudioMap.values().toArray(new String[mAudioMap.size()]);
-                Long idValue = ids[init];
-                Log.e("Titlee  hai", String.valueOf(titles));
-                Uri contentUri = ContentUris.withAppendedId(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,idValue);
-
-                mAudioMap = getMediaFileList();
+                //mAudioMap = getMediaFileList();
 
                 try{
                     // Initialize the media player
@@ -256,7 +248,7 @@ public class MusicPlayer extends Activity {
 
     private void previousItem()
     {
-        mAudioMap = getMediaFileList() ;
+        //mAudioMap = getMediaFileList() ;
         switch (GlobalVars.activityItemLocation)
         {
             case 1: //lang
@@ -307,6 +299,7 @@ public class MusicPlayer extends Activity {
                 // Get the current audio title
                 String thisTitle = cursor.getString(title);
                 // Process current music here
+                arr.add(thisId);
                 a.add(thisTitle);
                 mAudioMap.put(thisId,thisTitle);
             } while (cursor.moveToNext());
