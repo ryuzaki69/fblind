@@ -101,7 +101,7 @@ public class language extends Activity {
                 }
                 else
                     init=init+1;
-                lang.setText(lan.get(init)+code.get(init));
+                lang.setText(lan.get(init));
                 break;
 
             case 2: //select
@@ -109,7 +109,7 @@ public class language extends Activity {
                 //Log.e("dasdas",code.get(init));
 
                 GlobalVars.g(code.get(init));
-                Log.e("dfsvfxvxvdxvxcvcx",code.get(init));
+                //Log.e("dfsvfxvxvdxvxcvcx",code.get(init));
                 updateViews(code.get(init));
 
 
@@ -134,7 +134,7 @@ public class language extends Activity {
                 {
                     init = init -1;
                 }
-                lang.setText(lan.get(init)+code.get(init)+Integer.toString(init));
+                lang.setText(lan.get(init));
                 //GlobalVars.talk(GlobalVars.getDayName(dayValue));
                 break;
         }
