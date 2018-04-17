@@ -167,6 +167,9 @@ public class yo extends Activity
                 if(GlobalVars.inputModeResult==null) {
                     GlobalVars.talk(getResources().getString(R.string.noselection));
                     break;
+
+
+                    
                 }
 
                 if(j+1>hash.size()-1){
