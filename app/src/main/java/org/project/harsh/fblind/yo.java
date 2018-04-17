@@ -134,14 +134,9 @@ public class yo extends Activity
                 GlobalVars.selectTextView(body, true);
                 GlobalVars.selectTextView(addresse,false);
                 GlobalVars.selectTextView(send,false);
-              //  if (messageBody=="")
-               // {
-                    GlobalVars.talk(getResources().getString(R.string.selectyo));
-              //  }
-              //  else
-              //  {
-               //     GlobalVars.talk(getResources().getString(R.string.layoutMessagesComposeMessage3) + messageBody);
-              //  }
+
+                GlobalVars.talk(getResources().getString(R.string.selectyo));
+
                 break;
 
             case 3: //SEND
@@ -181,6 +176,7 @@ public class yo extends Activity
 
                 {
                     body.setText(hash.get(j).getTitle());
+                    GlobalVars.talk(hash.get(j).getTitle());
                     Log.e("ID:-", hash.get(j).getId());
                     j = j + 1;
                 }

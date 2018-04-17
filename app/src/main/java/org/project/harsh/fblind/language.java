@@ -105,6 +105,7 @@ public class language extends Activity {
                 else
                     init=init+1;
                 lang.setText(lan.get(init));
+                GlobalVars.talk(lan.get(init));
                 break;
 
             case 2: //select

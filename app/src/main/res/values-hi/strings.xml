@@ -2,6 +2,23 @@
 <resources>
 
 
+    <string name="searchyo">खोज करने के लिए दाएं स्लाइड करें</string>
+    <string name="selectyo">एक प्लेलिस्ट से चुनने के लिए दाएं स्लाइड करें</string>
+    <string name="playyo">यूट्यूब को चलाने के लिए लेफ्ट स्लाइड करें</string>
+    <string name="carryplay">चलाये</string>
+    <string name="carrypause">रुकिए </string>
+
+    <string name="welcometomusic">संगीत में आपका स्वागत है </string>
+    <string name="musicselect">गीत का चयन करने के लिए स्लाइड करें</string>
+
+    <string name="musicplay">संगीत चलाएं</string>
+
+    <string name="musicstop">रोकिये </string>
+    <string name="welcometoyoutube">ूट्यूब में आपका स्वागत है</string>
+    <string name="langselect">भाषा को चुनने के लिए सही स्लाइड करें</string>
+    <string name="langok">चुनने के लिए स्लाइड करें</string>
+    <string name="welcomelang">भाषा बदलने में आपका स्वागत है</string>
+    <string name="welcomeyoutube">यूट्यूब में आपका स्वागत है</string>
     <string name="menu_settings">सेटिंग्स</string>
     <string name="mainWelcome">हमारे सिस्टम में आपका स्वागत है </string>
     <string name="mainMessages">संदेश</string>
@@ -9,6 +26,7 @@
     <string name="mainMessagesNoNew">संदेश। कोई नया संदेश नहीं</string>
     <string name="mainMessagesOneNew">संदेश। एक नया संदेश</string>
     <string name="mainMessagesNewFromContact">&#160; से नया संदेश </string>
+    <string name="languagess">भाषा बदलिए </string>
     <string name="mainMessagesNewFromUnknown">अज्ञात नंबर से नया संदेश</string>
     <string name="mainMessagesNotAvailable">संदेश। इस उपकरण में उपलब्ध नहीं है.</string>
     <string name="mainCalls">कॉल</string>
@@ -155,7 +173,7 @@
 
 
     <string name="layoutCallsMissedCallsList">कॉल लॉग</string>
-    <string name="layoutCallsDeleteCallLogs">Delete logs</string>
+    <string name="layoutCallsDeleteCallLogs">डिलीट  लॉग्स </string>
     <string name="layoutCallsDeleteCallLogs2">सभी कॉल लॉग हटाएं</string>
     <string name="layoutCallsMakeCall">कॉल करें</string>
     <string name="layoutCallsOnResume">अब आप कॉल मेनू पर हैं</string>
@@ -277,9 +295,9 @@
     <string name="layoutInputKeysKeyEnter">[ENTER]</string>
     <string name="layoutInputKeysKeyEnter2">ENTER</string>
     <string name="layoutInputKeysKeyRead">[READ]</string>
-    <string name="layoutInputKeysKeyReadText">READ TEXT</string>
-    <string name="layoutInputKeysKeyReadNumber">READ NUMBER</string>
-    <string name="layoutInputKeysKeySpace">SPACE</string>
+    <string name="layoutInputKeysKeyReadText">पाठ पढ़ें</string>
+    <string name="layoutInputKeysKeyReadNumber">नंबर पढ़ें</string>
+    <string name="layoutInputKeysKeySpace">की जगह</string>
     <string name="layoutInputKeysNothingToRead">पढ़ने के लिए कुछ भी नहीं है</string>
     <string name="layoutInputKeysEmptyField">टेक्स्ट फ़ील्ड अब रिक्त है</string>
     <string name="layoutInputKeysEntered">&#160;घुसा</string>

@@ -2,12 +2,12 @@
 <resources>
 
 	<string name="searchyo">Slide right to search</string>
-	<string name="selectyo">Slide right to select from playlist</string>
+	<string name="selectyo">Slide right to select from a playlist</string>
 	<string name="playyo">Slide right to play</string>
 	<string name="carryplay">PLAY</string>
 	<string name="carrypause">PAUSE</string>
 	<string name="carryback">GO BACK</string>
-	<string name="welcometoyoutube">slide right to play</string>
+	<string name="welcometoyoutube">Welcome to YOUTUBE</string>
 	<string name="langselect">Slide right to select language</string>
 	<string name="langok">Slide to select</string>
 	<string name="welcomelang">Welcome to change language</string>
