@@ -45,7 +45,7 @@ public class MusicPlayer extends Activity {
         private Context mContext;
         private Activity mActivity;
 
-    int init = 0;
+    int init = -1;
         private LinearLayout mRootLayout;
         private Button mButtonSearch;
         private Button mButtonStop;
@@ -96,10 +96,6 @@ public class MusicPlayer extends Activity {
 
             // Set a click listener for button
             mAudioMap=getMediaFileList();
-            for(Long n:mAudioMap.keySet())
-            {
-
-            }
         }
 
     @Override public void onResume()
@@ -168,18 +164,12 @@ public class MusicPlayer extends Activity {
        switch (GlobalVars.activityItemLocation)
         {
             case 1: //lang
+
                 if(init+1 > a.size()-1 ){
                     init = 0;
                 }
                 else {
                     init = init + 1;
-
-
-
-
-                //    Log.e("Titlee  hai", String.valueOf(titles));
-                  //  Log.e("zdfzxfxzgfvxdzgvx",a.get(init) );
-
                     lang.setText(a.get(init));
                     GlobalVars.talk(a.get(init));
 
@@ -188,10 +178,14 @@ public class MusicPlayer extends Activity {
                break;
 
             case 2: //select
+                if(init==-1) {
+                    GlobalVars.talk(getResources().getString(R.string.noselection));
+                    break;
+                }
                 if(mPlayer != null )mPlayer.pause();
                 Main onj=new Main();
 
-                Log.e("Id ki value", String.valueOf(arr.get(init)));
+                //Log.e("Id ki value", String.valueOf(arr.get(init)));
                 Uri contentUri = ContentUris.withAppendedId(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,arr.get(init));
 
                 //mAudioMap = getMediaFileList();
@@ -254,13 +248,13 @@ public class MusicPlayer extends Activity {
             case 1: //lang
                 if (init-1<0)
                 {
-                    init = 0;
+                    init =a.size()-1;
                 }
                 else
                 {
                     init = init -1;
-                    lang.setText(a.get(init));
                 }
+                lang.setText(a.get(init));
                 //lang.setText(lan.get(init)+code.get(init)+Integer.toString(init));
                 //GlobalVars.talk(GlobalVars.getDayName(dayValue));
                 break;

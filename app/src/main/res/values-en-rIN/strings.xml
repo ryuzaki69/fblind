@@ -340,6 +340,8 @@
 
     <string name="backToPreviousMenu">Go back to the previous menu</string>
     <string name="backToMainMenu">Go back to the main menu</string>
+    <string name="noselection" />
+    <string name="youtubeselect" />
 
     <string-array name="keysAll">
         <item>A</item>

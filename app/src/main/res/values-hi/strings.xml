@@ -352,6 +352,8 @@
     <string name="october">अक्टूबर</string>
     <string name="november">नवंबर</string>
     <string name="december">दिसंबर</string>
+    <string name="noselection" >कृपया एक गीत चुनें</string>
+    <string name="youtubeselect">कृपया पहले बोलें और चुनें</string>
 
     <string-array name="keysAll">
         <item>क</item>
@@ -485,4 +487,7 @@
         <item>50</item>
         <item>55</item>
     </string-array>
+    <string name="layoutMusicPlayerNowPlaying">নির্বাচন করা</string>
+    <string name="layoutMusicPlayerPreviousTrack">খেলা</string>
+    <string name="layoutMusicPlayerHigherVolume">থামুন</string>
 </resources>

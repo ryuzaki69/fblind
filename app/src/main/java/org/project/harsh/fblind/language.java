@@ -41,16 +41,10 @@ public class language extends Activity {
         GlobalVars.activityItemLimit=3;
         lan.add("English");
         code.add("pt");
-        lan.add("Punjabi");
-        code.add("pa");
         lan.add("Hindi");
         code.add("hi");
         lan.add("Bengali");
         code.add("bn-rIN");
-        lan.add("Marathi");
-        code.add("in");
-        lan.add("German");
-        code.add("de");
         Log.e("sfdgvsdgvdxvgdxg",ll);
     }
     @Override public void onResume()

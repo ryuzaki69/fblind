@@ -448,4 +448,6 @@
     <string name="musicselect">স্লাইড নির্বাচন করুন</string>
     <string name="musicplay">খেলা</string>
     <string name="musicstop">থামুন</string>
+    <string name="noselection" >একটি গান নির্বাচন করুন</string>
+    <string name="youtubeselect">প্রথমেই বলুন এবং নির্বাচন করুন</string>
 </resources>

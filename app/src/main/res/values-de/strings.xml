@@ -487,8 +487,10 @@
 			
 	<string name="backToPreviousMenu">Zum vorherigen Menü zurückkehren</string>
 	<string name="backToMainMenu">Zum Hauptmenü zurückkehren</string>
+    <string name="noselection" />
+    <string name="youtubeselect" />
 
-	<string-array name="keysAll">
+    <string-array name="keysAll">
 		<item>A</item>
 		<item>B</item>
 		<item>C</item>

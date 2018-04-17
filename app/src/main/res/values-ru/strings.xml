@@ -487,8 +487,10 @@
 			
 	<string name="backToPreviousMenu">Вернуться на предыдущее меню</string>
 	<string name="backToMainMenu">Вернуться на главную</string>
+    <string name="noselection" />
+    <string name="youtubeselect" />
 
-	<string-array name="keysAll">
+    <string-array name="keysAll">
 	    <item>А</item>
 	    <item>Б</item>
 	    <item>В</item>

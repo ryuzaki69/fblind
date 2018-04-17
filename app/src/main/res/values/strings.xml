@@ -352,7 +352,9 @@
 					
 	<string name="backToPreviousMenu">Go back to the previous menu</string>
 	<string name="backToMainMenu">Go back to the main menu</string>
-	
+	<string name="noselection" >Please select a song</string>
+	<string name="youtubeselect" >Please speak first and select</string>
+
 	<string-array name="keysAll">
 		<item>A</item>
 		<item>B</item>

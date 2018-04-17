@@ -441,11 +441,5 @@
         <item>50</item>
         <item>55</item>
     </string-array>
-    <string name="layoutMusicPlayerNowPlaying">নির্বাচন করা</string>
-    <string name="layoutMusicPlayerPreviousTrack">খেলা</string>
-    <string name="layoutMusicPlayerHigherVolume">থামুন</string>
-    <string name="welcometomusic">সঙ্গীততে স্বাগতম</string>
-    <string name="musicselect">স্লাইড নির্বাচন করুন</string>
-    <string name="musicplay">খেলা</string>
-    <string name="musicstop">থামুন</string>
+    
 </resources>

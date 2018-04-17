@@ -487,8 +487,10 @@
 			
 	<string name="backToPreviousMenu">Kembali ke menu sebelum</string>
 	<string name="backToMainMenu">Kembali ke menu utama</string>
+    <string name="noselection" />
+    <string name="youtubeselect" />
 
-	<string-array name="keysAll">
+    <string-array name="keysAll">
 		<item>A</item>
 		<item>B</item>
 		<item>C</item>
