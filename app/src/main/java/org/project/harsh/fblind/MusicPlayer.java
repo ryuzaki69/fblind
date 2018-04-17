@@ -239,7 +239,7 @@ public class MusicPlayer extends Activity {
 
             case 3:
                 if(mPlayer!=null){
-                    mPlayer.stop();
+                    mPlayer.pause();
                     mPlayer.release();
                     mPlayer = null;
                     Toast.makeText(mContext,"Stop playing",Toast.LENGTH_SHORT).show();

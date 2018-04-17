@@ -80,35 +80,35 @@ public class carry extends YouTubeBaseActivity implements YouTubePlayer.OnInitia
         GlobalVars.selectTextView(g,false);
         // GlobalVars.selectTextView(gobacklang,false);
 
-        GlobalVars.talk(getResources().getString(R.string.welcometomusic));
+        GlobalVars.talk(getResources().getString(R.string.welcometoyoutube));
     }
 
     public void select () {
 
         switch (GlobalVars.activityItemLocation) {
-            case 1: // PLAYING AUDIO
+            case 1: // PLAYING VIDEO WTTH ENABLE TOUCH
                 GlobalVars.selectTextView(pl, true);
                 GlobalVars.selectTextView(pa, false);
                 GlobalVars.selectTextView(g, false);
                 //GlobalVars.selectTextView(gobacklang,false);
-                GlobalVars.talk(getResources().getString(R.string.musicselect));
+                GlobalVars.talk(getResources().getString(R.string.carryplay));
                 break;
 
-            case 2: // PLAY
+            case 2: // PAUSE
                 GlobalVars.selectTextView(pl, false);
                 GlobalVars.selectTextView(pa, true);
                 GlobalVars.selectTextView(g, false);
                 // GlobalVars.selectTextView(gobacklang,false);
-                GlobalVars.talk(getResources().getString(R.string.musicplay));
+                GlobalVars.talk(getResources().getString(R.string.carrypause));
                 break;
 
-            case 3:
+            case 3: //GO BACK TO THE PREVIOUS MENU
                 GlobalVars.selectTextView(pl, false);
                 GlobalVars.selectTextView(pa, false);
                 GlobalVars.selectTextView(g, true);
                 Log.e("tea","ad");
                 //GlobalVars.selectTextView(gobacklang,false);
-                GlobalVars.talk(getResources().getString(R.string.musicstop));
+                GlobalVars.talk(getResources().getString(R.string.backToPreviousMenu));
                 break;
         }
     }

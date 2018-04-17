@@ -526,6 +526,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 				GlobalVars.selectTextView(language,true);
 				GlobalVars.selectTextView(status,false);
 				GlobalVars.selectTextView(messages,false);
+				GlobalVars.talk(getResources().getString(R.string.languagess));
 				break;
 		}
 

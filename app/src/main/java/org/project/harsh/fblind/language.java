@@ -62,7 +62,7 @@ public class language extends Activity {
         GlobalVars.selectTextView(lang,false);
         GlobalVars.selectTextView(select,false);
         GlobalVars.selectTextView(gobacklang,false);
-        //GlobalVars.talk(getResources().getString(R.string.layoutAlarmsCreateOnResume));
+        GlobalVars.talk(getResources().getString(R.string.welcomelang));
     }
 
     public void select()
@@ -72,7 +72,8 @@ public class language extends Activity {
             case 1: //language
                 GlobalVars.selectTextView(lang,true);
                 GlobalVars.selectTextView(select,false);
-                GlobalVars.selectTextView(gobacklang,false);
+
+                GlobalVars.talk(getResources().getString(R.string.langselect));
                 break;
 
             case 2: //select
@@ -80,13 +81,15 @@ public class language extends Activity {
                 GlobalVars.selectTextView(select,true);
                 GlobalVars.selectTextView(gobacklang,false);
                 //GlobalVars.talk(getResources().getString(R.string.layoutAlarmsCreateDay2) + GlobalVars.getDayName(dayValue));
+                GlobalVars.talk(getResources().getString(R.string.langok));
                 break;
 
-            case 3: //goback language
+            case 3: //goback languagege
                 GlobalVars.selectTextView(lang,false);
                 GlobalVars.selectTextView(select,false);
                 GlobalVars.selectTextView(gobacklang,true);
                 //GlobalVars.talk(getResources().getString(R.string.layoutAlarmsCreateTimeHour2) + GlobalVars.alarmTimeHoursValues.get(hourValue) + getResources().getString(R.string.layoutAlarmsCreateHours));
+                GlobalVars.talk(getResources().getString(R.string.backToPreviousMenu));
                 break;
         }
     }

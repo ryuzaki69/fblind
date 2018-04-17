@@ -4,7 +4,13 @@
     <string name="app_name">Fblind</string>
     <string name="title_activity_main">Fblind</string>
     <string name="menu_settings">Settings</string>
-
+    <string name="searchyo">Slide right to search</string>
+    <string name="selectyo">Slide right to select from playlist</string>
+    <string name="playyo">Slide right to play</string>
+    <string name="carryplay">PLAY</string>
+    <string name="carrypause">PAUSE</string>
+    <string name="carryback">GO BACK</string>
+    <string name="welcometoyoutube">slide right to play</string>
     <string name="mainWelcome">Welcome to the system . </string>
     <string name="mainMessages">Messages</string>
     <string name="mainMessagesNew">new messages</string>

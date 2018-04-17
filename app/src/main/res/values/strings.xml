@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+	<string name="searchyo">Slide right to search</string>
+	<string name="selectyo">Slide right to select from playlist</string>
+	<string name="playyo">Slide right to play</string>
+	<string name="carryplay">PLAY</string>
+	<string name="carrypause">PAUSE</string>
+	<string name="carryback">GO BACK</string>
+	<string name="welcometoyoutube">slide right to play</string>
+	<string name="langselect">Slide right to select language</string>
+	<string name="langok">Slide to select</string>
+	<string name="welcomelang">Welcome to change language</string>
+	<string name="welcomeyoutube">WELCOME TO YOUTUBE</string>
+	<string name="languagess">change language</string>
     <string name="app_name">Fblind</string>
     <string name="title_activity_main">Fblind</string>
     <string name="menu_settings">Settings</string>

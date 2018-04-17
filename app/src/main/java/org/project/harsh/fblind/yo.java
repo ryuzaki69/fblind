@@ -87,7 +87,8 @@ public class yo extends Activity
         GlobalVars.selectTextView(body,false);
         GlobalVars.selectTextView(send,false);
         GlobalVars.selectTextView(goback,false);
-        GlobalVars.talk(getResources().getString(R.string.layoutMessagesComposeOnResume));
+        GlobalVars.talk(getResources().getString(R.string.welcometoyoutube));
+       //GlobalVars.talk(getResources().getString(R.string.layoutMessagesComposeOnResume));
     }
 
 
@@ -95,10 +96,11 @@ public class yo extends Activity
     {
         switch (GlobalVars.activityItemLocation)
         {
-            case 1: //ADDRESSE
+            case 1: // LINK ENRTY
                 GlobalVars.selectTextView(addresse,true);
                 GlobalVars.selectTextView(body,false);
                 GlobalVars.selectTextView(goback,false);
+                /*
                 if (selectedContact==-1 && messageToContactNameValue=="")
                 {
                     GlobalVars.talk(getResources().getString(R.string.layoutMessagesComposeAddressee2));
@@ -123,27 +125,30 @@ public class yo extends Activity
                         }
                     }
                 }
+                */
+
+                GlobalVars.talk(getResources().getString(R.string.searchyo));
                 break;
 
             case 2: //BODY
                 GlobalVars.selectTextView(body, true);
                 GlobalVars.selectTextView(addresse,false);
                 GlobalVars.selectTextView(send,false);
-                if (messageBody=="")
-                {
-                    GlobalVars.talk(getResources().getString(R.string.layoutMessagesComposeMessage2));
-                }
-                else
-                {
-                    GlobalVars.talk(getResources().getString(R.string.layoutMessagesComposeMessage3) + messageBody);
-                }
+              //  if (messageBody=="")
+               // {
+                    GlobalVars.talk(getResources().getString(R.string.selectyo));
+              //  }
+              //  else
+              //  {
+               //     GlobalVars.talk(getResources().getString(R.string.layoutMessagesComposeMessage3) + messageBody);
+              //  }
                 break;
 
             case 3: //SEND
                 GlobalVars.selectTextView(send, true);
                 GlobalVars.selectTextView(body,false);
                 GlobalVars.selectTextView(goback,false);
-                GlobalVars.talk(getResources().getString(R.string.layoutMessagesComposeSend));
+                GlobalVars.talk(getResources().getString(R.string.playyo));
                 break;
 
             case 4: //GO BACK TO THE PREVIOUS MENU
@@ -159,21 +164,26 @@ public class yo extends Activity
     {
         switch (GlobalVars.activityItemLocation)
         {
-            case 1: //ADDRESSE
+            case 1: // LINK
                GlobalVars.voice();
                 break;
 
             case 2: //BODY
 
-
+               // if(hash.size()-1 < 0){
+                 //   GlobalVars.talk("select again.");
+             //       break;
+              //  }
                 if(j+1>hash.size()-1){
                     j=0;
                 }
                 else
 
-                body.setText(hash.get(j).getTitle());
-                Log.e("ID:-",hash.get(j).getId());
-                j=j+1;
+                {
+                    body.setText(hash.get(j).getTitle());
+                    Log.e("ID:-", hash.get(j).getId());
+                    j = j + 1;
+                }
                 break;
 
             case 3: //SEND
@@ -195,10 +205,10 @@ public class yo extends Activity
                 break;
 
             case 4: //GO BACK TO THE PREVIOUS MENU
-                messageToPhoneNumberValue = "";
-                messageToContactNameValue = "";
-                messageBody = "";
-                selectedContact = -1;
+              // messageToPhoneNumberValue = "";
+              //  messageToContactNameValue = "";
+              //  messageBody = "";
+              //  selectedContact = -1;
                 this.finish();
                 break;
         }
@@ -208,8 +218,17 @@ public class yo extends Activity
     {
         switch (GlobalVars.activityItemLocation)
         {
-            case 1: //ADDRESSE
-                if (GlobalVars.contactListReady==false)
+            case 1: //result playlist
+                if(j+1 < 0){
+                    j = hash.size()-1;
+                }else{
+                    body.setText(hash.get(j).getTitle());
+                    j=j-1;
+                }
+
+            break;
+
+                /*if (GlobalVars.contactListReady==false)
                 {
                     GlobalVars.talk(getResources().getString(R.string.layoutContactsListPleaseWait));
                 }
@@ -235,7 +254,8 @@ public class yo extends Activity
                         GlobalVars.talk(getResources().getString(R.string.layoutContactsListNoContacts));
                     }
                 }
-                break;
+                */
+
         }
     }
 
@@ -284,6 +304,7 @@ public class yo extends Activity
         return GlobalVars.detectKeyDown(keyCode);
     }
 
+    /*
     public void sendSMS(final String phone, final String message)
     {
         sending = true;
@@ -382,4 +403,5 @@ public class yo extends Activity
         {
         }
     }
+    */
 }
