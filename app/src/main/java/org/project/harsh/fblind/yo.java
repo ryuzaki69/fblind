@@ -30,7 +30,7 @@ public class yo extends Activity
     List<VideoItem> hash2;
     ArrayList<Pair<String,String >> ans;
     String messageBody="";
-    String mm="";
+    String mm=null;
     int j=0;
 
     @Override protected void onCreate(Bundle savedInstanceState)
@@ -62,7 +62,7 @@ public class yo extends Activity
                 mm=     GlobalVars.inputModeResult;
             messageBody = GlobalVars.inputModeResult;
             GlobalVars.setText(body, false, messageBody);
-           // GlobalVars.inputModeResult = null;
+            GlobalVars.inputModeResult = null;
             new Thread(){
                 @Override
                 public void run() {
@@ -165,7 +165,7 @@ public class yo extends Activity
 
             case 2: //BODY
 
-                if(GlobalVars.inputModeResult==null)
+                if(mm==null)
             {
                 GlobalVars.talk(getResources().getString(R.string.noselection));
                 break;
@@ -188,6 +188,11 @@ public class yo extends Activity
                 break;
 
             case 3: //SEND
+                if(mm==null)
+                {
+                    GlobalVars.talk(getResources().getString(R.string.noselection));
+                    break;
+                }
                 new Thread(){
                     @Override
                     public void run() {
