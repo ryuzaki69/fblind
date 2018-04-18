@@ -13,8 +13,8 @@
 	<string name="welcomelang">Welcome to change language</string>
 
 	<string name="languagess">change language</string>
-    <string name="app_name">Fblind</string>
-    <string name="title_activity_main">Fblind</string>
+    <string name="app_name">Drishti</string>
+    <string name="title_activity_main">Drishti</string>
     <string name="menu_settings">Settings</string>
 	<string name="layoutMusicPlayerNowPlaying">Select</string>
 	<string name="layoutMusicPlayerPreviousTrack">Play</string>
