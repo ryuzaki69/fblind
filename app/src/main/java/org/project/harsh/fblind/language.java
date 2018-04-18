@@ -40,7 +40,7 @@ public class language extends Activity {
         GlobalVars.activityItemLocation=0;
         GlobalVars.activityItemLimit=3;
         lan.add("English");
-        code.add("pt");
+        code.add("en");
         lan.add("Hindi");
         code.add("hi");
         lan.add("Bengali");

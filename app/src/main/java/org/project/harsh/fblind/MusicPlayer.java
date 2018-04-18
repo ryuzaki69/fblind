@@ -165,6 +165,7 @@ public class MusicPlayer extends Activity {
         {
             case 1: //lang
 
+
                 if(init+1 > a.size()-1 ){
                     init = 0;
                 }
