@@ -4,8 +4,10 @@
     <modules>
       <module fileurl="file://F:\fblind\fblind3\Fblind.iml" filepath="F:\fblind\fblind3\Fblind.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://F:\fblind44\fblind\app\app.iml" filepath="F:\fblind44\fblind\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/fblind.iml" filepath="$PROJECT_DIR$/.idea/fblind.iml" />
       <module fileurl="file://C:\carry'\AndroidStudioProjects\qw\fblind3.iml" filepath="C:\carry'\AndroidStudioProjects\qw\fblind3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/qw.iml" filepath="$PROJECT_DIR$/.idea/qw.iml" />
+      <module fileurl="file://F:\fblind44\fblind\.idea\qw.iml" filepath="F:\fblind44\fblind\.idea\qw.iml" />
     </modules>
   </component>
 </project>

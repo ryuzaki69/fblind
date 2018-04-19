@@ -329,38 +329,38 @@ public class MusicPlayer extends Activity {
 
 
         protected void checkPermission(){
-            if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.M){
-                if(checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED){
-                    if(shouldShowRequestPermissionRationale(Manifest.permission.READ_EXTERNAL_STORAGE)){
-                        // Show an alert dialog
-                        AlertDialog.Builder builder = new AlertDialog.Builder(mActivity);
-                        builder.setMessage("Read external storage permission is required.");
-                        builder.setTitle("Please grant permission");
-                        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                ActivityCompat.requestPermissions(
-                                        mActivity,
-                                        new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
-                                        MY_PERMISSION_REQUEST_CODE
-                                );
-                            }
-                        });
-                        builder.setNeutralButton("Cancel",null);
-                        AlertDialog dialog = builder.create();
-                        dialog.show();
-                    }else {
-                        // Request permission
-                        ActivityCompat.requestPermissions(
-                                mActivity,
-                                new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
-                                MY_PERMISSION_REQUEST_CODE
-                        );
-                    }
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.M){
+            if(checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED){
+                if(shouldShowRequestPermissionRationale(Manifest.permission.READ_EXTERNAL_STORAGE)){
+                    // Show an alert dialog
+                    AlertDialog.Builder builder = new AlertDialog.Builder(mActivity);
+                    builder.setMessage("Read external storage permission is required.");
+                    builder.setTitle("Please grant permission");
+                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            ActivityCompat.requestPermissions(
+                                    mActivity,
+                                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                                    MY_PERMISSION_REQUEST_CODE
+                            );
+                        }
+                    });
+                    builder.setNeutralButton("Cancel",null);
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
                 }else {
-                    // Permission already granted
+                    // Request permission
+                    ActivityCompat.requestPermissions(
+                            mActivity,
+                            new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                            MY_PERMISSION_REQUEST_CODE
+                    );
                 }
+            }else {
+                // Permission already granted
             }
+        }
         }
 
     public boolean onKeyUp(int keyCode, KeyEvent event)

@@ -3,6 +3,7 @@
     package="org.project.harsh.fblind"
     android:versionCode="44"
     android:versionName="2.0.0" >
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.WRITE_SMS" />
