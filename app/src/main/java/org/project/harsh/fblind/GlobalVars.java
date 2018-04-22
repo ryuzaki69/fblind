@@ -909,7 +909,10 @@ public class GlobalVars extends Application
 
 		public static void voice()
 		{
+
 			GlobalVars.startActivity(InputVoice.class);
+
+
 		}
 
 

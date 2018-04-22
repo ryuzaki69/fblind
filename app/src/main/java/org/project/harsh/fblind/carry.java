@@ -63,9 +63,9 @@ public class carry extends YouTubeBaseActivity implements YouTubePlayer.OnInitia
 
 
 
-        pl = (TextView)findViewById(R.id.play);
-        pa =(TextView)findViewById(R.id.pause);
-        g =(TextView)findViewById(R.id.goback);
+//        pl = (TextView)findViewById(R.id.play);
+//        pa =(TextView)findViewById(R.id.pause);
+//        g =(TextView)findViewById(R.id.goback);
 
     }
 

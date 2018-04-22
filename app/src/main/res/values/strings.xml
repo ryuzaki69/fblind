@@ -11,7 +11,7 @@
 	<string name="langselect">Slide right to select language</string>
 	<string name="langok">Slide to select</string>
 	<string name="welcomelang">Welcome to change language</string>
-
+	<string name="younosel">Please select any video on youtube</string>
 	<string name="languagess">change language</string>
     <string name="app_name">Drishti</string>
     <string name="title_activity_main">Drishti</string>
