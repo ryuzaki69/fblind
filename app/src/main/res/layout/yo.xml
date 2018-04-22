@@ -1,4 +1,6 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/dashboard" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:background="#34629d">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:background="#34629d">
 
     <FrameLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="1"/>
 
@@ -18,7 +20,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Slide Right"
+                android:text="@string/v1"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
 
@@ -34,7 +36,14 @@
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
                 android:src="@drawable/browserpagelinks" />
-            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="#FFFFFF"  android:id="@+id/possibleresults" android:text="@string/layoutInputVoicePossibleResults"/>
+
+            <TextView
+                android:id="@+id/possibleresults"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/r1"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
     </LinearLayout>
@@ -52,7 +61,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/layoutInputVoicePossibleResults"
+                android:text="@string/s1"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
@@ -73,7 +82,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Select one"
+                android:text="@string/list1"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
@@ -97,7 +106,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Swipe to play"
+                android:text="@string/p1"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
@@ -108,7 +117,12 @@
     <LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="3" android:layout_gravity="center">
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
         <LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
-            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="fitCenter" android:src="@drawable/goback"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter" />
             <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="#FFFFFF"  android:id="@+id/goback" android:text="@string/layoutInputVoiceCancelAndGoBack"/>
         </LinearLayout>
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<string name="v1">Voice Input</string>
+	<string name="r1">Related Results</string>
+	<string name="s1">Select</string>
+	<string name="list1">Select Related Videos</string>
+	<string name="p1">Play</string>
 
 	<string name="searchyo">Slide right to search</string>
 	<string name="selectyo">Slide right to select from a playlist</string>

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="v1">बोलने के लिए दाए  स्लाइड करिये</string>
+    <string name="r1">संबंधित परिणाम</string>
+    <string name="s1">चुनिए </string>
+    <string name="list1"></string>
+    <string name="p1">संबंधित वीडियो का चयन करें
+    </string>
 
     <string name="searchyo">खोज करने के लिए दाएं स्लाइड करें</string>
     <string name="selectyo">एक प्लेलिस्ट से चुनने के लिए दाएं स्लाइड करें</string>
