@@ -41,7 +41,7 @@ public class yo extends Activity
     String mm=null;
     private List<String> stringResults = new ArrayList<String>();
     int j=0;
-
+    int j1=0;
     private TextView oh;
     @Override protected void onCreate(Bundle savedInstanceState)
     {
@@ -261,7 +261,7 @@ public class yo extends Activity
                 GlobalVars.selectTextView(oh,true);
                 GlobalVars.selectTextView(body,false);
                 GlobalVars.selectTextView(send,false);
-                GlobalVars.talk(getResources().getString(R.string.playyo));
+                GlobalVars.talk(getResources().getString(R.string.okyo));
                 break;
 
             case 4: //GO BACK TO THE PREVIOUS MENU
@@ -269,7 +269,7 @@ public class yo extends Activity
                 GlobalVars.selectTextView(body,true);
                 GlobalVars.selectTextView(send,false);
                 GlobalVars.selectTextView(goback,false);
-                GlobalVars.talk(getResources().getString(R.string.backToPreviousMenu));
+                GlobalVars.talk(getResources().getString(R.string.selectyo));
                 break;
 
             case 5 :
@@ -278,6 +278,7 @@ public class yo extends Activity
                 GlobalVars.selectTextView(body,false);
                 GlobalVars.selectTextView(send,true);
                 GlobalVars.selectTextView(goback,false);
+                GlobalVars.talk(getResources().getString(R.string.playyo));
                 break;
 
             case 6 :
@@ -286,7 +287,7 @@ public class yo extends Activity
                 GlobalVars.selectTextView(body,false);
                 GlobalVars.selectTextView(send,false);
                 GlobalVars.selectTextView(goback,true);
-                break;
+                GlobalVars.talk(getResources().getString(R.string.backToMainMenu));
 
 
         }
@@ -423,7 +424,10 @@ public class yo extends Activity
 
                     }
                 }
-                break;
+                //GlobalVars.talk(getResources().getString(R.string.selectedyo));
+                String s=getResources().getString(R.string.selectedyo);
+                GlobalVars.talk(s+mm);
+            break;
 
             case 4:
                 /*
@@ -434,6 +438,7 @@ public class yo extends Activity
                 count++;
 
                 */
+
                 if(mm == null)
                 {
                     GlobalVars.talk(getResources().getString(R.string.younosel));
@@ -459,6 +464,7 @@ public class yo extends Activity
 
             case 5:
 
+                if(j==0){break;}
                 if( mm == null )
                 {
                     GlobalVars.talk(getResources().getString(R.string.noselection));
@@ -492,14 +498,26 @@ public class yo extends Activity
         {
             switch (GlobalVars.activityItemLocation)
             {
-                case 1: //result playlist
-                if(j+1 < 0){
-                    j = hash.size()-1;
-                }else{
-                    j=j-1;
-                    body.setText(hash.get(j).getTitle());
+                case 2://
+                    if(selectedValue - 1 < 0){
+                        selectedValue = stringResults.size();
+                    }else{
+                        selectedValue = selectedValue - 1 ;
+                        GlobalVars.setText(resultsTextview, true, getResources().getString(R.string.layoutInputVoicePossibleResults) + stringResults.size() + ")\n" + (selectedValue + 1) + " - " + stringResults.get(selectedValue));
+                        GlobalVars.talk(getResources().getString(R.string.layoutInputVoicePossibleResult) + (selectedValue + 1) + ". " + stringResults.get(selectedValue));
 
-                }
+                    }
+                    break;
+                    case 4: //result playlist
+                        if(j - 1 < 0){
+                            j = hash.size()-1;
+                        }else if(j>0){
+                            j=j-1;
+                            body.setText(hash.get(j).getTitle());
+                        }else{
+                            j = hash.size() - 1;
+                            body.setText(hash.get(j).getTitle());
+                        }
 
             break;
 

@@ -6,8 +6,13 @@
 	<string name="list1">Select Related Videos</string>
 	<string name="p1">Play</string>
 
+
 	<string name="searchyo">Slide right to search</string>
-	<string name="selectyo">Slide right to select from a playlist</string>
+	<string name="selectyo">Slide right to select from the list</string>
+	<string name="okyo">Slide RIGHT TO SELECT ABOVE RESULT</string>
+	<string name="firstyo">First you must select from the possible resutlts</string>
+	<string name="selectedyo">You have selected the result</string>
+
 	<string name="playyo">Slide right to play</string>
 	<string name="carryplay">PLAY</string>
 	<string name="carrypause">PAUSE</string>
@@ -18,6 +23,7 @@
 	<string name="welcomelang">Welcome to change language</string>
 	<string name="younosel">Please select any video on youtube</string>
 	<string name="languagess">change language</string>
+
     <string name="app_name">Drishti</string>
     <string name="title_activity_main">Drishti</string>
     <string name="menu_settings">Settings</string>
