@@ -5,17 +5,20 @@
 	<string name="s1">Select</string>
 	<string name="list1">Select Related Videos</string>
 	<string name="p1">Play</string>
+	<string name="nonet">First you have to on your mobile data</string>
 
-
+	<string name="you">"Welcome to Youtube"</string>
 	<string name="searchyo">Slide right to search</string>
 	<string name="selectyo">Slide right to select from the list</string>
 	<string name="okyo">Slide RIGHT TO SELECT ABOVE RESULT</string>
 	<string name="firstyo">First you must select from the possible resutlts</string>
 	<string name="selectedyo">You have selected the result</string>
 
+
 	<string name="playyo">Slide right to play</string>
-	<string name="carryplay">PLAY</string>
-	<string name="carrypause">PAUSE</string>
+	<string name="carryplay">Slide right to play</string>
+	<string name="pp">Slide right to pause</string>
+	<string name="carrypause">Slide right to pause</string>
 	<string name="carryback">GO BACK</string>
 	<string name="welcometoyoutube">Welcome to YOUTUBE</string>
 	<string name="langselect">Slide right to select language</string>

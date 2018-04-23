@@ -44,7 +44,7 @@ public class language extends Activity {
         lan.add("Hindi");
         code.add("hi");
         lan.add("Bengali");
-        code.add("bn-rIN");
+        code.add("bn");
         Log.e("sfdgvsdgvdxvgdxg",ll);
     }
     @Override public void onResume()

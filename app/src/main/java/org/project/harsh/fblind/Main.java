@@ -603,7 +603,11 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 
 			case 5:
 				//case 5: //INTERNET
-				GlobalVars.startActivity(yo.class);
+				if(GlobalVars.isOnline(this)){
+				GlobalVars.startActivity(yo.class);}
+				else{
+					GlobalVars.talk(getResources().getString(R.string.nonet));
+				}
 				break;
 			case 6: //STATUS
 				GlobalVars.talk(getDeviceStatus());
