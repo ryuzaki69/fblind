@@ -262,7 +262,7 @@ public class yo extends Activity
                 GlobalVars.selectTextView(oh,true);
                 GlobalVars.selectTextView(body,false);
                 GlobalVars.selectTextView(send,false);
-                GlobalVars.talk(getResources().getString());
+                GlobalVars.talk(getResources().getString(R.string.okyo));
                 break;
 
             case 4: //GO BACK TO THE PREVIOUS MENU
