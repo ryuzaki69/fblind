@@ -30,7 +30,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:src="@drawable/playernowplaying" />
+                android:src="@drawable/player" />
 
             <TextView
                 android:id="@+id/language"

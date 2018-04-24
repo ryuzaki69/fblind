@@ -80,7 +80,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:src="@drawable/call" />
+                android:src="@drawable/calls" />
 
             <TextView
                 android:id="@+id/contactscall"
