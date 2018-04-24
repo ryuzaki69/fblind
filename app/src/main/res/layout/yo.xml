@@ -35,7 +35,7 @@
                 android:layout_height="65dp"
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:src="@drawable/voicerecorder" />
+                android:src="@drawable/voicesearch" />
 
             <TextView
                 android:id="@+id/start"
@@ -76,7 +76,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:src="@drawable/browserpagelinks" />
+                android:src="@drawable/list" />
 
             <TextView
                 android:id="@+id/possibleresults"
@@ -123,7 +123,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:src="@drawable/browserpagelinks" />
+                android:src="@drawable/right" />
 
             <TextView
                 android:id="@+id/ok"
@@ -164,7 +164,7 @@
                 android:layout_height="76dp"
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:src="@drawable/options" />
+                android:src="@drawable/playlist" />
 
             <TextView
                 android:id="@+id/results"
@@ -210,7 +210,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:src="@drawable/swiperight" />
+                android:src="@drawable/slideright" />
 
             <TextView
                 android:id="@+id/enter"
