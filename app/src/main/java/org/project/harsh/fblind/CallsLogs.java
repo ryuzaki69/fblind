@@ -1,7 +1,8 @@
 package org.project.harsh.fblind;
 
 import android.os.Bundle;
-import android.provider.CallLog;
+import android.provider.*;
+import android.provider.Settings;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.widget.TextView;
@@ -82,19 +83,19 @@ public class CallsLogs extends Activity
 					{
 						String callType = identifyCallType(getCallType(GlobalVars.callLogsDataBase.get(selectedLog)));
 						String finalName = getContactNameIfAvailable(GlobalVars.callLogsDataBase.get(selectedLog));
-
+						String num=getPhoneNumber(GlobalVars.callLogsDataBase.get(selectedLog));
 						if (getCallType(GlobalVars.callLogsDataBase.get(selectedLog))==CallLog.Calls.OUTGOING_TYPE)
 						{
 							GlobalVars.talk(getResources().getString(R.string.layoutCallsLogsLogItem) + (selectedLog + 1) + getResources().getString(R.string.layoutCallsLogsOfNumber) +
 									GlobalVars.callLogsDataBase.size() + ". " + callType +
-									getResources().getString(R.string.layoutCallsLogsCallTo) +
+									getResources().getString(R.string.layoutCallsLogsCallTo) + num+
 									finalName + "." + getDateTimeCall(GlobalVars.callLogsDataBase.get(selectedLog)));
 						}
 						else
 						{
 							GlobalVars.talk(getResources().getString(R.string.layoutCallsLogsLogItem) + (selectedLog + 1) + getResources().getString(R.string.layoutCallsLogsOfNumber) +
 									GlobalVars.callLogsDataBase.size() + ". " + callType +
-									getResources().getString(R.string.layoutCallsLogsCallFrom) +
+									getResources().getString(R.string.layoutCallsLogsCallFrom) +num+
 									finalName + "." + getDateTimeCall(GlobalVars.callLogsDataBase.get(selectedLog)));
 						}
 					}
@@ -152,22 +153,22 @@ public class CallsLogs extends Activity
 
 						String callType = identifyCallType(getCallType(GlobalVars.callLogsDataBase.get(selectedLog)));
 						String finalName = getContactNameIfAvailable(GlobalVars.callLogsDataBase.get(selectedLog));
-
+						String num=getPhoneNumber(GlobalVars.callLogsDataBase.get(selectedLog));
 						GlobalVars.setText(phonenumber, true, getResources().getString(R.string.layoutCallsLogsLogItem) + " (" + (selectedLog + 1) + "/" + GlobalVars.callLogsDataBase.size() + ")\n" +
-								callType + "\n" + finalName);
+								callType + "\n" + num+ finalName);
 
 						if (getCallType(GlobalVars.callLogsDataBase.get(selectedLog))==CallLog.Calls.OUTGOING_TYPE)
 						{
 							GlobalVars.talk(getResources().getString(R.string.layoutCallsLogsLogItem) + (selectedLog + 1) + getResources().getString(R.string.layoutCallsLogsOfNumber) +
 									GlobalVars.callLogsDataBase.size() + ". " + callType +
-									getResources().getString(R.string.layoutCallsLogsCallTo) +
+									getResources().getString(R.string.layoutCallsLogsCallTo) + num+
 									finalName + "." + getDateTimeCall(GlobalVars.callLogsDataBase.get(selectedLog)));
 						}
 						else
 						{
 							GlobalVars.talk(getResources().getString(R.string.layoutCallsLogsLogItem) + (selectedLog + 1) + getResources().getString(R.string.layoutCallsLogsOfNumber) +
 									GlobalVars.callLogsDataBase.size() + ". " + callType +
-									getResources().getString(R.string.layoutCallsLogsCallFrom) +
+									getResources().getString(R.string.layoutCallsLogsCallFrom) + num+
 									finalName + "." + getDateTimeCall(GlobalVars.callLogsDataBase.get(selectedLog)));
 						}
 						markCallLogRead(getCallID(GlobalVars.callLogsDataBase.get(selectedLog)));
@@ -289,22 +290,22 @@ public class CallsLogs extends Activity
 
 						String callType = identifyCallType(getCallType(GlobalVars.callLogsDataBase.get(selectedLog)));
 						String finalName = getContactNameIfAvailable(GlobalVars.callLogsDataBase.get(selectedLog));
-
+						String num=getPhoneNumber(GlobalVars.callLogsDataBase.get(selectedLog));
 						GlobalVars.setText(phonenumber, true, getResources().getString(R.string.layoutCallsLogsLogItem) + " (" + (selectedLog + 1) + "/" + GlobalVars.callLogsDataBase.size() + ")\n" +
-								callType + "\n" + finalName);
+								callType + "\n" +num+ finalName);
 
 						if (getCallType(GlobalVars.callLogsDataBase.get(selectedLog))==CallLog.Calls.OUTGOING_TYPE)
 						{
 							GlobalVars.talk(getResources().getString(R.string.layoutCallsLogsLogItem) + (selectedLog + 1) + getResources().getString(R.string.layoutCallsLogsOfNumber) +
 									GlobalVars.callLogsDataBase.size() + ". " + callType +
-									getResources().getString(R.string.layoutCallsLogsCallTo) +
+									getResources().getString(R.string.layoutCallsLogsCallTo) + num+
 									finalName + "." + getDateTimeCall(GlobalVars.callLogsDataBase.get(selectedLog)));
 						}
 						else
 						{
 							GlobalVars.talk(getResources().getString(R.string.layoutCallsLogsLogItem) + (selectedLog + 1) + getResources().getString(R.string.layoutCallsLogsOfNumber) +
 									GlobalVars.callLogsDataBase.size() + ". " + callType +
-									getResources().getString(R.string.layoutCallsLogsCallFrom) +
+									getResources().getString(R.string.layoutCallsLogsCallFrom) + num+
 									finalName + "." + getDateTimeCall(GlobalVars.callLogsDataBase.get(selectedLog)));
 						}
 						markCallLogRead(getCallID(GlobalVars.callLogsDataBase.get(selectedLog)));

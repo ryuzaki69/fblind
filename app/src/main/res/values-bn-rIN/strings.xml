@@ -441,5 +441,21 @@
         <item>50</item>
         <item>55</item>
     </string-array>
-    
+    <string name="layoutMusicPlayerNowPlaying">নির্বাচন করা</string>
+    <string name="layoutMusicPlayerPreviousTrack">খেলা</string>
+    <string name="layoutMusicPlayerHigherVolume">থামুন</string>
+    <string name="welcometomusic">সঙ্গীততে স্বাগতম</string>
+    <string name="musicselect">স্লাইড নির্বাচন করুন</string>
+    <string name="musicplay">খেলা</string>
+    <string name="musicstop">থামুন</string>
+    <string name="noselection" >একটি গান নির্বাচন করুন</string>
+    <string name="youtubeselect">প্রথমেই বলুন এবং নির্বাচন করুন</string>
+    <string name="tut" >েনু পরিবর্তন করার জন্য নীচে এবং উপরে স্লাইড করুন। নির্বাচিত বিকল্পটি নির্বাচন করতে ডানদিকে স্লাইড করুন।</string>
+    <string name="advice" >টিউটোরিয়াল বার্তাটি শুনতে ডানদিকে স্লাইড করুন।</string>
+    <string name="mainapp" >প্রধান অ্যাপ্লিকেশন যেতে ডান স্লাইড</string>
+    <string name="welcometutor" >দীপ্তি অ্যাপে স্বাগতম যদি আপনি প্রথমবারের জন্য এই অ্যাপ্লিকেশন পরিদর্শন করেন, আমরা আপনাকে নীচে স্লাইড করতে এবং তারপর টিউটোরিয়াল বার্তাটি শুনতে চাই।</string>
+    <string name="youtubeicon" >ইউটিউব</string>
+    <string name="languageicon" >ভাষা</string>
+    <string name="tuticon">অভিভাবকসংবঁধীয়</string>
+    <string name="mainappicon">প্রধান অ্যাপ্লিকেশন</string>
 </resources>

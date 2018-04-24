@@ -361,6 +361,14 @@
     <string name="december">दिसंबर</string>
     <string name="noselection" >कृपया एक गीत चुनें</string>
     <string name="youtubeselect">कृपया पहले बोलें और चुनें</string>
+    <string name="tut" >मेनू को बदलने के लिए नीचे स्लाइड करें चुने हुए विकल्प का चयन करने के दाएं स्लाइड करें।</string>
+    <string name="advice">ट्यूटोरियल संदेश सुनने के लिए दाएं स्लाइड करें।</string>
+    <string name="mainapp" >मुख्य ऐप पर जाने के लिए दाएं स्लाइड करें</string>
+    <string name="welcometutor" >दृष्टि ऐप में आपका स्वागत है। यदि आप पहली बार इस ऐप पर आए हैं, तो हम आपको ट्यूटोरियल संदेश सुनने के लिए नीचे स्वाइप करने और दाएं स्वाइप करने की सलाह देते हैं</string>
+    <string name="youtubeicon" >यूट्यूब</string>
+    <string name="languageicon" >भाषा</string>
+    <string name="tuticon">ट्यूटोरियल</string>
+    <string name="mainappicon">मुख्य ऐप</string>
 
     <string-array name="keysAll">
         <item>क</item>

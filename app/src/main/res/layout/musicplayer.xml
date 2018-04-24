@@ -3,7 +3,8 @@
     android:id="@+id/dashboard"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/wa">
+    android:background="@drawable/wa"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="fill_parent"

@@ -138,7 +138,11 @@ public class MessagesInbox extends Activity
 								String.valueOf(selectedMessage + 1) +
 								getResources().getString(R.string.layoutMessagesInboxMessageOf) +
 								String.valueOf(GlobalVars.messagesInboxDataBase.size()) + ". " +
+
 								getResources().getString(R.string.layoutMessagesInboxMessageReceived) +
+
+								getResources().getString(R.string.layoutMessagesInboxMessageReceived) +GlobalVars.getMessagePhoneNumber(GlobalVars.messagesInboxDataBase.get(selectedMessage))+
+
 								GlobalVars.getMessageContactName(GlobalVars.messagesInboxDataBase.get(selectedMessage)) +
 								GlobalVars.getMessageDateTime(GlobalVars.messagesInboxDataBase.get(selectedMessage)) +
 								getResources().getString(R.string.layoutMessagesInboxMessageMessageBody) +
@@ -217,7 +221,11 @@ public class MessagesInbox extends Activity
 								String.valueOf(selectedMessage + 1) +
 								getResources().getString(R.string.layoutMessagesInboxMessageOf) +
 								String.valueOf(GlobalVars.messagesInboxDataBase.size()) + ". " +
+
 								getResources().getString(R.string.layoutMessagesInboxMessageReceived) +
+
+								getResources().getString(R.string.layoutMessagesInboxMessageReceived) + GlobalVars.getMessagePhoneNumber(GlobalVars.messagesInboxDataBase.get(selectedMessage))+
+
 								GlobalVars.getMessageContactName(GlobalVars.messagesInboxDataBase.get(selectedMessage)) +
 								GlobalVars.getMessageDateTime(GlobalVars.messagesInboxDataBase.get(selectedMessage)) +
 								getResources().getString(R.string.layoutMessagesInboxMessageMessageBody) +
@@ -363,6 +371,7 @@ public class MessagesInbox extends Activity
 								getResources().getString(R.string.layoutMessagesInboxMessageOf) +
 								String.valueOf(GlobalVars.messagesInboxDataBase.size()) + ". " +
 								getResources().getString(R.string.layoutMessagesInboxMessageReceived) +
+								getResources().getString(R.string.layoutMessagesInboxMessageReceived) + GlobalVars.getMessagePhoneNumber(GlobalVars.messagesInboxDataBase.get(selectedMessage))+
 								GlobalVars.getMessageContactName(GlobalVars.messagesInboxDataBase.get(selectedMessage)) +
 								GlobalVars.getMessageDateTime(GlobalVars.messagesInboxDataBase.get(selectedMessage)) +
 								getResources().getString(R.string.layoutMessagesInboxMessageMessageBody) +

@@ -19,7 +19,7 @@
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />        
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
@@ -27,43 +27,48 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.GET_TASKS"/>    
+    <uses-permission android:name="android.permission.GET_TASKS"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-	<uses-permission android:name="android.permission.BLUETOOTH"/>
-	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-		
-	<uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
     <uses-feature android:name="android.hardware.telephony" android:required="false"/>
-	<uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
     <supports-screens android:resizeable="true"
-        			  android:smallScreens="true"
-        			  android:normalScreens="true"
-        			  android:largeScreens="true"
-        			  android:xlargeScreens="true"
-        			  android:anyDensity="true"/>
-    
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/appppps"
         android:label="Dristhi"
         android:theme="@style/AppTheme">
-        
+
+        <activity
+            android:launchMode="singleTask"
+            android:label="@string/app_name"
+            android:name="org.project.harsh.fblind.tutorial"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:launchMode="singleTask"
             android:label="@string/app_name"
             android:name="org.project.harsh.fblind.Main"
             android:configChanges="orientation|keyboardHidden|screenSize|locale"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            	<category android:name="android.intent.category.DEFAULT" />
-            	<category android:name="android.intent.category.HOME" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>        
-        </activity>
-
-
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <activity
             android:launchMode="singleTask"
             android:label="@string/app_name"
@@ -112,63 +117,63 @@
             android:name="org.project.harsh.fblind.MusicPlayerArtists"
             android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        
+
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.Messages"
             android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        
+
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.MessagesInbox"
             android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        
+
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.MessagesSent"
             android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        
+
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.MessagesSentDeleteAll"
             android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        
+
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.MessagesCompose"
             android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        
+
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.MessagesDelete"
             android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        
+
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.MessagesInboxDeleteAll"
             android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        
+
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.Calls"
             android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        
+
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
@@ -189,14 +194,14 @@
             android:name="org.project.harsh.fblind.CallsLogsDelete"
             android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        
+
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.Contacts"
             android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        
+
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
@@ -210,21 +215,21 @@
             android:name="org.project.harsh.fblind.ContactsDelete"
             android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        
+
         <activity
             android:launchMode="singleTask"
             android:label="Project"
             android:name="org.project.harsh.fblind.ContactsList"
             android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        
+
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
             android:name="org.project.harsh.fblind.InputKeyboard"
             android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        
+
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
@@ -232,7 +237,7 @@
             android:configChanges="orientation|keyboardHidden|screenSize|locale"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateVisible"/>
-        
+
         <activity
             android:launchMode="singleTask"
             android:label="@string/title_activity_main"
@@ -244,7 +249,7 @@
 
         <!-- BroadcastReceiver that listens for incoming SMS messages -->
         <receiver android:name="org.project.harsh.fblind.SmsReceiver"
-                android:permission="android.permission.BROADCAST_SMS">
+            android:permission="android.permission.BROADCAST_SMS">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_DELIVER" />
             </intent-filter>
@@ -262,7 +267,7 @@
         <!-- Activity that allows the user to send new SMS/MMS messages -->
         <activity android:name="org.project.harsh.fblind.ComposeSmsActivity" >
             <intent-filter>
-                <action android:name="android.intent.action.SEND" />                
+                <action android:name="android.intent.action.SEND" />
                 <action android:name="android.intent.action.SENDTO" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
@@ -275,8 +280,8 @@
 
         <!-- Service that delivers messages from the phone "quick response" -->
         <service android:name="org.project.harsh.fblind.HeadlessSmsSendService"
-                 android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE"
-                 android:exported="true" >
+            android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
                 <category android:name="android.intent.category.DEFAULT" />
