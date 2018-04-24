@@ -11,19 +11,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <FrameLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="1"/>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="205dp"
+        android:layout_weight="1" />
 
     <LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="3" android:layout_gravity="center">
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
         <LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
-            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="fitCenter" android:src="@drawable/contacts"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/playerplay" />
 
             <TextView
                 android:id="@+id/PLAY"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/layoutContactsListContactsList"
+                android:text="@string/carryplay"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
@@ -38,8 +47,15 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:src="@drawable/call" />
-            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="#FFFFFF"  android:id="@+id/contactscall" android:text="@string/layoutContactsListCall" />
+                android:src="@android:drawable/ic_media_pause" />
+
+            <TextView
+                android:id="@+id/PAUSE"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/carrypause"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
     </LinearLayout>
@@ -47,8 +63,21 @@
     <LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="3" android:layout_gravity="center">
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
         <LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
-            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="fitCenter" android:src="@drawable/goback"/>
-            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="#FFFFFF"  android:id="@+id/goback" android:text="@string/backToPreviousMenu"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/goback" />
+
+            <TextView
+                android:id="@+id/goback"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/backToPreviousMenu"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
         <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
     </LinearLayout>
