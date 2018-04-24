@@ -37,6 +37,7 @@ public class yo extends Activity
     List<VideoItem> hash;
     List<VideoItem> hash2;
     ArrayList<Pair<String,String>> ans;
+
     String messageBody="";
     String mm=null;
     private List<String> stringResults = new ArrayList<String>();
@@ -261,14 +262,14 @@ public class yo extends Activity
                 GlobalVars.selectTextView(oh,true);
                 GlobalVars.selectTextView(body,false);
                 GlobalVars.selectTextView(send,false);
-                GlobalVars.talk(getResources().getString(R.string.okyo));
+                GlobalVars.talk(getResources().getString());
                 break;
 
             case 4: //GO BACK TO THE PREVIOUS MENU
                 GlobalVars.selectTextView(oh,false);
-                GlobalVars.selectTextView(body,true);
+
                 GlobalVars.selectTextView(send,false);
-                GlobalVars.selectTextView(goback,false);
+                GlobalVars.selectTextView(goback,false);GlobalVars.selectTextView(body,true);
                 GlobalVars.talk(getResources().getString(R.string.selectyo));
                 break;
 
