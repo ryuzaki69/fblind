@@ -20,7 +20,7 @@ public class MessagesInbox extends Activity
 {
 	public static TextView inbox;
 	private TextView reply;
-	//private TextView delete;
+	//private TextView d elete;
 	private TextView callto;
 	private TextView addtonewcontact;
 	//private TextView deleteall;
