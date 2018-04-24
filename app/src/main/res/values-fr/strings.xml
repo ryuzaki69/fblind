@@ -489,8 +489,10 @@
 	<string name="backToMainMenu">Revenir au menu principal</string>
     <string name="noselection" />
     <string name="youtubeselect" />
+    <string name="inboxtalk" />
+	<string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
 
-    <string-array name="keysAll">
+	<string-array name="keysAll">
 		<item>A</item>
 		<item>B</item>
 		<item>C</item>

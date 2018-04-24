@@ -2,6 +2,7 @@ package org.project.harsh.fblind;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.*;
 import android.widget.TextView;
 import android.app.Activity;
@@ -19,10 +20,10 @@ public class MessagesInbox extends Activity
 {
 	public static TextView inbox;
 	private TextView reply;
-	private TextView delete;
+	//private TextView delete;
 	private TextView callto;
 	private TextView addtonewcontact;
-	private TextView deleteall;
+	//private TextView deleteall;
 	private TextView goback;
 	public static int selectedMessage = -1;
 
@@ -33,13 +34,13 @@ public class MessagesInbox extends Activity
 		GlobalVars.lastActivity = MessagesInbox.class;
 		inbox = (TextView) findViewById(R.id.messagesinbox);
 		reply = (TextView) findViewById(R.id.messagesreply);
-		delete = (TextView) findViewById(R.id.messagesdelete);
+		//delete = (TextView) findViewById(R.id.messagesdelete);
 		callto = (TextView) findViewById(R.id.messagescallto);
 		addtonewcontact = (TextView) findViewById(R.id.addtonewcontact);
-		deleteall = (TextView) findViewById(R.id.messagesdeleteall);
+		//deleteall = (TextView) findViewById(R.id.messagesdeleteall);
 		goback = (TextView) findViewById(R.id.goback);
 		GlobalVars.activityItemLocation=0;
-		GlobalVars.activityItemLimit=7;
+		GlobalVars.activityItemLimit=5;
 		selectedMessage = -1;
 		new MessagesCheckThread(GlobalVars.TYPE_INBOX).execute();
 	}
@@ -50,13 +51,11 @@ public class MessagesInbox extends Activity
 		try{GlobalVars.alarmVibrator.cancel();}catch(NullPointerException e){}catch(Exception e){}
 		GlobalVars.lastActivity = MessagesInbox.class;
 		GlobalVars.activityItemLocation=0;
-		GlobalVars.activityItemLimit=7;
+		GlobalVars.activityItemLimit=5;
 		GlobalVars.selectTextView(inbox,false);
 		GlobalVars.selectTextView(reply,false);
-		GlobalVars.selectTextView(delete,false);
 		GlobalVars.selectTextView(callto, false);
 		GlobalVars.selectTextView(addtonewcontact, false);
-		GlobalVars.selectTextView(deleteall,false);
 		GlobalVars.selectTextView(goback,false);
 		if (GlobalVars.messagesWasSent == true)
 		{
@@ -154,42 +153,27 @@ public class MessagesInbox extends Activity
 			case 2: //REPLY
 				GlobalVars.selectTextView(reply, true);
 				GlobalVars.selectTextView(inbox,false);
-				GlobalVars.selectTextView(delete,false);
+				GlobalVars.selectTextView(callto,false);
 				GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxReply));
 				break;
 
-			case 3: //DELETE
-				GlobalVars.selectTextView(delete, true);
-				GlobalVars.selectTextView(reply,false);
-				GlobalVars.selectTextView(callto,false);
-				GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxDelete));
-				break;
-
-			case 4: //CALL TO CONTACT
+			case 3: //CALL TO CONTACT
 				GlobalVars.selectTextView(callto, true);
-				GlobalVars.selectTextView(delete,false);
 				GlobalVars.selectTextView(addtonewcontact,false);
+				GlobalVars.selectTextView(reply, false);
 				GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxCallTo));
 				break;
 
-			case 5: //ADD TO NEW CONTACT
+			case 4: //ADD TO NEW CONTACT
 				GlobalVars.selectTextView(addtonewcontact, true);
 				GlobalVars.selectTextView(callto,false);
-				GlobalVars.selectTextView(deleteall,false);
+				GlobalVars.selectTextView(goback,false);
 				GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxAddToNewContact));
 				break;
-
-			case 6: //DELETE ALL RECEIVED MESSAGES
-				GlobalVars.selectTextView(deleteall, true);
-				GlobalVars.selectTextView(addtonewcontact,false);
-				GlobalVars.selectTextView(goback,false);
-				GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxDeleteAll));
-				break;
-
-			case 7: //GO BACK TO THE PREVIOUS MENU
-				GlobalVars.selectTextView(goback,true);
-				GlobalVars.selectTextView(deleteall,false);
+			case 5:
+				GlobalVars.selectTextView(addtonewcontact, false);
 				GlobalVars.selectTextView(inbox,false);
+				GlobalVars.selectTextView(goback,true);
 				GlobalVars.talk(getResources().getString(R.string.backToPreviousMenu));
 				break;
 		}
@@ -206,6 +190,7 @@ public class MessagesInbox extends Activity
 				}
 				else
 				{
+					GlobalVars.talk(getResources().getString(R.string.inboxtalk1));
 					if (GlobalVars.messagesInboxDataBase.size()>0)
 					{
 						if (selectedMessage+1==GlobalVars.messagesInboxDataBase.size())
@@ -265,32 +250,7 @@ public class MessagesInbox extends Activity
 				}
 				break;
 
-			case 3: //DELETE
-				if (selectedMessage==-1)
-				{
-					GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxError));
-				}
-				else
-				{
-					if (GlobalVars.messagesInboxDatabaseReady==false)
-					{
-						GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxTryAgain));
-					}
-					else
-					{
-						GlobalVars.startActivity(MessagesDelete.class);
-						MessagesDelete.messageType = GlobalVars.TYPE_INBOX;
-						MessagesDelete.messageIDToDelete = GlobalVars.getMessageID(GlobalVars.messagesInboxDataBase.get(selectedMessage));
-						MessagesDelete.messageFrom = GlobalVars.getMessageContactName(GlobalVars.messagesInboxDataBase.get(selectedMessage));
-						MessagesDelete.messageToDelete = GlobalVars.getMessageContactName(GlobalVars.messagesInboxDataBase.get(selectedMessage)) +
-								GlobalVars.getMessageDateTime(GlobalVars.messagesInboxDataBase.get(selectedMessage)) +
-								getResources().getString(R.string.layoutMessagesInboxMessageMessageBody) +
-								GlobalVars.getMessageBody(GlobalVars.messagesInboxDataBase.get(selectedMessage));
-					}
-				}
-				break;
-
-			case 4: //CALL TO CONTACT
+			case 3: //CALL TO CONTACT
 				if (selectedMessage==-1)
 				{
 					GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxError));
@@ -309,7 +269,7 @@ public class MessagesInbox extends Activity
 				}
 				break;
 
-			case 5: //ADD TO NEW CONTACT
+			case 4: //ADD TO NEW CONTACT
 				if (selectedMessage==-1)
 				{
 					GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxError));
@@ -334,11 +294,7 @@ public class MessagesInbox extends Activity
 				}
 				break;
 
-			case 6: //DELETE ALL RECEIVED MESSAGES
-				GlobalVars.startActivity(MessagesInboxDeleteAll.class);
-				break;
-
-			case 7: //GO BACK TO THE PREVIOUS MENU
+			case 5: //GO BACK TO THE PREVIOUS MENU
 				this.finish();
 				break;
 		}

@@ -505,4 +505,6 @@
     <string name="layoutMusicPlayerNowPlaying">নির্বাচন করা</string>
     <string name="layoutMusicPlayerPreviousTrack">খেলা</string>
     <string name="layoutMusicPlayerHigherVolume">থামুন</string>
+    <string name="inboxtalk" />
+    <string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
 </resources>

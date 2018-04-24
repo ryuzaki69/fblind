@@ -458,4 +458,6 @@
     <string name="languageicon" >ভাষা</string>
     <string name="tuticon">অভিভাবকসংবঁধীয়</string>
     <string name="mainappicon">প্রধান অ্যাপ্লিকেশন</string>
+    <string name="inboxtalk" />
+    <string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
 </resources>

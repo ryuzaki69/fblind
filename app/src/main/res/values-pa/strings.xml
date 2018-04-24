@@ -322,6 +322,8 @@
     <string name="december">December</string>
     <string name="noselection" />
     <string name="youtubeselect" />
+    <string name="inboxtalk" />
+    <string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
 
     <string-array name="keysAll">
         <item>A</item>
