@@ -320,57 +320,7 @@ public class yo extends Activity
                 {
                     GlobalVars.talk(getResources().getString(R.string.layoutInputVoiceSystemError));
                 }
-                /*
-                try
-                {
-                    stringResults.clear();
-                    selectedValue = -1;
-                    sr = SpeechRecognizer.createSpeechRecognizer(this);
-                    sr.setRecognitionListener(new yo.listener());
-                    Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-                    intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-                    intent.putExtra(RecognizerIntent.EXTRA_PROMPT,"Voice Recognition...");
-                    intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS,5000000);
-                    sr.startListening(intent);
 
-                    Log.e("yha STRING VALUE", GlobalVars.inputModeResult);
-                }
-                catch(Exception e)
-                {
-                    GlobalVars.talk(getResources().getString(R.string.layoutInputVoiceSystemError));
-                }
-
-                if (stringResults.size()==0)
-                {
-                    GlobalVars.talk(getResources().getString(R.string.layoutInputVoiceNoRecognition));
-                }
-
-                else
-                {
-                    Log.e("ha ha bhai","232");
-                    if (selectedValue+1==stringResults.size())
-                    {
-                        selectedValue=-1;
-                    }
-                    selectedValue = selectedValue + 1;
-                    GlobalVars.setText(start, true, getResources().getString(R.string.layoutInputVoicePossibleResults) + stringResults.size() + ")\n" + (selectedValue + 1) + " - " + stringResults.get(selectedValue));
-                    GlobalVars.talk(getResources().getString(R.string.layoutInputVoicePossibleResult) + (selectedValue + 1) + ". " + stringResults.get(selectedValue));
-                }
-                if (selectedValue==-1)
-                {
-                    GlobalVars.talk(getResources().getString(R.string.layoutInputVoiceNoResultToSelect));
-                }
-                else
-                {
-
-                    GlobalVars.inputModeResult = stringResults.get(selectedValue);
-                    //this.finish();
-                    //GlobalVars.startActivity(yo.class);
-                }
-
-                GlobalVars.inputModeResult = stringResults.get(selectedValue);
-                Log.e("VALUE dekho string ki ",GlobalVars.inputModeResult);
-                */
                 break;
 
             case 2: //BODY
@@ -477,23 +427,23 @@ public class yo extends Activity
                 if( mm == null )
                 {
                     GlobalVars.talk(getResources().getString(R.string.noselection));
-                    break;
+
                 }
-                new Thread(){
-                    @Override
-                    public void run() {
-                        //YoutubeConnector yc = new YoutubeConnector(yo.this);
-                        //hash = yc.search(mm);
-                        Log.e("fhgv",hash.get(0).getDescription());
-                        GlobalVars.h=hash.get(j-1).getId();
+                else {
+                    new Thread() {
+                        @Override
+                        public void run() {
+                            //YoutubeConnector yc = new YoutubeConnector(yo.this);
+                            //hash = yc.search(mm);
+                            Log.e("fhgv", hash.get(0).getDescription());
+                            GlobalVars.h = hash.get(j - 1).getId();
 
-                        GlobalVars.startActivity(carry.class);
+                            GlobalVars.startActivity(carry.class);
 
 
-
-                    }
-                }.start();
-
+                        }
+                    }.start();
+                }
                 break;
 
             case 6:

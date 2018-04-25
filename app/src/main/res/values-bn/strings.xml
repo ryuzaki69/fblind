@@ -460,4 +460,5 @@
     <string name="mainappicon">প্রধান অ্যাপ্লিকেশন</string>
     <string name="inboxtalk" />
     <string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
+    <string name="voicein">Voice Input</string>
 </resources>

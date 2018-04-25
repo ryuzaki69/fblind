@@ -83,7 +83,7 @@ public class language extends Activity {
                 GlobalVars.selectTextView(select,false);
                 GlobalVars.selectTextView(gobacklang,true);
                 //GlobalVars.talk(getResources().getString(R.string.layoutAlarmsCreateTimeHour2) + GlobalVars.alarmTimeHoursValues.get(hourValue) + getResources().getString(R.string.layoutAlarmsCreateHours));
-                GlobalVars.talk(getResources().getString(R.string.backToPreviousMenu));
+                GlobalVars.talk(getResources().getString(R.string.backToMainMenu));
                 break;
         }
     }

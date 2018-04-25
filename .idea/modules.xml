@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/69.iml" filepath="$PROJECT_DIR$/69.iml" />
       <module fileurl="file://F:\fblind\fblind3\Fblind.iml" filepath="F:\fblind\fblind3\Fblind.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://F:\fblind44\fblind\app\app.iml" filepath="F:\fblind44\fblind\app\app.iml" />
       <module fileurl="file://E:\pro\fblind\.idea\end.iml" filepath="E:\pro\fblind\.idea\end.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fblind.iml" filepath="$PROJECT_DIR$/fblind.iml" />
+      <module fileurl="file://C:\Users\carry'\AndroidStudioProjects\69\fblind.iml" filepath="C:\Users\carry'\AndroidStudioProjects\69\fblind.iml" />
       <module fileurl="file://E:\..\..\carry'\AndroidStudioProjects\qw\.idea\fblind.iml" filepath="E:\..\..\carry'\AndroidStudioProjects\qw\.idea\fblind.iml" />
       <module fileurl="file://C:\carry'\AndroidStudioProjects\qw\fblind3.iml" filepath="C:\carry'\AndroidStudioProjects\qw\fblind3.iml" />
       <module fileurl="file://E:\..\..\carry'\AndroidStudioProjects\end\qw.iml" filepath="E:\..\..\carry'\AndroidStudioProjects\end\qw.iml" />

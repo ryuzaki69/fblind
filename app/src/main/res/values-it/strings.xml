@@ -491,8 +491,9 @@
     <string name="youtubeselect" />
     <string name="inboxtalk" />
 	<string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
+    <string name="voicein">Voice Input</string>
 
-	<string-array name="keysAll">
+    <string-array name="keysAll">
 		<item>A</item>
 		<item>B</item>
 		<item>C</item>

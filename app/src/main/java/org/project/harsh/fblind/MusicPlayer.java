@@ -148,7 +148,7 @@ public class MusicPlayer extends Activity {
                 GlobalVars.selectTextView(select,false);
                 GlobalVars.selectTextView(stop,false);
                 GlobalVars.selectTextView(gobacklang,true);
-                GlobalVars.talk(getResources().getString(R.string.backToPreviousMenu));
+                GlobalVars.talk(getResources().getString(R.string.backToMainMenu));
                 break;
         }
     }

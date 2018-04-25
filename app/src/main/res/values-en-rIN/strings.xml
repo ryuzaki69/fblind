@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!--
+    <string name="layoutyoutubein">Voice input.</string>
+-->
+
     <string name="v1">Voice Input</string>
     <string name="r1">Related Results</string>
     <string name="s1">Select</string>
@@ -8,19 +13,19 @@
     <string name="nonet">First you have to on your mobile data</string>
 
 
-    <string name="searchyo">Slide right to search</string>
-    <string name="selectyo">Slide right to select from the list</string>
+    <string name="searchyo">after the tts tone speak to give voice input to search and then slide right.</string>
+    <string name="selectyo">Slide right to select from the possible results</string>
     <string name="okyo">Slide RIGHT TO SELECT ABOVE RESULT</string>
     <string name="firstyo">First you must select from the possible resutlts</string>
     <string name="selectedyo">You have selected the result</string>
-
+    <string name="you">slide down and than slide right to play.</string>
 
     <string name="playyo">Slide right to play</string>
     <string name="carryplay">Slide right to play</string>
     <string name="pp">Slide right to pause</string>
     <string name="carrypause">Slide right to pause</string>
     <string name="carryback">GO BACK</string>
-    <string name="welcometoyoutube">Welcome to YOUTUBE , First slide right to give VOICE input to search and than slide down and slide right to select the possible result.</string>
+    <string name="welcometoyoutube">Welcome to YOUTUBE , First slide down to give VOICE input to search and than slide down and slide right to select the possible result.</string>
     <string name="langselect">Slide right to choose language and slide down </string>
     <string name="langok">Slide right to select above language</string>
     <string name="welcomelang">Welcome to change language,slide down to hear each option</string>
@@ -241,9 +246,9 @@
     <string name="layoutCallsLogsLogs2">Call logs. Slide right or left to hear each one.</string>
     <string name="layoutCallsLogsAddToNewContact">Slide right to add number into contact</string>
     <string name="layoutCallsLogsCall">Call</string>
-    <string name="layoutCallsLogsCall2">Call to selected number</string>
+    <string name="layoutCallsLogsCall2">slide right to Call the selected number</string>
     <string name="layoutCallsLogsSendMessage">Send a message</string>
-    <string name="layoutCallsLogsSendMessage2">Send a message to selected contact</string>
+    <string name="layoutCallsLogsSendMessage2">slide right to Send a message to the selected contact</string>
     <string name="layoutCallsLogsNoLogs">There are no call logs</string>
     <string name="layoutCallsLogsOutgoingCall">Outgoing call</string>
     <string name="layoutCallsLogsIncomingCall">Incoming call</string>
@@ -364,7 +369,7 @@
     <string name="layoutInputVoiceNoResultToSelect">First you must select a result</string>
     <string name="layoutInputVoiceNoRecognition">No possible results. Please, try again or check if the voice recognition on your device requires an Internet connection. If so, check your Internet connection status.</string>
     <string name="layoutInputVoiceSystemError">System Error. Voice recognition can\'t be executed</string>
-    <string name="layoutInputVoiceCancelAndGoBack">Cancel and go back to the previous menu</string>
+    <string name="layoutInputVoiceCancelAndGoBack">slide right to Cancel and go back to the previous menu</string>
 
     <string name="layoutInputKeyboardTalkbackOnResume">Now you are at the input text mode using the standard android keyboard with Talkback. You must have talkBack enabled in order to use this method. A textbox is selected right now and the standard android keyboard is available at the bottom of the screen. Write what you want and press the enter key in the keyboard to enter the data. Press the back button to cancel and go back to the previous menu.</string>
 
@@ -374,8 +379,8 @@
     <string name="callingToUnknown">Calling to an unregistered number</string>
     <string name="callEnded">The call has ended</string>
 
-    <string name="backToPreviousMenu">Go back to the previous menu</string>
-    <string name="backToMainMenu">Go back to the main menu</string>
+    <string name="backToPreviousMenu">slide right to Go back to the previous menu</string>
+    <string name="backToMainMenu">slide right to Go back to the main menu</string>
 
 
 
@@ -390,6 +395,7 @@
     <string name="tuticon">Tutorial</string>
     <string name="mainappicon">Main App</string>
     <string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
+    <string name="voicein">Voice Input</string>
     <string-array name="keysAll">
         <item>A</item>
         <item>B</item>

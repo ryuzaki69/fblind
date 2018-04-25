@@ -42,7 +42,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/v1"
+                android:text="@string/voicein"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
 
@@ -217,7 +217,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/p1"
+                android:text="@string/playyo"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
 

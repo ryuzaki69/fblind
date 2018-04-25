@@ -11,7 +11,7 @@
     <string name="okyo">उपरोक्त परिणाम चुनने के लिए स्लाइड दाएं</string>
     <string name="firstyo">सबसे पहले आपको संभावित परिणामों से चयन करना होगा</string>
     <string name="selectedyo">आपने परिणाम चुना है</string>
-    <string name="you">यूट्यूब में आपका स्वागत है</string>
+    <string name="you">यवीडियो चलने के लिए पहले नीचे स्लाइड करके दायें स्लाइड करे </string>
     <string name="nonet">सबसे पहले आपको अपना मोबाइल डेटा चालू करना होगा</string>
 
 
@@ -23,9 +23,9 @@
     <string name="list1"> संबंधित वीडियो का चयन करें</string>
     <string name="p1">चलाएँ</string>
 
-    <string name="searchyo">खोज करने के लिए दाएं स्लाइड करें</string>
-    <string name="selectyo">एक प्लेलिस्ट से चुनने के लिए दाएं स्लाइड करें</string>
-    <string name="playyo">यूट्यूब को चलाने के लिए लेफ्ट स्लाइड करें</string>
+    <string name="searchyo">टीटीएस टोन के बाद बोल के इनपुट दीजिये और फिर दाएं स्लाइड करे </string>
+    <string name="selectyo"> संभावित परिणामों से चयन करने के लिए दाएं स्लाइड करें </string>
+    <string name="playyo">यूट्यूब को चलाने के लिए दाएं स्लाइड करेंं</string>
     <string name="carryplay">चलाने के लिए दाएं स्लाइड करे</string>
     <string name="carrypause">रोकने के लिए दाएं स्लाइड करे</string>
 
@@ -36,11 +36,11 @@
 
     <string name="musicstop">संगीत रोकिये, गीत को रोकने के लिए दाएं स्लाइड करें </string>
     <string name="younosel">कृपया यूट्यूब पर एक वीडियो का चयन करें</string>
-    <string name="welcometoyoutube">ूट्यूब में आपका स्वागत है</string>
+    <string name="welcometoyoutube">ूट्यूब में आपका स्वागत है | खोज के लिए बोलकर  इनपुट दीजिये , संभावित परिणाम का चयन करने के लिए नीचे स्लाइड करके , दाईं स्लाइड करें।</string>
     <string name="langselect">भाषा चुनने के लिए दाएं स्लाइड करें और फिर नीचे स्लाइड करें</string>
     <string name="langok">उपरोक्त भाषा का चयन करने के लिए दाएं स्लाइड करेंं</string>
     <string name="welcomelang">भाषा बदलने में आपका स्वागत है,प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
-    <string name="welcomeyoutube">यूट्यूब में आपका स्वागत है</string>
+
 
 
 
@@ -219,8 +219,8 @@
 
     <string name="layoutCallsLogsLogs">कॉल लॉग</string>
     <string name="layoutCallsLogsLogs2">कॉल लॉग। प्रत्येक एक को सुनने के लिए दाएं या बाएं स्लाइड करें.</string>
-    <string name="layoutCallsLogsAddToNewContact">नए संपर्क में जोड़ें</string>
-    <string name="layoutCallsLogsCall">कॉल</string>
+    <string name="layoutCallsLogsAddToNewContact">दायें स्लाइड करके नए संपर्क में जोड़ें</string>
+    <string name="layoutCallsLogsCall">दायें स्लाइड करके कॉल करे </string>
     <string name="layoutCallsLogsCall2">चयनित नंबर पर कॉल करें</string>
     <string name="layoutCallsLogsSendMessage">संदेश भेजें</string>
     <string name="layoutCallsLogsSendMessage2">चयनित संपर्क को एक संदेश भेजें</string>
@@ -355,8 +355,8 @@
     <string name="callingToUnknown">अपंजीकृत नंबर पर कॉल करना</string>
     <string name="callEnded">कॉल समाप्त हो गया है</string>
 
-    <string name="backToPreviousMenu">पिछले मेनू पर वापस जाएं</string>
-    <string name="backToMainMenu">मुख्य मेनू पर वापस जाएं</string>
+    <string name="backToPreviousMenu">दायें स्लाइड करके पिछले मेनू पर वापस जाएं</string>
+    <string name="backToMainMenu">दायें स्लाइड करके मुख्य मेनू पर वापस जाएं</string>
 
 
 
@@ -534,4 +534,5 @@
     <string name="layoutMusicPlayerHigherVolume">रोकें</string>
     <string name="inboxtalk" />
     <string name="inboxtalk1">हमने सभी संदेशों को सफलतापूर्वक लाया है, प्रत्येक को सुनने के लिए दाएं और बाएं स्लाइड करें।</string>
+    <string name="voicein">आवाज़ डालना</string>
 </resources>
