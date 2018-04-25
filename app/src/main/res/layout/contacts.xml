@@ -1,38 +1,151 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/dashboard" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:background="#34629d">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dashboard"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wallpaper5"
+    android:orientation="vertical">
 
-    <FrameLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="1"/>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
 
-    <LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="3" android:layout_gravity="center">
-        <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
-        <LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
-            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="fitCenter" android:src="@drawable/contactslist"/>
-            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="#FFFFFF" android:id="@+id/contactslist" android:text="@string/layoutContactsList" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_gravity="center"
+        android:layout_weight="3">
+
+        <FrameLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" />
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/contactslist" />
+
+            <TextView
+                android:id="@+id/contactslist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/layoutContactsList"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
-        <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
+
+        <FrameLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" />
     </LinearLayout>
 
-    <FrameLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="1"/>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
 
-    <LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="3" android:layout_gravity="center">
-        <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
-        <LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
-            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="fitCenter" android:src="@drawable/contactscreate"/>
-            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="#FFFFFF"  android:id="@+id/contactscreate" android:text="@string/layoutContactsCreate" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_gravity="center"
+        android:layout_weight="3">
+
+        <FrameLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" />
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/contactscreate" />
+
+            <TextView
+                android:id="@+id/contactscreate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/layoutContactsCreate"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
-        <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
+
+        <FrameLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" />
     </LinearLayout>
 
-    <FrameLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="1"/>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
 
-    <LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="3" android:layout_gravity="center">
-        <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
-        <LinearLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="3" android:orientation="vertical" android:layout_gravity="center" android:gravity="center">
-            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="fitCenter" android:src="@drawable/goback"/>
-            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="#FFFFFF"  android:id="@+id/goback" android:text="@string/backToMainMenu" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_gravity="center"
+        android:layout_weight="3">
+
+        <FrameLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" />
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/goback" />
+
+            <TextView
+                android:id="@+id/goback"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/backToMainMenu"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
-        <FrameLayout android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="2"/>
+
+        <FrameLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" />
     </LinearLayout>
 
-    <FrameLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="1"/>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
 
 </LinearLayout>

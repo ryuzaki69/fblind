@@ -24,7 +24,7 @@ public class MessagesSent extends Activity
 		deleteall = (TextView) findViewById(R.id.messagesdeleteall);
 		goback = (TextView) findViewById(R.id.goback);
 		GlobalVars.activityItemLocation=0;
-		GlobalVars.activityItemLimit=4;
+		GlobalVars.activityItemLimit=2;
 		selectedMessage = -1;
 		new MessagesCheckThread(GlobalVars.TYPE_SENT).execute();
 	}
@@ -35,10 +35,9 @@ public class MessagesSent extends Activity
 		try{GlobalVars.alarmVibrator.cancel();}catch(NullPointerException e){}catch(Exception e){}
 		GlobalVars.lastActivity = MessagesSent.class;
 		GlobalVars.activityItemLocation=0;
-		GlobalVars.activityItemLimit=4;
+		GlobalVars.activityItemLimit=2;
 		GlobalVars.selectTextView(sent,false);
-		GlobalVars.selectTextView(delete,false);
-		GlobalVars.selectTextView(deleteall,false);
+
 		GlobalVars.selectTextView(goback,false);
 		if (GlobalVars.messagesWasDeleted==true)
 		{
@@ -94,7 +93,7 @@ public class MessagesSent extends Activity
 		{
 			case 1: //SENT MESSAGES
 				GlobalVars.selectTextView(sent,true);
-				GlobalVars.selectTextView(delete,false);
+
 				GlobalVars.selectTextView(goback,false);
 				if (selectedMessage==-1)
 				{
@@ -121,24 +120,13 @@ public class MessagesSent extends Activity
 				}
 				break;
 
-			case 2: //DELETE
-				GlobalVars.selectTextView(delete, true);
-				GlobalVars.selectTextView(sent,false);
-				GlobalVars.selectTextView(deleteall,false);
-				GlobalVars.talk(getResources().getString(R.string.layoutMessagesSentDelete));
-				break;
 
-			case 3: //DELETE ALL SENT MESSAGES
-				GlobalVars.selectTextView(deleteall, true);
-				GlobalVars.selectTextView(delete,false);
-				GlobalVars.selectTextView(goback,false);
-				GlobalVars.talk(getResources().getString(R.string.layoutMessagesSentDeleteAllDeleteDelete));
-				break;
 
-			case 4: //GO BACK TO THE PREVIOUS MENU
+
+			case 2: //GO BACK TO THE PREVIOUS MENU
 				GlobalVars.selectTextView(goback,true);
 				GlobalVars.selectTextView(sent,false);
-				GlobalVars.selectTextView(deleteall,false);
+
 				GlobalVars.talk(getResources().getString(R.string.backToPreviousMenu));
 				break;
 		}
@@ -161,17 +149,18 @@ public class MessagesSent extends Activity
 						{
 							selectedMessage = -1;
 						}
+
 						selectedMessage = selectedMessage + 1;
 						GlobalVars.setText(sent, true, getResources().getString(R.string.layoutMessagesSentMessageItem) +
 								"(" + String.valueOf(selectedMessage + 1) + "/" +
-								String.valueOf(GlobalVars.messagesSentDataBase.size()) + ")\n" +
+								String.valueOf(GlobalVars.messagesSentDataBase.size())  +")\n"+GlobalVars.getMessagePhoneNumber(GlobalVars.messagesSentDataBase.get(selectedMessage)) +
 								GlobalVars.getMessageContactName(GlobalVars.messagesSentDataBase.get(selectedMessage)));
 						GlobalVars.talk(getResources().getString(R.string.layoutMessagesSentMessageItem) +
 								String.valueOf(selectedMessage + 1) +
 								getResources().getString(R.string.layoutMessagesSentMessageOf) +
 								String.valueOf(GlobalVars.messagesSentDataBase.size()) + ". " +
 								getResources().getString(R.string.layoutMessagesSentMessageSent) +
-								GlobalVars.getMessageContactName(GlobalVars.messagesSentDataBase.get(selectedMessage)) +
+								GlobalVars.getMessageContactName(GlobalVars.messagesSentDataBase.get(selectedMessage)) +GlobalVars.getMessagePhoneNumber(GlobalVars.messagesSentDataBase.get(selectedMessage))+
 								GlobalVars.getMessageDateTime(GlobalVars.messagesSentDataBase.get(selectedMessage)) +
 								getResources().getString(R.string.layoutMessagesSentMessageMessageBody) +
 								GlobalVars.getMessageBody(GlobalVars.messagesSentDataBase.get(selectedMessage)));
@@ -183,36 +172,8 @@ public class MessagesSent extends Activity
 				}
 				break;
 
-			case 2: //DELETE
-				if (selectedMessage==-1)
-				{
-					GlobalVars.talk(getResources().getString(R.string.layoutMessagesSentError));
-				}
-				else
-				{
-					if (GlobalVars.messagesSentDatabaseReady==false)
-					{
-						GlobalVars.talk(getResources().getString(R.string.layoutMessagesSentTryAgain));
-					}
-					else
-					{
-						GlobalVars.startActivity(MessagesDelete.class);
-						MessagesDelete.messageType = GlobalVars.TYPE_SENT;
-						MessagesDelete.messageIDToDelete = GlobalVars.getMessageID(GlobalVars.messagesSentDataBase.get(selectedMessage));
-						MessagesDelete.messageFrom = GlobalVars.getMessageContactName(GlobalVars.messagesSentDataBase.get(selectedMessage));
-						MessagesDelete.messageToDelete = GlobalVars.getMessageContactName(GlobalVars.messagesSentDataBase.get(selectedMessage)) +
-								GlobalVars.getMessageDateTime(GlobalVars.messagesSentDataBase.get(selectedMessage)) +
-								getResources().getString(R.string.layoutMessagesSentMessageMessageBody) +
-								GlobalVars.getMessageBody(GlobalVars.messagesSentDataBase.get(selectedMessage));
-					}
-				}
-				break;
 
-			case 3: //DELETE ALL SENT MESSAGES
-				GlobalVars.startActivity(MessagesSentDeleteAll.class);
-				break;
-
-			case 4: //GO BACK TO THE PREVIOUS MENU
+			case 2: //GO BACK TO THE PREVIOUS MENU
 				this.finish();
 				break;
 		}
@@ -239,13 +200,14 @@ public class MessagesSent extends Activity
 						GlobalVars.setText(sent, true, getResources().getString(R.string.layoutMessagesSentMessageItem) +
 								"(" + String.valueOf(selectedMessage + 1) + "/" +
 								String.valueOf(GlobalVars.messagesSentDataBase.size()) + ")\n" +
-								GlobalVars.getMessageContactName(GlobalVars.messagesSentDataBase.get(selectedMessage)));
+								GlobalVars.getMessageContactName(GlobalVars.messagesSentDataBase.get(selectedMessage))+")\n"+GlobalVars.getMessagePhoneNumber(GlobalVars.messagesSentDataBase.get(selectedMessage)));
 						GlobalVars.talk(getResources().getString(R.string.layoutMessagesSentMessageItem) +
 								String.valueOf(selectedMessage + 1) +
 								getResources().getString(R.string.layoutMessagesSentMessageOf) +
 								String.valueOf(GlobalVars.messagesSentDataBase.size()) + ". " +
 								getResources().getString(R.string.layoutMessagesSentMessageSent) +
-								GlobalVars.getMessageContactName(GlobalVars.messagesSentDataBase.get(selectedMessage)) +
+
+								GlobalVars.getMessageContactName(GlobalVars.messagesSentDataBase.get(selectedMessage)) +GlobalVars.getMessagePhoneNumber(GlobalVars.messagesSentDataBase.get(selectedMessage))+
 								GlobalVars.getMessageDateTime(GlobalVars.messagesSentDataBase.get(selectedMessage)) +
 								getResources().getString(R.string.layoutMessagesSentMessageMessageBody) +
 								GlobalVars.getMessageBody(GlobalVars.messagesSentDataBase.get(selectedMessage)));
