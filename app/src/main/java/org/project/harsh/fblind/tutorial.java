@@ -44,6 +44,7 @@ public class tutorial extends Activity implements TextToSpeech.OnInitListener {
         GlobalVars.activityItemLimit=1;
         GlobalVars.context = this;
 
+
         if (Build.VERSION.SDK_INT >= 23) {
             Log.d("TAG", "@@@ IN IF Build.VERSION.SDK_INT >= 23");
             String[] PERMISSIONS = {
@@ -83,6 +84,7 @@ public class tutorial extends Activity implements TextToSpeech.OnInitListener {
             //callNextActivity();
         }
         tts1 = new TextToSpeech(this, this);
+        tts1.setPitch((float) 1.2);
     }
 
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
