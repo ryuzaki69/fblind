@@ -181,11 +181,11 @@ public class InputVoice extends Activity
 				GlobalVars.selectTextView(enter,false);
 				if (selectedValue==-1)
 				{
-					GlobalVars.talk(getResources().getString(R.string.layoutInputVoicePossibleResults2) + stringResults.size() +  getResources().getString(R.string.layoutInputVoicePossibleResults3));
+					GlobalVars.talk(getResources().getString(R.string.layoutInputVoicePossibleResults2) + stringResults.size() +  getResources().getString(R.string.layoutInputVoicePossibleResults3) + getResources().getString(R.string.slidedown));
 				}
 				else
 				{
-					GlobalVars.talk(getResources().getString(R.string.layoutInputVoicePossibleResult) + (selectedValue + 1) + ". " + stringResults.get(selectedValue));
+					GlobalVars.talk(getResources().getString(R.string.layoutInputVoicePossibleResult) + (selectedValue + 1) + ". " + stringResults.get(selectedValue)+ getResources().getString(R.string.slidedown));
 				}
 				break;
 
@@ -193,7 +193,7 @@ public class InputVoice extends Activity
 				GlobalVars.selectTextView(enter, true);
 				GlobalVars.selectTextView(resultsTextview,false);
 				GlobalVars.selectTextView(goback,false);
-				GlobalVars.talk(getResources().getString(R.string.layoutInputVoiceEnterSelectedResult));
+				GlobalVars.talk(getResources().getString(R.string.EnterSelectedResult));
 				break;
 
 			case 4: //CANCEL AND GO BACK TO MAIN MENU

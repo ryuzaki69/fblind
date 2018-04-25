@@ -101,7 +101,7 @@ public class ContactsCreate extends Activity
 			GlobalVars.selectTextView(create, true);
 			GlobalVars.selectTextView(phonenumber,false);
 			GlobalVars.selectTextView(goback,false);
-			GlobalVars.talk(getResources().getString(R.string.layoutContactsCreateCreate));
+			GlobalVars.talk(getResources().getString(R.string.ContactsCreate));
 			break;
 			
 			case 4: //GO BACK TO THE PREVIOUS MENU

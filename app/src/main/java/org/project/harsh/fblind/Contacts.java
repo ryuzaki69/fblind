@@ -51,14 +51,14 @@ public class Contacts extends Activity
 				GlobalVars.selectTextView(list,true);
 				GlobalVars.selectTextView(create,false);
 				GlobalVars.selectTextView(goback,false);
-				GlobalVars.talk(getResources().getString(R.string.layoutContactsList));
+				GlobalVars.talk(getResources().getString(R.string.contacts));
 				break;
 
 			case 2: //CREATE CONTACT
 				GlobalVars.selectTextView(create, true);
 				GlobalVars.selectTextView(list,false);
 				GlobalVars.selectTextView(goback,false);
-				GlobalVars.talk(getResources().getString(R.string.layoutContactsCreate));
+				GlobalVars.talk(getResources().getString(R.string.ContactsCreate));
 				break;
 
 			case 3: //GO BACK TO THE MAIN MENU

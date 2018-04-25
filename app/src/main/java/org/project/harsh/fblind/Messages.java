@@ -76,7 +76,7 @@ public class Messages extends Activity
 				GlobalVars.selectTextView(sent, true);
 				GlobalVars.selectTextView(inbox,false);
 				GlobalVars.selectTextView(compose,false);
-				GlobalVars.talk(getResources().getString(R.string.layoutMessagesSent));
+				GlobalVars.talk(getResources().getString(R.string.MessagesSent));
 				break;
 
 			case 3: //COMPOSE MESSAGE

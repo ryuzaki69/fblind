@@ -111,7 +111,7 @@ public class MessagesCompose extends Activity
 			GlobalVars.selectTextView(send, true);
 			GlobalVars.selectTextView(body,false);
 			GlobalVars.selectTextView(goback,false);
-			GlobalVars.talk(getResources().getString(R.string.layoutMessagesComposeSend));
+			GlobalVars.talk(getResources().getString(R.string.MessagesComposeSend));
 			break;
 			
 			case 4: //GO BACK TO THE PREVIOUS MENU

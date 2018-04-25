@@ -30,11 +30,11 @@
     <string name="carrypause">रोकने के लिए दाएं स्लाइड करे</string>
 
     <string name="welcometomusic">संगीत में आपका स्वागत है,प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें </string>
-    <string name="musicselect">गीत का चयन करने के लिए स्लाइड करें</string>
+    <string name="musicselect">गीत चुनने के लिए दाएं स्लाइड करें और फिर नीचे स्लाइड करें</string>
 
-    <string name="musicplay">संगीत चलाएं</string>
+    <string name="musicplay">संगीत चलाएं, गाने को चलाने के लिए दाएं स्लाइड करें</string>
 
-    <string name="musicstop">रोकिये </string>
+    <string name="musicstop">संगीत रोकिये, गीत को रोकने के लिए दाएं स्लाइड करें </string>
     <string name="younosel">कृपया यूट्यूब पर एक वीडियो का चयन करें</string>
     <string name="welcometoyoutube">ूट्यूब में आपका स्वागत है</string>
     <string name="langselect">भाषा चुनने के लिए दाएं स्लाइड करें और फिर नीचे स्लाइड करें</string>
@@ -43,8 +43,12 @@
     <string name="welcomeyoutube">यूट्यूब में आपका स्वागत है</string>
 
 
+
+    <string name="EnterSelectedResult">चयनित परिणाम दर्ज करने के लिए दाएं स्लाइड करें</string>
+
+    <string name="slidedown">और फिर नीचे स्लाइड करें</string>
     <string name="menu_settings">सेटिंग्स</string>
-    <string name="mainWelcome">मुख्य मेनू में आपका स्वागत है, प्रत्येक विकल्प को सुनने के लिए नीचे स्लाइड करें </string>
+    <string name="mainWelcome">मुख्य मेनू में आपका स्वागत है, प्रत्येक विकल्प को सुनने के लिए ऊपर या नीचे स्लाइड करें </string>
     <string name="mainMessages">संदेश</string>
     <string name="mainMessagesNew">नए संदेश,इस मेनू में प्रवेश करने के लिए दाएं स्लाइड करें</string>
     <string name="mainMessagesNoNew">संदेश। कोई नया संदेश नहीं,इस मेनू में प्रवेश करने के लिए दाएं स्लाइड करें</string>
@@ -59,6 +63,7 @@
     <string name="mainCallsOneMissed">कॉल। एक मिस कॉल।,इस मेनू में प्रवेश करने के लिए दाएं स्लाइड करें</string>
     <string name="mainCallsNotAvailable">कॉल। इस उपकरण में उपलब्ध नहीं है.</string>
     <string name="mainNotAvailable">यह विकल्प इस डिवाइस में उपलब्ध नहीं है।.</string>
+    <string name="contacts">संपर्क,इस मेनू में प्रवेश करने के लिए दाएं स्लाइड करें</string>
     <string name="mainContacts">संपर्क,इस मेनू में प्रवेश करने के लिए दाएं स्लाइड करें</string>
     <string name="mainMusicPlayer">संगीत,इस मेनू में प्रवेश करने के लिए दाएं स्लाइड करें</string>
     <string name="mainBrowser">इंटरनेट,इस मेनू में प्रवेश करने के लिए दाएं स्लाइड करें</string>
@@ -99,14 +104,14 @@
     <string name="wifiDisconnectedFromNetwork">वाईफाई नेटवर्क से डिस्कनेक्ट किया गया</string>
     <string name="layoutMainMessages">संदेश</string>
     <string name="layoutMainCalls">कॉल</string>
-    <string name="layoutMainContacts">संपर्क</string>
+    <string name="layoutMainContacts">संपर्क, इस विकल्प को दर्ज करने के लिए दाएं स्लाइड करें</string>
     <string name="layoutMainMusic">संगीत</string>
     <string name="layoutMainBrowser">इंटरनेट</string>
 
     <string name="layoutMainSettings">सेटिंग्स</string>
     <string name="layoutMainStatus">स्थिति</string>
 
-    <string name="layoutMainOnResume">अब आप मुख्य मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
+    <string name="layoutMainOnResume">अब आप मुख्य मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
 
 
     <string name="layoutAlarmsNotifierShutdown">अलार्म शटडाउन करने के लिए ऊपर या नीचे स्लाइड करें</string>
@@ -159,11 +164,13 @@
     <string name="layoutSettingsMinutes2">निष्क्रियता के मिनट &#160;</string>
     <string name="layoutSettingsPrivacyPolicy">गोपनीयता नीति</string>
 
-    <string name="layoutSettingsOnResume">अब आप सेटिंग मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
+    <string name="layoutSettingsOnResume">अब आप सेटिंग मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
     <string name="layoutContactsList">संपर्क</string>
+    <string name="ContactsCreate">संपर्क बनाएं,इस विकल्प को चुनने के लिए दाएं स्लाइड करें</string>
+
     <string name="layoutContactsCreate">संपर्क बनाएं</string>
-    <string name="layoutContactsOnResumeCreated">संपर्क बनाया गया और अब आप संपर्क मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
-    <string name="layoutContactsOnResume">अब आप संपर्क मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
+    <string name="layoutContactsOnResumeCreated">संपर्क बनाया गया और अब आप संपर्क मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
+    <string name="layoutContactsOnResume">अब आप संपर्क मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
 
     <string name="layoutContactsCreateName">- इनपुट नाम -</string>
     <string name="layoutContactsCreateName2">संपर्क नाम. इनपुट करने के लिए दाय स्लाइड करे.</string>
@@ -173,44 +180,44 @@
     <string name="layoutContactsCreatePhone3">फोन नंबर.&#160;</string>
     <string name="layoutContactsCreateCreate">संपर्क बनाएं</string>
     <string name="layoutContactsCreateErrorComplete">त्रुटि। एक संपर्क बनाने के लिए आपको प्रत्येक फ़ील्ड को पूरा करना होगा.</string>
-    <string name="layoutContactsCreateOnResume">अब आप संपर्क बनाएं मेनू   पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
+    <string name="layoutContactsCreateOnResume">अब आप संपर्क बनाएं मेनू   पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
 
     <string name="layoutContactsListContactsList">संपर्क</string>
-    <string name="layoutContactsListContactsList2">संपर्क. प्रत्येक एक को सुनने के लिए दाएं या बाएं स्लाइड करें.</string>
+    <string name="layoutContactsListContactsList2">संपर्क. प्रत्येक एक को सुनने के लिए दाएं या बाएं स्लाइड करें. और नीचे स्लाइड करें</string>
     <string name="layoutContactsListNoContacts">कोई संपर्क नहीं हैं</string>
     <string name="layoutContactsListWithThePhoneNumber">&#160;फोन नंबर के साथ&#160;</string>
     <string name="layoutContactsListCall">कॉल</string>
-    <string name="layoutContactsListCall2">चयनित संपर्क को कॉल करें</string>
+    <string name="layoutContactsListCall2">चयनित संपर्क को कॉल करने के लिए दाएं स्लाइड करें</string>
     <string name="layoutContactsListSendMessage"> संदेश भेजें</string>
     <string name="layoutContactsListSendMessage2">चयनित संपर्क को  संदेश भेजें</string>
     <string name="layoutContactsListDelete">संपर्क हटाएं</string>
     <string name="layoutContactsListDelete2">चयनित संपर्क हटाएं</string>
     <string name="layoutContactsListError">पहले आपको एक संपर्क का चयन करना होगा</string>
     <string name="layoutContactsListPleaseWait">कुछ पलों में फिर से प्रयास करें जब सभी संपर्कों पर कार्रवाई की गई है</string>
-    <string name="layoutContactsListOnResumeContactDeleted">संपर्क हटा दिया गया था और अब आप संपर्क सूची मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
-    <string name="layoutContactsListOnResume">अब आप संपर्क सूची मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
-    <string name="layoutContactsListOnResume2">संदेश भेजा गया  और अब आप संपर्क सूची मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
+    <string name="layoutContactsListOnResumeContactDeleted">संपर्क हटा दिया गया था और अब आप संपर्क सूची मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
+    <string name="layoutContactsListOnResume">अब आप संपर्क सूची मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
+    <string name="layoutContactsListOnResume2">संदेश भेजा गया  और अब आप संपर्क सूची मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
 
     <string name="layoutContactsDeleteSelected">मिटाने के लिए चयनित संपर्क.&#160;</string>
     <string name="layoutContactsDeleteDelete">मिटाने की पुष्टि</string>
-    <string name="layoutContactsDeleteOnResume">अब आप हटाना संपर्क मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
+    <string name="layoutContactsDeleteOnResume">अब आप हटाना संपर्क मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
 
 
-    <string name="layoutCallsMissedCallsList">कॉल लॉग , इस मेनू में प्रवेश करने के लिए दाएं स्लाइड करें ..</string>
+    <string name="layoutCallsMissedCallsList">कॉल लॉग</string>
     <string name="layoutCallsDeleteCallLogs">डिलीट  लॉग्स </string>
-    <string name="layoutCallsDeleteCallLogs2">सभी कॉल लॉग हटाएं | इस मेनू में प्रवेश करने के लिए दाएं स्लाइड करें ..</string>
-    <string name="layoutCallsMakeCall">कॉल करें , प्रवेश करने के लिए दाएं स्लाइड करें और एक नया कॉल करें |</string>
-    <string name="layoutCallsOnResume">अब आप कॉल मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करे और चयन करने के लिए दायें स्लाइड करें</string>
-    <string name="layoutCallsOnResume2">सभी कॉल लॉग सफलतापूर्वक हटा दिए गए हैं और अब आप कॉल मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
+    <string name="layoutCallsDeleteCallLogs2">सभी कॉल लॉग हटाएं</string>
+    <string name="layoutCallsMakeCall">कॉल करें</string>
+    <string name="layoutCallsOnResume">अब आप कॉल मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
+    <string name="layoutCallsOnResume2">सभी कॉल लॉग सफलतापूर्वक हटा दिए गए हैं और अब आप कॉल मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
 
     <string name="layoutCallsMakeCallPhone">- इनपुट फोन नंबर-</string>
     <string name="layoutCallsMakeCallPhone2">फोन नंबर. इनपुट करने के लिए दाय स्लाइड करे.</string>
     <string name="layoutCallsMakeCallPhone3">फोन नंबर.&#160;</string>
-    <string name="layoutCallsMakeCallCall">कॉल करने के लिए दाएं स्लाइड करें </string>
+    <string name="layoutCallsMakeCallCall">कॉल</string>
     <string name="layoutCallsMakeCallCallError">सबसे पहले आपको एक फ़ोन नंबर इनपुट करना होगा</string>
-    <string name="layoutCallsMakeCallOnResume">अब आप कॉल करने के मेनू  मै हैं, संख्या निवेश करने के लिए नीचे स्लाइड करके दाएं स्लाइड करें और फिर कॉल करने के लिए नीचे स्लाइड करें।</string>
+    <string name="layoutCallsMakeCallOnResume">अब आप कॉल करने के मेनू  मै हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
 
-    <string name="layoutCallsLogsLogs">कॉल लॉग | इस मेनू में प्रवेश करने के लिए दाएं स्लाइड करें ..</string>
+    <string name="layoutCallsLogsLogs">कॉल लॉग</string>
     <string name="layoutCallsLogsLogs2">कॉल लॉग। प्रत्येक एक को सुनने के लिए दाएं या बाएं स्लाइड करें.</string>
     <string name="layoutCallsLogsAddToNewContact">नए संपर्क में जोड़ें</string>
     <string name="layoutCallsLogsCall">कॉल</string>
@@ -231,29 +238,30 @@
     <string name="layoutCallsLogsCallFrom">&#160;से&#160;</string>
     <string name="layoutCallsLogsError">पहले आपको एक लॉग चुनना होगा</string>
     <string name="layoutCallsLogsPleaseTryAgain">सभी कॉल लॉग संसाधित किए गए हैं, कृपया कुछ पलों में पुनः प्रयास करें.</string>
-    <string name="layoutCallsLogsOnResume">अब आप कॉल लॉग्स मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
-    <string name="layoutCallsLogsOnResume2">संदेश भेजा गया और अब आप कॉल लॉग्स मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
+    <string name="layoutCallsLogsOnResume">अब आप कॉल लॉग्स मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
+    <string name="layoutCallsLogsOnResume2">संदेश भेजा गया और अब आप कॉल लॉग्स मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
 
-    <string name="layoutCallsLogsDelete">कॉल लॉग हटाने की पुष्टि करने के लिए दाएं स्लाइड करें</string>
-    <string name="layoutCallsLogsDeleteOnResume">अब आप कॉल लॉग्स हटाने की सूची में है | पकृपया नीचे स्लाइड करें </string>
+    <string name="layoutCallsLogsDelete">कॉल लॉग हटाएं पुष्टि करने के लिए दाएं स्लाइड करें</string>
+    <string name="layoutCallsLogsDeleteOnResume">अब आप हटाना कॉल लॉग्स मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
 
     <string name="layoutMessagesInbox">इनबॉक्स</string>
     <string name="layoutMessagesInboxNew">नए संदेश</string>
     <string name="layoutMessagesInboxNoNew">इनबॉक्स। कोई नया संदेश नहीं</string>
     <string name="layoutMessagesInboxOneNew">इनबॉक्स। एक नया संदेश</string>
-    <string name="layoutMessagesSent">संदेश भेजें</string>
+    <string name="MessagesSent">भेजें हुए संदेश, इस मेनू का चयन करने के लिए दाएं स्लाइड करें</string>
+    <string name="layoutMessagesSent"> भेजें हुए संदेश</string>
     <string name="layoutMessagesMessageLogs">संदेश लॉग</string>
     <string name="layoutMessagesMessageLogsDelete">लॉग हटाएं</string>
     <string name="layoutMessagesMessageLogsDelete2">सभी संदेश लॉग हटाएं</string>
     <string name="layoutMessagesNew">लिखें</string>
     <string name="layoutMessagesNew2">संदेश लिखें</string>
-    <string name="layoutMessagesOnResume">अब आप संदेश मेनू पर हैं, प्रत्येक विकल्प को सुनने के लिए नीचे स्लाइड करें, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
-    <string name="layoutMessagesOnResume2">संदेश भेजा गया और अब आप संदेश मेनू पर है, प्रत्येक विकल्प को सुनने के लिए नीचे स्लाइड करें, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करेंं</string>
+    <string name="layoutMessagesOnResume">अब आप संदेश मेनू पर हैं, प्रत्येक विकल्प को सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
+    <string name="layoutMessagesOnResume2">संदेश भेजा गया और अब आप संदेश मेनू पर है, प्रत्येक विकल्प को सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
 
     <string name="layoutMessagesDeleteNameFrom">&#160;से हटाने के लिए संदेश</string>
     <string name="layoutMessagesDeleteNameTo">&#160;को हटाने के लिए संदेश</string>
     <string name="layoutMessagesDeleteDelete">हटाने की पुष्टि करें</string>
-    <string name="layoutMessagesDeleteOnResume">अब आप हटाना संदेश मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
+    <string name="layoutMessagesDeleteOnResume">अब आप हटाना संदेश मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
 
     <string name="layoutMessagesSentSent">भेजा</string>
     <string name="layoutMessagesSentSent2">भेजे गए सन्देश। प्रत्येक संदेश को सुनने के लिए दाएं या बाएं स्लाइड करें.</string>
@@ -265,13 +273,13 @@
     <string name="layoutMessagesSentTryAgain">कुछ पलों में फिर से प्रयास करें जब सभी भेजे गए संदेश संसाधित हो जाएंगे।</string>
     <string name="layoutMessagesSentNoMessages">कोई संदेश नहीं हैं</string>
     <string name="layoutMessagesSentError">पहले आपको एक संदेश चुनना होगा</string>
-    <string name="layoutMessagesSentOnResume">अब आप भेजे गए संदेश मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
-    <string name="layoutMessagesSentOnResume2">संदेश हटा दिया गया था और अब आप भेजे गए संदेश मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
-    <string name="layoutMessagesSentOnResume3">सभी भेजे गए संदेश सफलतापूर्वक नष्ट किए गए थे और अब आप भेजे गए संदेश मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
+    <string name="layoutMessagesSentOnResume">अब आप भेजे गए संदेश मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
+    <string name="layoutMessagesSentOnResume2">संदेश हटा दिया गया था और अब आप भेजे गए संदेश मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
+    <string name="layoutMessagesSentOnResume3">सभी भेजे गए संदेश सफलतापूर्वक नष्ट किए गए थे और अब आप भेजे गए संदेश मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
 
     <string name="layoutMessagesSentDeleteAllDelete">सभी भेजे गए संदेश हटाएं पुष्टि करने के लिए दाएं स्लाइड करें.</string>
     <string name="layoutMessagesSentDeleteAllDeleteDelete">सभी भेजे गए संदेश हटाएं</string>
-    <string name="layoutMessagesSentDeleteAllOnResume">अब आप सभी भेजे गए संदेश मेनू को हटा सकते हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
+    <string name="layoutMessagesSentDeleteAllOnResume">अब आप सभी भेजे गए संदेश मेनू को हटा सकते हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
 
     <string name="layoutMessagesInboxInbox">इनबॉक्स</string>
     <string name="layoutMessagesInboxInbox2">इनबॉक्स। प्रत्येक संदेश को सुनने के लिए दाएं या बाएं स्लाइड करें.</string>
@@ -292,17 +300,17 @@
     <string name="layoutMessagesInboxTryAgain">सभी इनबॉक्स संदेशों पर संसाधित होने पर कुछ पलों में पुनः प्रयास करें.</string>
     <string name="layoutMessagesInboxError">पहले आपको एक संदेश चुनना होगा</string>
     <string name="layoutMessagesInboxNoMessages">कोई संदेश नहीं हैं</string>
-    <string name="layoutMessagesInboxOnResume">अब आप इनबॉक्स संदेश मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
-    <string name="layoutMessagesInboxOnResume2">संदेश भेजा गया और अब आप इनबॉक्स संदेश मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
-    <string name="layoutMessagesInboxOnResume3">संदेश हटा दिया गया था और अब आप इनबॉक्स संदेश मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
-    <string name="layoutMessagesInboxOnResume4">सभी प्राप्त संदेशों को सफलतापूर्वक हटा दिया गया था और अब आप इनबॉक्स संदेश मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
+    <string name="layoutMessagesInboxOnResume">अब आप इनबॉक्स संदेश मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
+    <string name="layoutMessagesInboxOnResume2">संदेश भेजा गया और अब आप इनबॉक्स संदेश मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
+    <string name="layoutMessagesInboxOnResume3">संदेश हटा दिया गया था और अब आप इनबॉक्स संदेश मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
+    <string name="layoutMessagesInboxOnResume4">सभी प्राप्त संदेशों को सफलतापूर्वक हटा दिया गया था और अब आप इनबॉक्स संदेश मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
 
     <string name="layoutMessagesInboxDeleteAllDelete">सभी प्राप्त संदेशों को हटाएं पुष्टि करने के लिए दाएं  स्लाइड करें</string>
     <string name="layoutMessagesInboxDeleteAllDeleteDelete">सभी प्राप्त संदेशों को हटाएं</string>
     <string name="layoutMessagesInboxDeleteAllOnResume">अब आप सभी प्राप्त संदेश मेनू हटाते हैं</string>
-
+    <string name="MessagesComposeSend">संदेश भेजें, संदेश भेजने के लिए दाएं स्लाइड करें</string>
     <string name="layoutMessagesComposeAddressee">पत्र पानेवाला</string>
-    <string name="layoutMessagesComposeAddressee2">पत्र पानेवाला.प्रत्येक संपर्क को सुनने के लिए दाएं या बाएं स्लाइड करें.</string>
+    <string name="layoutMessagesComposeAddressee2">पत्र पानेवाला.प्रत्येक संपर्क को सुनने के लिए दाएं या बाएं स्लाइड करें. और फिर नीचे स्लाइड करें</string>
     <string name="layoutMessagesComposeAddressee3">पत्र पानेवाला.&#160;</string>
     <string name="layoutMessagesComposeMessage">संदेश</string>
     <string name="layoutMessagesComposeMessage2">संदेश. इनपुट करने के लिए दाय स्लाइड करे.</string>
@@ -312,7 +320,7 @@
     <string name="layoutMessagesComposeSendingError">आपका संदेश भेजा जा रहा है, कृपया प्रतीक्षा करें ..</string>
     <string name="layoutMessagesComposeSendingError2">संदेश भेजा नहीं जा सका, अपना वाहक स्थिति जांचें और बाद में पुनः प्रयास करें.</string>
     <string name="layoutMessagesComposeErrorComplete">त्रुटि। एक संदेश भेजने के लिए आपको प्रत्येक फ़ील्ड को पूरा करना होगा।</string>
-    <string name="layoutMessagesComposeOnResume">अब आप रचना संदेश मेनू पर है, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करेंं</string>
+    <string name="layoutMessagesComposeOnResume">अब आप रचना संदेश मेनू पर है, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करेंं</string>
 
     <string name="layoutInputKeysOnResume">अब आप भौतिक कीबोर्ड या टचस्क्रीन का उपयोग कर इनपुट टेक्स्ट मोड में हैं यदि आप टचस्क्रीन का उपयोग करेंगे, तो एक चरित्र या कुंजी का चयन करने के लिए ऊपर और नीचे स्लाइड करें, वर्ण या कुंजी की पुष्टि करने के लिए दाएं स्लाइड करें और अगले एक पर जाएं और अंतिम वर्ण को हटाने के लिए बाएं स्लाइड करें.</string>
     <string name="layoutInputKeysTips">इनपुट पाठ मोड \ n \ n * चरित्र का चयन करने के लिए ऊपर और नीचे स्लाइड करें \ n \ n * वर्ण या कुंजी की पुष्टि करने के लिए दाईं ओर स्लाइड करें और अगले एक पर जाएं \ n \ n * अंतिम वर्ण को हटाने के लिए बाएं स्लाइड करें \ n \ n * भौतिक कीबोर्ड संगत</string>
@@ -326,9 +334,9 @@
     <string name="layoutInputKeysEmptyField">टेक्स्ट फ़ील्ड अब रिक्त है</string>
     <string name="layoutInputKeysEntered">&#160;घुसा</string>
 
-    <string name="layoutInputVoiceOnResume">अब आप आवाज पहचान मेनू का उपयोग करके इनपुट टेक्स्ट मोड पर हैं</string>
+    <string name="layoutInputVoiceOnResume">अब आप आवाज पहचान मेनू का उपयोग करके इनपुट टेक्स्ट मोड पर हैं, प्रत्येक विकल्प सुनने के लिए ऊपर या नीचे स्लाइड करें</string>
     <string name="layoutInputVoiceStartRecognition">आवाज पहचान प्रारंभ करें</string>
-    <string name="layoutInputVoiceStartRecognition2">आवाज की पहचान। दाएं स्लाइड करें और फिर बोलें</string>
+    <string name="layoutInputVoiceStartRecognition2">आवाज की पहचान। दाएं स्लाइड करें और फिर बोलें, और फिर नीचे स्लाइड करें</string>
     <string name="layoutInputVoicePossibleResult">परिणाम&#160;</string>
     <string name="layoutInputVoicePossibleResults">परिणाम (</string>
     <string name="layoutInputVoicePossibleResults2">संभावित परिणाम.&#160;</string>
