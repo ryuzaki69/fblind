@@ -37,7 +37,16 @@
 	<string name="musicselect">Slide to Select</string>
 	<string name="musicplay">Play</string>
 	<string name="musicstop">Stop</string>
-	<string name="mainWelcome">Welcome to the system . </string>
+
+
+
+
+
+
+
+
+
+	<string name="mainWelcome">Welcome to the main menu, slide down to hear each option </string>
 	<string name="mainMessages">Messages</string>
 	<string name="mainMessagesNew">new messages</string>
 	<string name="mainMessagesNoNew">Messages. No new messages.</string>
@@ -264,8 +273,8 @@
 	<string name="layoutMessagesMessageLogsDelete2">Delete all message logs</string>
 	<string name="layoutMessagesNew">Compose</string>
 	<string name="layoutMessagesNew2">Compose message</string>
-	<string name="layoutMessagesOnResume">Now you are at the messages menu</string>
-	<string name="layoutMessagesOnResume2">The message was sent and now you are at the messages menu</string>
+	<string name="layoutMessagesOnResume">Now you are at the messages menu, slide down to hear each option</string>
+	<string name="layoutMessagesOnResume2">The message was sent and now you are at the messages menu,slide down to hear each option</string>
 
 	<string name="layoutMessagesDeleteNameFrom">Message to delete from&#160;</string>
 	<string name="layoutMessagesDeleteNameTo">Message to delete to&#160;</string>
@@ -366,6 +375,9 @@
 
 	<string name="backToPreviousMenu">Go back to the previous menu</string>
 	<string name="backToMainMenu">Go back to the main menu</string>
+
+
+
 	<string name="noselection" >Please select a song</string>
 	<string name="youtubeselect" >Please speak first and select</string>
 	<string name="tut" >Slide down and up to change the menu. Slide right to select the chosen option.</string>

@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="okyo">उपरोक्त परिणाम चुनने के लिए स्लाइड दाएं</string>
+    <string name="firstyo">सबसे पहले आपको संभावित परिणामों से चयन करना होगा</string>
+    <string name="selectedyo">आपने परिणाम चुना है</string>
+    <string name="you">यूट्यूब में आपका स्वागत है</string>
+    <string name="nonet">सबसे पहले आपको अपना मोबाइल डेटा चालू करना होगा</string>
 
+
+    <string name="carryback">वापस  जाने के लिए दाएं स्लाइड करे </string>
+    <string name="pp">रोकने के लिए दाएं स्लाइड कर</string>
     <string name="v1">बोलने के लिए दाए  स्लाइड करिये</string>
     <string name="r1">संबंधित परिणाम</string>
     <string name="s1">चुनिए </string>
-    <string name="list1"></string>
-    <string name="p1">संबंधित वीडियो का चयन करें
-    </string>
+    <string name="list1"> संबंधित वीडियो का चयन करें</string>
+    <string name="p1">चलाएँ</string>
 
     <string name="searchyo">खोज करने के लिए दाएं स्लाइड करें</string>
     <string name="selectyo">एक प्लेलिस्ट से चुनने के लिए दाएं स्लाइड करें</string>
     <string name="playyo">यूट्यूब को चलाने के लिए लेफ्ट स्लाइड करें</string>
-    <string name="carryplay">चलाये</string>
-    <string name="carrypause">रुकिए </string>
+    <string name="carryplay">चलाने के लिए दाएं स्लाइड करे</string>
+    <string name="carrypause">रोकने के लिए दाएं स्लाइड करे</string>
 
     <string name="welcometomusic">संगीत में आपका स्वागत है </string>
     <string name="musicselect">गीत का चयन करने के लिए स्लाइड करें</string>
@@ -26,8 +33,10 @@
     <string name="langok">चुनने के लिए स्लाइड करें</string>
     <string name="welcomelang">भाषा बदलने में आपका स्वागत है</string>
     <string name="welcomeyoutube">यूट्यूब में आपका स्वागत है</string>
+
+
     <string name="menu_settings">सेटिंग्स</string>
-    <string name="mainWelcome">हमारे सिस्टम में आपका स्वागत है </string>
+    <string name="mainWelcome">मुख्य मेनू में आपका स्वागत है, प्रत्येक विकल्प को सुनने के लिए नीचे स्लाइड करें </string>
     <string name="mainMessages">संदेश</string>
     <string name="mainMessagesNew">नए संदेश</string>
     <string name="mainMessagesNoNew">संदेश। कोई नया संदेश नहीं</string>
@@ -230,8 +239,8 @@
     <string name="layoutMessagesMessageLogsDelete2">सभी संदेश लॉग हटाएं</string>
     <string name="layoutMessagesNew">लिखें</string>
     <string name="layoutMessagesNew2">संदेश लिखें</string>
-    <string name="layoutMessagesOnResume">अब आप संदेश मेनू पर हैं</string>
-    <string name="layoutMessagesOnResume2">संदेश भेजा गया और अब आप संदेश मेनू पर हैं</string>
+    <string name="layoutMessagesOnResume">अब आप संदेश मेनू पर हैं, प्रत्येक विकल्प को सुनने के लिए नीचे स्लाइड करें</string>
+    <string name="layoutMessagesOnResume2">संदेश भेजा गया और अब आप संदेश मेनू पर है, प्रत्येक विकल्प को सुनने के लिए नीचे स्लाइड करेंं</string>
 
     <string name="layoutMessagesDeleteNameFrom">&#160;से हटाने के लिए संदेश</string>
     <string name="layoutMessagesDeleteNameTo">&#160;को हटाने के लिए संदेश</string>
@@ -359,6 +368,8 @@
     <string name="october">अक्टूबर</string>
     <string name="november">नवंबर</string>
     <string name="december">दिसंबर</string>
+
+
     <string name="noselection" >कृपया एक गीत चुनें</string>
     <string name="youtubeselect">कृपया पहले बोलें और चुनें</string>
     <string name="tut" >मेनू को बदलने के लिए नीचे स्लाइड करें चुने हुए विकल्प का चयन करने के दाएं स्लाइड करें।</string>
@@ -502,9 +513,9 @@
         <item>50</item>
         <item>55</item>
     </string-array>
-    <string name="layoutMusicPlayerNowPlaying">নির্বাচন করা</string>
-    <string name="layoutMusicPlayerPreviousTrack">খেলা</string>
-    <string name="layoutMusicPlayerHigherVolume">থামুন</string>
+    <string name="layoutMusicPlayerNowPlaying">चूने</string>
+    <string name="layoutMusicPlayerPreviousTrack">चलाएँ</string>
+    <string name="layoutMusicPlayerHigherVolume">रोकें</string>
     <string name="inboxtalk" />
-    <string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
+    <string name="inboxtalk1">हमने सभी संदेशों को सफलतापूर्वक लाया है, प्रत्येक को सुनने के लिए दाएं और बाएं स्लाइड करें।</string>
 </resources>

@@ -10,7 +10,7 @@
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         -->
-
+             <item name="android:background">@drawable/wallpap</item>
 
 
 
@@ -21,7 +21,7 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
 
 
-        <item name="android:background"></item>
+        <item name="android:background">@drawable/wallpap</item>
     </style>
 
 </resources>
