@@ -39,6 +39,9 @@ public class carry extends YouTubeBaseActivity implements YouTubePlayer.OnInitia
 
         playerStateChangeListener = new MyPlayerStateChangeListener();
         playbackEventListener = new MyPlaybackEventListener();
+        pl=(TextView)findViewById(R.id.PLAY);
+        pa=(TextView)findViewById(R.id.PAUSE);
+        g=(TextView)findViewById(R.id.goback);
 
         //final EditText seekToText = (EditText) findViewById(R.id.seek_to_text);
         //Button seekToButton = (Button) findViewById(R.id.seek_to_button);
@@ -64,7 +67,7 @@ public class carry extends YouTubeBaseActivity implements YouTubePlayer.OnInitia
 
 
 //        pl = (TextView)findViewById(R.id.play);
-//        pa =(TextView)findViewById(R.id.pause);
+//        pa =(TextView)findViewById(R.id.paus                  e);
 //        g =(TextView)findViewById(R.id.goback);
 
     }

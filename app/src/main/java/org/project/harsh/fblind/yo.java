@@ -397,6 +397,9 @@ public class yo extends Activity
                 {
                     GlobalVars.talk(getResources().getString(R.string.layoutInputVoiceNoResultToSelect));
                 }
+                else if(GlobalVars.isOnline(this)==false){
+                    GlobalVars.talk(getResources().getString(R.string.nonet));
+                }
                 else
                 {
 
@@ -410,24 +413,26 @@ public class yo extends Activity
                         messageBody = GlobalVars.inputModeResult;
                         GlobalVars.setText(body, false, video);
                         GlobalVars.inputModeResult = null;
-                        new Thread(){
-                            @Override
-                            public void run() {
-                                YoutubeConnector yc = new YoutubeConnector(yo.this);
-                                hash = yc.search(mm);
-                                Log.e("fhgv",hash.get(0).getDescription());
+
+                            new Thread() {
+                                @Override
+                                public void run() {
+                                    YoutubeConnector yc = new YoutubeConnector(yo.this);
+                                    hash = yc.search(mm);
+                                    Log.e("fhgv", hash.get(0).getDescription());
 
 
-                                //GlobalVars.startActivity(carry.class);
-                                //
-                            }
-                        }.start();
+                                    //GlobalVars.startActivity(carry.class);
+                                    //
+                                }
+                            }.start();
+                        }
 
-                    }
+                    String s=getResources().getString(R.string.selectedyo);
+                    GlobalVars.talk(s+mm);
                 }
                 //GlobalVars.talk(getResources().getString(R.string.selectedyo));
-                String s=getResources().getString(R.string.selectedyo);
-                GlobalVars.talk(s+mm);
+
             break;
 
             case 4:
@@ -449,23 +454,26 @@ public class yo extends Activity
                 //   GlobalVars.talk("select again.");
                 //       break;
                 //  }
-                if(j+1>hash.size()-1){
-                    j=0;
+                if(hash.size()==0){
+                    GlobalVars.talk(getResources().getString(R.string.nonet));
                 }
-                else
+                else {
+                    if (j + 1 > hash.size() - 1) {
+                        j = 0;
+                    } else
 
-                {
-                    body.setText(hash.get(j).getTitle());
-                    GlobalVars.talk(hash.get(j).getTitle());
-                    Log.e("ID:-", hash.get(j).getId());
-                    j = j + 1;
+                    {
+                        body.setText(hash.get(j).getTitle());
+                        GlobalVars.talk(hash.get(j).getTitle());
+                        Log.e("ID:-", hash.get(j).getId());
+                        j = j + 1;
+                    }
                 }
-
                 break;
 
             case 5:
 
-                if(j==0){break;}
+
                 if( mm == null )
                 {
                     GlobalVars.talk(getResources().getString(R.string.noselection));
@@ -510,6 +518,11 @@ public class yo extends Activity
                     }
                     break;
                     case 4: //result playlist
+                        if(mm == null)
+                        {
+                            GlobalVars.talk(getResources().getString(R.string.younosel));
+                            break;
+                        }
                         if(j - 1 < 0){
                             j = hash.size()-1;
                         }else if(j>0){
