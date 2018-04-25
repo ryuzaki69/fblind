@@ -244,8 +244,7 @@
 	<string name="layoutCallsLogsCall2">slide right to Call the selected number</string>
 	<string name="layoutCallsLogsSendMessage">Send a message</string>
 	<string name="layoutCallsLogsSendMessage2">slide right to Send a message to the selected contact</string>
-	<string name="layoutCallsLogsNoLogs">There are no call logs
-	</string>
+	<string name="layoutCallsLogsNoLogs">There are no call logs</string>
 	<string name="layoutCallsLogsOutgoingCall">Outgoing call</string>
 	<string name="layoutCallsLogsIncomingCall">Incoming call</string>
 	<string name="layoutCallsLogsMissedCall">Missed call</string>
