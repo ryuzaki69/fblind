@@ -7,7 +7,7 @@
 	<string name="p1">Play</string>
 	<string name="nonet">First you have to on your mobile data</string>
 
-	<string name="you">"Welcome to Youtube"</string>
+
 	<string name="searchyo">Slide right to search</string>
 	<string name="selectyo">Slide right to select from the list</string>
 	<string name="okyo">Slide RIGHT TO SELECT ABOVE RESULT</string>
@@ -20,7 +20,7 @@
 	<string name="pp">Slide right to pause</string>
 	<string name="carrypause">Slide right to pause</string>
 	<string name="carryback">GO BACK</string>
-	<string name="welcometoyoutube">Welcome to YOUTUBE</string>
+	<string name="welcometoyoutube">Welcome to YOUTUBE , First slide right to give VOICE input to search and than slide down and slide right to select the possible result.</string>
 	<string name="langselect">Slide right to choose language and slide down </string>
 	<string name="langok">Slide right to select above language</string>
 	<string name="welcomelang">Welcome to change language,slide down to hear each option</string>
@@ -223,28 +223,29 @@
 	<string name="layoutContactsDeleteOnResume">Now you are at the delete contact menu,slide down to hear each option</string>
 
 
-	<string name="layoutCallsMissedCallsList">Call logs</string>
-	<string name="layoutCallsDeleteCallLogs">Delete logs</string>
-	<string name="layoutCallsDeleteCallLogs2">Delete all call logs</string>
-	<string name="layoutCallsMakeCall">Make a call</string>
-	<string name="layoutCallsOnResume">Now you are at the calls menu,slide down to hear each option</string>
+	<string name="layoutCallsMissedCallsList">Call logs , slide right to enter this menu.</string>
+	<string name="layoutCallsDeleteCallLogs">Delete logs </string>
+	<string name="layoutCallsDeleteCallLogs2">Delete all call logs , slide right to enter this menu.</string>
+	<string name="layoutCallsMakeCall">Make a call , slide right to enter and make a new call..</string>
+	<string name="layoutCallsOnResume">Now you are at the calls logs , slide down to hear each option and slide right to select.</string>
 	<string name="layoutCallsOnResume2">All call logs has been deleted successfully and now you are at the calls menu,slide down to hear each option</string>
 
 	<string name="layoutCallsMakeCallPhone">- input phone number -</string>
 	<string name="layoutCallsMakeCallPhone2">Phone number. Slide right to input.</string>
 	<string name="layoutCallsMakeCallPhone3">Phone number.&#160;</string>
-	<string name="layoutCallsMakeCallCall">Call</string>
+	<string name="layoutCallsMakeCallCall">slide right to Call</string>
 	<string name="layoutCallsMakeCallCallError">First you must input a phone number</string>
-	<string name="layoutCallsMakeCallOnResume">Now you are at the make a call menu,slide down to hear each option</string>
+	<string name="layoutCallsMakeCallOnResume">Now you are at the call menu , slide down to input number and slide down and than slide right to make call.</string>
 
-	<string name="layoutCallsLogsLogs">Call logs</string>
+	<string name="layoutCallsLogsLogs">Call logs </string>
 	<string name="layoutCallsLogsLogs2">Call logs. Slide right or left to hear each one.</string>
-	<string name="layoutCallsLogsAddToNewContact">Add to new contact</string>
+	<string name="layoutCallsLogsAddToNewContact">Slide right to add number into contact</string>
 	<string name="layoutCallsLogsCall">Call</string>
-	<string name="layoutCallsLogsCall2">Call to selected number</string>
+	<string name="layoutCallsLogsCall2">slide right to Call the selected number</string>
 	<string name="layoutCallsLogsSendMessage">Send a message</string>
-	<string name="layoutCallsLogsSendMessage2">Send a message to selected contact</string>
-	<string name="layoutCallsLogsNoLogs">There are no call logs</string>
+	<string name="layoutCallsLogsSendMessage2">slide right to Send a message to the selected contact</string>
+	<string name="layoutCallsLogsNoLogs">There are no call logs
+	</string>
 	<string name="layoutCallsLogsOutgoingCall">Outgoing call</string>
 	<string name="layoutCallsLogsIncomingCall">Incoming call</string>
 	<string name="layoutCallsLogsMissedCall">Missed call</string>
@@ -306,7 +307,7 @@
 	<string name="layoutMessagesInboxDelete">Delete message</string>
 	<string name="layoutMessagesInboxDeleteAll">Delete all received messages</string>
 	<string name="layoutMessagesInboxCallTo">Call to contact</string>
-	<string name="layoutMessagesInboxAddToNewContact">Add to new contact</string>
+	<string name="layoutMessagesInboxAddToNewContact">Add to new contact , Slide right to add above contact .</string>
 	<string name="layoutMessagesInboxMessageReceived">Received from&#160;</string>
 	<string name="layoutMessagesInboxMessageOn">&#160;on&#160;</string>
 	<string name="layoutMessagesInboxMessageItem">Message&#160;</string>

@@ -1,64 +1,66 @@
 package org.project.harsh.fblind;
 
+import android.Manifest;
 import android.app.*;
+import android.content.pm.PackageManager;
 import android.os.*;
 import android.provider.*;
+import android.support.v4.app.ActivityCompat;
 import android.view.*;
 import android.widget.*;
 
-public class CallsLogsDelete extends Activity
-{
+public class CallsLogsDelete extends Activity {
 	private TextView deletecalls;
 	private TextView goback;
 
-	@Override protected void onCreate(Bundle savedInstanceState)
-	{
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.callslogsdelete);
 		GlobalVars.lastActivity = CallsLogsDelete.class;
 		deletecalls = (TextView) findViewById(R.id.deletecalllogs);
 		goback = (TextView) findViewById(R.id.goback);
-		GlobalVars.activityItemLocation=0;
-		GlobalVars.activityItemLimit=2;
+		GlobalVars.activityItemLocation = 0;
+		GlobalVars.activityItemLimit = 2;
 	}
 
-	@Override public void onResume()
-	{
+	@Override
+	public void onResume() {
 		super.onResume();
-		try{GlobalVars.alarmVibrator.cancel();}catch(NullPointerException e){}catch(Exception e){}
+		try {
+			GlobalVars.alarmVibrator.cancel();
+		} catch (NullPointerException e) {
+		} catch (Exception e) {
+		}
 		GlobalVars.lastActivity = CallsLogsDelete.class;
-		GlobalVars.activityItemLocation=0;
-		GlobalVars.activityItemLimit=2;
-		GlobalVars.selectTextView(deletecalls,false);
-		GlobalVars.selectTextView(goback,false);
+		GlobalVars.activityItemLocation = 0;
+		GlobalVars.activityItemLimit = 2;
+		GlobalVars.selectTextView(deletecalls, false);
+		GlobalVars.selectTextView(goback, false);
 		GlobalVars.talk(getResources().getString(R.string.layoutCallsLogsDeleteOnResume));
 	}
 
-	public void select()
-	{
-		switch (GlobalVars.activityItemLocation)
-		{
+	public void select() {
+		switch (GlobalVars.activityItemLocation) {
 			case 1: //DELETE ALL CALL LOGS
-				GlobalVars.selectTextView(deletecalls,true);
-				GlobalVars.selectTextView(goback,false);
+				GlobalVars.selectTextView(deletecalls, true);
+				GlobalVars.selectTextView(goback, false);
 				GlobalVars.talk(getResources().getString(R.string.layoutCallsLogsDelete));
 				break;
 
 			case 2: //GO BACK TO THE PREVIOUS MENU
-				GlobalVars.selectTextView(goback,true);
-				GlobalVars.selectTextView(deletecalls,false);
+				GlobalVars.selectTextView(goback, true);
+				GlobalVars.selectTextView(deletecalls, false);
 				GlobalVars.talk(getResources().getString(R.string.backToPreviousMenu));
 				break;
 		}
 	}
 
-	public void execute()
-	{
-		switch (GlobalVars.activityItemLocation)
-		{
+	public void execute() {
+		switch (GlobalVars.activityItemLocation) {
 			case 1: //DELETE ALL CALL LOGS
 				deleteAllCallLogs();
-				GlobalVars.callLogsDeleted=true;
+				GlobalVars.callLogsDeleted = true;
 				this.finish();
 				break;
 
@@ -68,11 +70,10 @@ public class CallsLogsDelete extends Activity
 		}
 	}
 
-	@Override public boolean onTouchEvent(MotionEvent event)
-	{
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
 		int result = GlobalVars.detectMovement(event);
-		switch (result)
-		{
+		switch (result) {
 			case GlobalVars.ACTION_SELECT:
 				select();
 				break;
@@ -84,11 +85,9 @@ public class CallsLogsDelete extends Activity
 		return super.onTouchEvent(event);
 	}
 
-	public boolean onKeyUp(int keyCode, KeyEvent event)
-	{
+	public boolean onKeyUp(int keyCode, KeyEvent event) {
 		int result = GlobalVars.detectKeyUp(keyCode);
-		switch (result)
-		{
+		switch (result) {
 			case GlobalVars.ACTION_SELECT:
 				select();
 				break;
@@ -100,15 +99,32 @@ public class CallsLogsDelete extends Activity
 		return super.onKeyUp(keyCode, event);
 	}
 
-	public boolean onKeyDown(int keyCode, KeyEvent event)
-	{
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		return GlobalVars.detectKeyDown(keyCode);
 	}
 
-	public void deleteAllCallLogs()
-	{
-		try
-		{
+	public void deleteAllCallLogs() {
+		try {
+			if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_CALL_LOG) != PackageManager.PERMISSION_GRANTED) {
+				// TODO: Consider calling
+				//    ActivityCompat#requestPermissions
+				// here to request the missing permissions, and then overriding
+				//   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+				//                                          int[] grantResults)
+				// to handle the case where the user grants the permission. See the documentation
+				// for ActivityCompat#requestPermissions for more details.
+				return;
+			}
+			if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_CALL_LOG) != PackageManager.PERMISSION_GRANTED) {
+				// TODO: Consider calling
+				//    ActivityCompat#requestPermissions
+				// here to request the missing permissions, and then overriding
+				//   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+				//                                          int[] grantResults)
+				// to handle the case where the user grants the permission. See the documentation
+				// for ActivityCompat#requestPermissions for more details.
+				return;
+			}
 			getContentResolver().delete(CallLog.Calls.CONTENT_URI, null, null);
 		}
 		catch(Exception e)

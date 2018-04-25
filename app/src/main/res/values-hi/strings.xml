@@ -196,21 +196,21 @@
     <string name="layoutContactsDeleteOnResume">अब आप हटाना संपर्क मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
 
 
-    <string name="layoutCallsMissedCallsList">कॉल लॉग</string>
+    <string name="layoutCallsMissedCallsList">कॉल लॉग , इस मेनू में प्रवेश करने के लिए दाएं स्लाइड करें ..</string>
     <string name="layoutCallsDeleteCallLogs">डिलीट  लॉग्स </string>
-    <string name="layoutCallsDeleteCallLogs2">सभी कॉल लॉग हटाएं</string>
-    <string name="layoutCallsMakeCall">कॉल करें</string>
-    <string name="layoutCallsOnResume">अब आप कॉल मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
+    <string name="layoutCallsDeleteCallLogs2">सभी कॉल लॉग हटाएं | इस मेनू में प्रवेश करने के लिए दाएं स्लाइड करें ..</string>
+    <string name="layoutCallsMakeCall">कॉल करें , प्रवेश करने के लिए दाएं स्लाइड करें और एक नया कॉल करें |</string>
+    <string name="layoutCallsOnResume">अब आप कॉल मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करे और चयन करने के लिए दायें स्लाइड करें</string>
     <string name="layoutCallsOnResume2">सभी कॉल लॉग सफलतापूर्वक हटा दिए गए हैं और अब आप कॉल मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
 
     <string name="layoutCallsMakeCallPhone">- इनपुट फोन नंबर-</string>
     <string name="layoutCallsMakeCallPhone2">फोन नंबर. इनपुट करने के लिए दाय स्लाइड करे.</string>
     <string name="layoutCallsMakeCallPhone3">फोन नंबर.&#160;</string>
-    <string name="layoutCallsMakeCallCall">कॉल</string>
+    <string name="layoutCallsMakeCallCall">कॉल करने के लिए दाएं स्लाइड करें </string>
     <string name="layoutCallsMakeCallCallError">सबसे पहले आपको एक फ़ोन नंबर इनपुट करना होगा</string>
-    <string name="layoutCallsMakeCallOnResume">अब आप कॉल करने के मेनू  मै हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
+    <string name="layoutCallsMakeCallOnResume">अब आप कॉल करने के मेनू  मै हैं, संख्या निवेश करने के लिए नीचे स्लाइड करके दाएं स्लाइड करें और फिर कॉल करने के लिए नीचे स्लाइड करें।</string>
 
-    <string name="layoutCallsLogsLogs">कॉल लॉग</string>
+    <string name="layoutCallsLogsLogs">कॉल लॉग | इस मेनू में प्रवेश करने के लिए दाएं स्लाइड करें ..</string>
     <string name="layoutCallsLogsLogs2">कॉल लॉग। प्रत्येक एक को सुनने के लिए दाएं या बाएं स्लाइड करें.</string>
     <string name="layoutCallsLogsAddToNewContact">नए संपर्क में जोड़ें</string>
     <string name="layoutCallsLogsCall">कॉल</string>
@@ -234,8 +234,8 @@
     <string name="layoutCallsLogsOnResume">अब आप कॉल लॉग्स मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
     <string name="layoutCallsLogsOnResume2">संदेश भेजा गया और अब आप कॉल लॉग्स मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
 
-    <string name="layoutCallsLogsDelete">कॉल लॉग हटाएं पुष्टि करने के लिए दाएं स्लाइड करें</string>
-    <string name="layoutCallsLogsDeleteOnResume">अब आप हटाना कॉल लॉग्स मेनू पर हैं, प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
+    <string name="layoutCallsLogsDelete">कॉल लॉग हटाने की पुष्टि करने के लिए दाएं स्लाइड करें</string>
+    <string name="layoutCallsLogsDeleteOnResume">अब आप कॉल लॉग्स हटाने की सूची में है | पकृपया नीचे स्लाइड करें </string>
 
     <string name="layoutMessagesInbox">इनबॉक्स</string>
     <string name="layoutMessagesInboxNew">नए संदेश</string>

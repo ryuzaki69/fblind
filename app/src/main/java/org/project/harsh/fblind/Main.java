@@ -498,7 +498,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 				if (GlobalVars.deviceIsAPhone()==true)
 				{
 					int missedCalls = GlobalVars.getCallsMissedCount();
-					if (missedCalls==0)
+					if (missedCalls == 0)
 					{
 						GlobalVars.talk(getResources().getString(R.string.mainCallsNoMissed));
 					}
