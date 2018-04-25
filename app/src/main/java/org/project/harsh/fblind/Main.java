@@ -275,7 +275,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
                 }
             }, 2000);
 
-            GlobalVars.startService(BlindCommunicatorService.class);
+            GlobalVars.startService(Drishti.class);
         }
 
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -455,7 +455,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 		GlobalVars.musicPlayerPlayingSongIndex = -1;
 		try
 		{
-			GlobalVars.stopService(BlindCommunicatorService.class);
+			GlobalVars.stopService(Drishti.class);
 		}
 		catch(Exception e)
 		{
