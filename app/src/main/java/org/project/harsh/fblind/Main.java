@@ -483,6 +483,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 					{
 						GlobalVars.talk(getResources().getString(R.string.mainMessages) + ". " + smsUnread + " " + getResources().getString(R.string.mainMessagesNew));
 					}
+				//	GlobalVars.talk(getResources().getString(R.string.SlideHearToEachOne));
 				}
 				else
 				{
@@ -509,6 +510,8 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 					{
 						GlobalVars.talk(getResources().getString(R.string.mainCalls) + ". " + missedCalls + " " + getResources().getString(R.string.mainCallsMissed));
 					}
+
+				//	GlobalVars.talk(getResources().getString(R.string.SlideHearToEachOne));
 				}
 				else
 				{
@@ -525,6 +528,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 				GlobalVars.selectTextView(calls,false);
 				GlobalVars.selectTextView(music,false);
 				GlobalVars.talk(getResources().getString(R.string.mainContacts));
+				//GlobalVars.talk(getResources().getString(R.string.SlideHearToEachOne));
 				break;
 
 			case 4: //MUSIC
@@ -532,6 +536,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 				GlobalVars.selectTextView(contacts,false);
 				GlobalVars.selectTextView(internet,false);
 				GlobalVars.talk(getResources().getString(R.string.mainMusicPlayer));
+				//GlobalVars.talk(getResources().getString(R.string.SlideHearToEachOne));
 				break;
 
 			case 5: //INTERNET
@@ -539,7 +544,8 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 				GlobalVars.selectTextView(status,false);
 				GlobalVars.selectTextView(music,false);
 
-				GlobalVars.talk("Youtube");
+				GlobalVars.talk(getResources().getString(R.string.youtube));
+				//GlobalVars.talk(getResources().getString(R.string.SlideHearToEachOne));
 				break;
 			case 6: //STATUS
 				GlobalVars.selectTextView(status,true);
@@ -554,6 +560,7 @@ public class Main extends Activity implements TextToSpeech.OnInitListener
 				GlobalVars.selectTextView(status,false);
 				GlobalVars.selectTextView(messages,false);
 				GlobalVars.talk(getResources().getString(R.string.languagess));
+				//GlobalVars.talk(getResources().getString(R.string.SlideHearToEachOne));
 				break;
 		}
 
