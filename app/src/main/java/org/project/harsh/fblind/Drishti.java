@@ -22,7 +22,7 @@ import com.android.internal.telephony.*;
 import java.lang.reflect.*;
 import java.util.*;
 
-public class BlindCommunicatorService extends Service implements TextToSpeech.OnInitListener
+public class Drishti extends Service implements TextToSpeech.OnInitListener
 	{
 	private static boolean started = false;
 	private static boolean callInProgress = false;

@@ -40,7 +40,7 @@ public class MessagesInbox extends Activity
 		//deleteall = (TextView) findViewById(R.id.messagesdeleteall);
 		goback = (TextView) findViewById(R.id.goback);
 		GlobalVars.activityItemLocation=0;
-		GlobalVars.activityItemLimit=5;
+		GlobalVars.activityItemLimit=4;
 		selectedMessage = -1;
 		new MessagesCheckThread(GlobalVars.TYPE_INBOX).execute();
 	}
@@ -51,7 +51,7 @@ public class MessagesInbox extends Activity
 		try{GlobalVars.alarmVibrator.cancel();}catch(NullPointerException e){}catch(Exception e){}
 		GlobalVars.lastActivity = MessagesInbox.class;
 		GlobalVars.activityItemLocation=0;
-		GlobalVars.activityItemLimit=5;
+		GlobalVars.activityItemLimit=4;
 		GlobalVars.selectTextView(inbox,false);
 		GlobalVars.selectTextView(reply,false);
 		GlobalVars.selectTextView(callto, false);
@@ -150,27 +150,21 @@ public class MessagesInbox extends Activity
 				}
 				break;
 
-			case 2: //REPLY
-				GlobalVars.selectTextView(reply, true);
-				GlobalVars.selectTextView(inbox,false);
-				GlobalVars.selectTextView(callto,false);
-				GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxReply));
-				break;
 
-			case 3: //CALL TO CONTACT
+			case 2: //CALL TO CONTACT
 				GlobalVars.selectTextView(callto, true);
 				GlobalVars.selectTextView(addtonewcontact,false);
 				GlobalVars.selectTextView(reply, false);
 				GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxCallTo));
 				break;
 
-			case 4: //ADD TO NEW CONTACT
+			case 3: //ADD TO NEW CONTACT
 				GlobalVars.selectTextView(addtonewcontact, true);
 				GlobalVars.selectTextView(callto,false);
 				GlobalVars.selectTextView(goback,false);
 				GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxAddToNewContact));
 				break;
-			case 5:
+			case 4:
 				GlobalVars.selectTextView(addtonewcontact, false);
 				GlobalVars.selectTextView(inbox,false);
 				GlobalVars.selectTextView(goback,true);
@@ -224,33 +218,7 @@ public class MessagesInbox extends Activity
 				}
 				break;
 
-			case 2: //REPLY
-				if (selectedMessage==-1)
-				{
-					GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxError));
-				}
-				else
-				{
-					if (GlobalVars.messagesInboxDatabaseReady==false)
-					{
-						GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxTryAgain));
-					}
-					else
-					{
-						GlobalVars.startActivity(MessagesCompose.class);
-						try
-						{
-							MessagesCompose.messageToContactNameValue = GlobalVars.getMessageContactName(GlobalVars.messagesInboxDataBase.get(selectedMessage));
-							MessagesCompose.messageToPhoneNumberValue = GlobalVars.getMessagePhoneNumber(GlobalVars.messagesInboxDataBase.get(selectedMessage));
-						}
-						catch(Exception e)
-						{
-						}
-					}
-				}
-				break;
-
-			case 3: //CALL TO CONTACT
+			case 2: //CALL TO CONTACT
 				if (selectedMessage==-1)
 				{
 					GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxError));
@@ -269,7 +237,7 @@ public class MessagesInbox extends Activity
 				}
 				break;
 
-			case 4: //ADD TO NEW CONTACT
+			case 3: //ADD TO NEW CONTACT
 				if (selectedMessage==-1)
 				{
 					GlobalVars.talk(getResources().getString(R.string.layoutMessagesInboxError));
@@ -294,7 +262,7 @@ public class MessagesInbox extends Activity
 				}
 				break;
 
-			case 5: //GO BACK TO THE PREVIOUS MENU
+			case 4: //GO BACK TO THE PREVIOUS MENU
 				this.finish();
 				break;
 		}
