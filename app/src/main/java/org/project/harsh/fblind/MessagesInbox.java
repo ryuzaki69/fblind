@@ -203,10 +203,10 @@ public class MessagesInbox extends Activity
 
 								getResources().getString(R.string.layoutMessagesInboxMessageReceived) +
 
-								getResources().getString(R.string.layoutMessagesInboxMessageReceived) + GlobalVars.getMessagePhoneNumber(GlobalVars.messagesInboxDataBase.get(selectedMessage))+
+								  GlobalVars.getMessagePhoneNumber(GlobalVars.messagesInboxDataBase.get(selectedMessage))+
 
 								GlobalVars.getMessageContactName(GlobalVars.messagesInboxDataBase.get(selectedMessage)) +
-								GlobalVars.getMessageDateTime(GlobalVars.messagesInboxDataBase.get(selectedMessage)) +
+
 								getResources().getString(R.string.layoutMessagesInboxMessageMessageBody) +
 								GlobalVars.getMessageBody(GlobalVars.messagesInboxDataBase.get(selectedMessage)));
 						markMessageRead(GlobalVars.getMessageID(GlobalVars.messagesInboxDataBase.get(selectedMessage)));

@@ -119,9 +119,8 @@ public class ContactsCreate extends Activity
 			{
 			case 1: //INPUT NAME
 			location = LOCATION_NAME;
-			if(GlobalVars.isOnline(this)){GlobalVars.voice();}
-			else{
-			GlobalVars.startInputActivity();}
+			GlobalVars.voice();
+
 			break;
 
 			case 2: //INPUT PHONENUMBER

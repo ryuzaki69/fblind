@@ -1,0 +1,597 @@
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ .idea/modules.xml	(revision )
+@@ -2,11 +2,12 @@
+ <project version="4">
+   <component name="ProjectModuleManager">
+     <modules>
++      <module fileurl="file://$PROJECT_DIR$/69.iml" filepath="$PROJECT_DIR$/69.iml" />
+       <module fileurl="file://F:\fblind\fblind3\Fblind.iml" filepath="F:\fblind\fblind3\Fblind.iml" />
+       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+       <module fileurl="file://F:\fblind44\fblind\app\app.iml" filepath="F:\fblind44\fblind\app\app.iml" />
+       <module fileurl="file://E:\pro\fblind\.idea\end.iml" filepath="E:\pro\fblind\.idea\end.iml" />
+-      <module fileurl="file://$PROJECT_DIR$/fblind.iml" filepath="$PROJECT_DIR$/fblind.iml" />
++      <module fileurl="file://C:\Users\carry'\AndroidStudioProjects\69\fblind.iml" filepath="C:\Users\carry'\AndroidStudioProjects\69\fblind.iml" />
+       <module fileurl="file://E:\..\..\carry'\AndroidStudioProjects\qw\.idea\fblind.iml" filepath="E:\..\..\carry'\AndroidStudioProjects\qw\.idea\fblind.iml" />
+       <module fileurl="file://C:\carry'\AndroidStudioProjects\qw\fblind3.iml" filepath="C:\carry'\AndroidStudioProjects\qw\fblind3.iml" />
+       <module fileurl="file://E:\..\..\carry'\AndroidStudioProjects\end\qw.iml" filepath="E:\..\..\carry'\AndroidStudioProjects\end\qw.iml" />
+Index: app/src/main/java/org/project/harsh/fblind/MusicPlayer.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/org/project/harsh/fblind/MusicPlayer.java	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/java/org/project/harsh/fblind/MusicPlayer.java	(revision )
+@@ -148,7 +148,7 @@
+                 GlobalVars.selectTextView(select,false);
+                 GlobalVars.selectTextView(stop,false);
+                 GlobalVars.selectTextView(gobacklang,true);
+-                GlobalVars.talk(getResources().getString(R.string.backToPreviousMenu));
++                GlobalVars.talk(getResources().getString(R.string.backToMainMenu));
+                 break;
+         }
+     }
+Index: app/src/main/res/values-bn-rIN/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-bn-rIN/strings.xml	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/res/values-bn-rIN/strings.xml	(revision )
+@@ -460,4 +460,5 @@
+     <string name="mainappicon">প্রধান অ্যাপ্লিকেশন</string>
+     <string name="inboxtalk" />
+     <string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
++    <string name="voicein">Voice Input</string>
+ </resources>
+Index: app/src/main/res/values-hi/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-hi/strings.xml	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/res/values-hi/strings.xml	(revision )
+@@ -11,7 +11,7 @@
+     <string name="okyo">उपरोक्त परिणाम चुनने के लिए स्लाइड दाएं</string>
+     <string name="firstyo">सबसे पहले आपको संभावित परिणामों से चयन करना होगा</string>
+     <string name="selectedyo">आपने परिणाम चुना है</string>
+-    <string name="you">यूट्यूब में आपका स्वागत है</string>
++    <string name="you">यवीडियो चलने के लिए पहले नीचे स्लाइड करके दायें स्लाइड करे </string>
+     <string name="nonet">सबसे पहले आपको अपना मोबाइल डेटा चालू करना होगा</string>
+ 
+ 
+@@ -23,9 +23,9 @@
+     <string name="list1"> संबंधित वीडियो का चयन करें</string>
+     <string name="p1">चलाएँ</string>
+ 
+-    <string name="searchyo">खोज करने के लिए दाएं स्लाइड करें</string>
+-    <string name="selectyo">एक प्लेलिस्ट से चुनने के लिए दाएं स्लाइड करें</string>
+-    <string name="playyo">यूट्यूब को चलाने के लिए लेफ्ट स्लाइड करें</string>
++    <string name="searchyo">टीटीएस टोन के बाद बोल के इनपुट दीजिये और फिर दाएं स्लाइड करे </string>
++    <string name="selectyo"> संभावित परिणामों से चयन करने के लिए दाएं स्लाइड करें </string>
++    <string name="playyo">यूट्यूब को चलाने के लिए दाएं स्लाइड करेंं</string>
+     <string name="carryplay">चलाने के लिए दाएं स्लाइड करे</string>
+     <string name="carrypause">रोकने के लिए दाएं स्लाइड करे</string>
+ 
+@@ -36,11 +36,11 @@
+ 
+     <string name="musicstop">संगीत रोकिये, गीत को रोकने के लिए दाएं स्लाइड करें </string>
+     <string name="younosel">कृपया यूट्यूब पर एक वीडियो का चयन करें</string>
+-    <string name="welcometoyoutube">ूट्यूब में आपका स्वागत है</string>
++    <string name="welcometoyoutube">ूट्यूब में आपका स्वागत है | खोज के लिए बोलकर  इनपुट दीजिये , संभावित परिणाम का चयन करने के लिए नीचे स्लाइड करके , दाईं स्लाइड करें।</string>
+     <string name="langselect">भाषा चुनने के लिए दाएं स्लाइड करें और फिर नीचे स्लाइड करें</string>
+     <string name="langok">उपरोक्त भाषा का चयन करने के लिए दाएं स्लाइड करेंं</string>
+     <string name="welcomelang">भाषा बदलने में आपका स्वागत है,प्रत्येक विकल्प सुनने के लिए नीचे स्लाइड करें</string>
+-    <string name="welcomeyoutube">यूट्यूब में आपका स्वागत है</string>
++
+ 
+ 
+ 
+@@ -219,8 +219,8 @@
+ 
+     <string name="layoutCallsLogsLogs">कॉल लॉग</string>
+     <string name="layoutCallsLogsLogs2">कॉल लॉग। प्रत्येक एक को सुनने के लिए दाएं या बाएं स्लाइड करें.</string>
+-    <string name="layoutCallsLogsAddToNewContact">नए संपर्क में जोड़ें</string>
+-    <string name="layoutCallsLogsCall">कॉल</string>
++    <string name="layoutCallsLogsAddToNewContact">दायें स्लाइड करके नए संपर्क में जोड़ें</string>
++    <string name="layoutCallsLogsCall">दायें स्लाइड करके कॉल करे </string>
+     <string name="layoutCallsLogsCall2">चयनित नंबर पर कॉल करें</string>
+     <string name="layoutCallsLogsSendMessage">संदेश भेजें</string>
+     <string name="layoutCallsLogsSendMessage2">चयनित संपर्क को एक संदेश भेजें</string>
+@@ -355,8 +355,8 @@
+     <string name="callingToUnknown">अपंजीकृत नंबर पर कॉल करना</string>
+     <string name="callEnded">कॉल समाप्त हो गया है</string>
+ 
+-    <string name="backToPreviousMenu">पिछले मेनू पर वापस जाएं</string>
+-    <string name="backToMainMenu">मुख्य मेनू पर वापस जाएं</string>
++    <string name="backToPreviousMenu">दायें स्लाइड करके पिछले मेनू पर वापस जाएं</string>
++    <string name="backToMainMenu">दायें स्लाइड करके मुख्य मेनू पर वापस जाएं</string>
+ 
+ 
+ 
+@@ -534,4 +534,5 @@
+     <string name="layoutMusicPlayerHigherVolume">रोकें</string>
+     <string name="inboxtalk" />
+     <string name="inboxtalk1">हमने सभी संदेशों को सफलतापूर्वक लाया है, प्रत्येक को सुनने के लिए दाएं और बाएं स्लाइड करें।</string>
++    <string name="voicein">आवाज़ डालना</string>
+ </resources>
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/res/values/strings.xml	(revision )
+@@ -1,5 +1,10 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
++
++	<!--
++	<string name="layoutyoutubein">Voice input.</string>
++-->
++
+ 	<string name="v1">Voice Input</string>
+ 	<string name="r1">Related Results</string>
+ 	<string name="s1">Select</string>
+@@ -8,19 +13,19 @@
+ 	<string name="nonet">First you have to on your mobile data</string>
+ 
+ 
+-	<string name="searchyo">Slide right to search</string>
+-	<string name="selectyo">Slide right to select from the list</string>
++	<string name="searchyo">after the tts tone speak to give voice input to search and then slide right.</string>
++	<string name="selectyo">Slide right to select from the possible results</string>
+ 	<string name="okyo">Slide RIGHT TO SELECT ABOVE RESULT</string>
+ 	<string name="firstyo">First you must select from the possible resutlts</string>
+ 	<string name="selectedyo">You have selected the result</string>
+-
++	<string name="you">slide down and than slide right to play.</string>
+ 
+ 	<string name="playyo">Slide right to play</string>
+ 	<string name="carryplay">Slide right to play</string>
+ 	<string name="pp">Slide right to pause</string>
+ 	<string name="carrypause">Slide right to pause</string>
+ 	<string name="carryback">GO BACK</string>
+-	<string name="welcometoyoutube">Welcome to YOUTUBE , First slide right to give VOICE input to search and than slide down and slide right to select the possible result.</string>
++	<string name="welcometoyoutube">Welcome to YOUTUBE , First slide down to give VOICE input to search and than slide down and slide right to select the possible result.</string>
+ 	<string name="langselect">Slide right to choose language and slide down </string>
+ 	<string name="langok">Slide right to select above language</string>
+ 	<string name="welcomelang">Welcome to change language,slide down to hear each option</string>
+@@ -299,7 +304,7 @@
+ 	<string name="layoutMessagesSentDeleteAllDelete">Delete all sent messages. Slide right to confirm.</string>
+ 	<string name="layoutMessagesSentDeleteAllDeleteDelete">Delete all sent messages</string>
+ 	<string name="layoutMessagesSentDeleteAllOnResume">Now you are at the delete all sent messages menu,slide down to hear each option</string>
+-
++	<string name="MessagesSent">Message sent, slide right to select this menu</string>
+ 	<string name="layoutMessagesInboxInbox">Inbox</string>
+ 	<string name="layoutMessagesInboxInbox2">Inbox. Slide right or left to hear each message.</string>
+ 	<string name="layoutMessagesInboxReply">Compose message</string>
+@@ -364,7 +369,7 @@
+ 	<string name="layoutInputVoiceNoResultToSelect">First you must select a result</string>
+ 	<string name="layoutInputVoiceNoRecognition">No possible results. Please, try again or check if the voice recognition on your device requires an Internet connection. If so, check your Internet connection status.</string>
+ 	<string name="layoutInputVoiceSystemError">System Error. Voice recognition can\'t be executed</string>
+-	<string name="layoutInputVoiceCancelAndGoBack">Cancel and go back to the previous menu</string>
++	<string name="layoutInputVoiceCancelAndGoBack">slide right to Cancel and go back to the previous menu</string>
+ 
+ 	<string name="layoutInputKeyboardTalkbackOnResume">Now you are at the input text mode using the standard android keyboard with Talkback. You must have talkBack enabled in order to use this method. A textbox is selected right now and the standard android keyboard is available at the bottom of the screen. Write what you want and press the enter key in the keyboard to enter the data. Press the back button to cancel and go back to the previous menu.</string>
+ 
+@@ -374,8 +379,8 @@
+ 	<string name="callingToUnknown">Calling to an unregistered number</string>
+ 	<string name="callEnded">The call has ended</string>
+ 
+-	<string name="backToPreviousMenu">Go back to the previous menu</string>
+-	<string name="backToMainMenu">Go back to the main menu</string>
++	<string name="backToPreviousMenu">slide right to Go back to the previous menu</string>
++	<string name="backToMainMenu">slide right to Go back to the main menu</string>
+ 
+ 
+ 
+@@ -390,6 +395,7 @@
+ 	<string name="tuticon">Tutorial</string>
+ 	<string name="mainappicon">Main App</string>
+ 	<string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
++	<string name="voicein">Voice Input</string>
+ 	<string-array name="keysAll">
+ 		<item>A</item>
+ 		<item>B</item>
+Index: app/src/main/java/org/project/harsh/fblind/yo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/org/project/harsh/fblind/yo.java	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/java/org/project/harsh/fblind/yo.java	(revision )
+@@ -320,57 +320,7 @@
+                 {
+                     GlobalVars.talk(getResources().getString(R.string.layoutInputVoiceSystemError));
+                 }
+-                /*
+-                try
+-                {
+-                    stringResults.clear();
+-                    selectedValue = -1;
+-                    sr = SpeechRecognizer.createSpeechRecognizer(this);
+-                    sr.setRecognitionListener(new yo.listener());
+-                    Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+-                    intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+-                    intent.putExtra(RecognizerIntent.EXTRA_PROMPT,"Voice Recognition...");
+-                    intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS,5000000);
+-                    sr.startListening(intent);
+ 
+-                    Log.e("yha STRING VALUE", GlobalVars.inputModeResult);
+-                }
+-                catch(Exception e)
+-                {
+-                    GlobalVars.talk(getResources().getString(R.string.layoutInputVoiceSystemError));
+-                }
+-
+-                if (stringResults.size()==0)
+-                {
+-                    GlobalVars.talk(getResources().getString(R.string.layoutInputVoiceNoRecognition));
+-                }
+-
+-                else
+-                {
+-                    Log.e("ha ha bhai","232");
+-                    if (selectedValue+1==stringResults.size())
+-                    {
+-                        selectedValue=-1;
+-                    }
+-                    selectedValue = selectedValue + 1;
+-                    GlobalVars.setText(start, true, getResources().getString(R.string.layoutInputVoicePossibleResults) + stringResults.size() + ")\n" + (selectedValue + 1) + " - " + stringResults.get(selectedValue));
+-                    GlobalVars.talk(getResources().getString(R.string.layoutInputVoicePossibleResult) + (selectedValue + 1) + ". " + stringResults.get(selectedValue));
+-                }
+-                if (selectedValue==-1)
+-                {
+-                    GlobalVars.talk(getResources().getString(R.string.layoutInputVoiceNoResultToSelect));
+-                }
+-                else
+-                {
+-
+-                    GlobalVars.inputModeResult = stringResults.get(selectedValue);
+-                    //this.finish();
+-                    //GlobalVars.startActivity(yo.class);
+-                }
+-
+-                GlobalVars.inputModeResult = stringResults.get(selectedValue);
+-                Log.e("VALUE dekho string ki ",GlobalVars.inputModeResult);
+-                */
+                 break;
+ 
+             case 2: //BODY
+@@ -477,23 +427,23 @@
+                 if( mm == null )
+                 {
+                     GlobalVars.talk(getResources().getString(R.string.noselection));
+-                    break;
++
+                 }
+-                new Thread(){
+-                    @Override
+-                    public void run() {
+-                        //YoutubeConnector yc = new YoutubeConnector(yo.this);
+-                        //hash = yc.search(mm);
+-                        Log.e("fhgv",hash.get(0).getDescription());
+-                        GlobalVars.h=hash.get(j-1).getId();
++                else {
++                    new Thread() {
++                        @Override
++                        public void run() {
++                            //YoutubeConnector yc = new YoutubeConnector(yo.this);
++                            //hash = yc.search(mm);
++                            Log.e("fhgv", hash.get(0).getDescription());
++                            GlobalVars.h = hash.get(j - 1).getId();
+ 
+-                        GlobalVars.startActivity(carry.class);
++                            GlobalVars.startActivity(carry.class);
+ 
+ 
+-
+-                    }
+-                }.start();
+-
++                        }
++                    }.start();
++                }
+                 break;
+ 
+             case 6:
+Index: app/src/main/res/values-es/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-es/strings.xml	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/res/values-es/strings.xml	(revision )
+@@ -491,8 +491,9 @@
+     <string name="youtubeselect" />
+     <string name="inboxtalk" />
+ 	<string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
++    <string name="voicein">Voice Input</string>
+ 
+-	<string-array name="keysAll">
++    <string-array name="keysAll">
+ 		<item>A</item>
+ 		<item>B</item>
+ 		<item>C</item>
+Index: app/src/main/res/values-en-rIN/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-en-rIN/strings.xml	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/res/values-en-rIN/strings.xml	(revision )
+@@ -1,5 +1,10 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
++
++    <!--
++    <string name="layoutyoutubein">Voice input.</string>
++-->
++
+     <string name="v1">Voice Input</string>
+     <string name="r1">Related Results</string>
+     <string name="s1">Select</string>
+@@ -8,19 +13,19 @@
+     <string name="nonet">First you have to on your mobile data</string>
+ 
+ 
+-    <string name="searchyo">Slide right to search</string>
+-    <string name="selectyo">Slide right to select from the list</string>
++    <string name="searchyo">after the tts tone speak to give voice input to search and then slide right.</string>
++    <string name="selectyo">Slide right to select from the possible results</string>
+     <string name="okyo">Slide RIGHT TO SELECT ABOVE RESULT</string>
+     <string name="firstyo">First you must select from the possible resutlts</string>
+     <string name="selectedyo">You have selected the result</string>
+-
++    <string name="you">slide down and than slide right to play.</string>
+ 
+     <string name="playyo">Slide right to play</string>
+     <string name="carryplay">Slide right to play</string>
+     <string name="pp">Slide right to pause</string>
+     <string name="carrypause">Slide right to pause</string>
+     <string name="carryback">GO BACK</string>
+-    <string name="welcometoyoutube">Welcome to YOUTUBE , First slide right to give VOICE input to search and than slide down and slide right to select the possible result.</string>
++    <string name="welcometoyoutube">Welcome to YOUTUBE , First slide down to give VOICE input to search and than slide down and slide right to select the possible result.</string>
+     <string name="langselect">Slide right to choose language and slide down </string>
+     <string name="langok">Slide right to select above language</string>
+     <string name="welcomelang">Welcome to change language,slide down to hear each option</string>
+@@ -241,9 +246,9 @@
+     <string name="layoutCallsLogsLogs2">Call logs. Slide right or left to hear each one.</string>
+     <string name="layoutCallsLogsAddToNewContact">Slide right to add number into contact</string>
+     <string name="layoutCallsLogsCall">Call</string>
+-    <string name="layoutCallsLogsCall2">Call to selected number</string>
++    <string name="layoutCallsLogsCall2">slide right to Call the selected number</string>
+     <string name="layoutCallsLogsSendMessage">Send a message</string>
+-    <string name="layoutCallsLogsSendMessage2">Send a message to selected contact</string>
++    <string name="layoutCallsLogsSendMessage2">slide right to Send a message to the selected contact</string>
+     <string name="layoutCallsLogsNoLogs">There are no call logs</string>
+     <string name="layoutCallsLogsOutgoingCall">Outgoing call</string>
+     <string name="layoutCallsLogsIncomingCall">Incoming call</string>
+@@ -364,7 +369,7 @@
+     <string name="layoutInputVoiceNoResultToSelect">First you must select a result</string>
+     <string name="layoutInputVoiceNoRecognition">No possible results. Please, try again or check if the voice recognition on your device requires an Internet connection. If so, check your Internet connection status.</string>
+     <string name="layoutInputVoiceSystemError">System Error. Voice recognition can\'t be executed</string>
+-    <string name="layoutInputVoiceCancelAndGoBack">Cancel and go back to the previous menu</string>
++    <string name="layoutInputVoiceCancelAndGoBack">slide right to Cancel and go back to the previous menu</string>
+ 
+     <string name="layoutInputKeyboardTalkbackOnResume">Now you are at the input text mode using the standard android keyboard with Talkback. You must have talkBack enabled in order to use this method. A textbox is selected right now and the standard android keyboard is available at the bottom of the screen. Write what you want and press the enter key in the keyboard to enter the data. Press the back button to cancel and go back to the previous menu.</string>
+ 
+@@ -374,8 +379,8 @@
+     <string name="callingToUnknown">Calling to an unregistered number</string>
+     <string name="callEnded">The call has ended</string>
+ 
+-    <string name="backToPreviousMenu">Go back to the previous menu</string>
+-    <string name="backToMainMenu">Go back to the main menu</string>
++    <string name="backToPreviousMenu">slide right to Go back to the previous menu</string>
++    <string name="backToMainMenu">slide right to Go back to the main menu</string>
+ 
+ 
+ 
+@@ -390,6 +395,7 @@
+     <string name="tuticon">Tutorial</string>
+     <string name="mainappicon">Main App</string>
+     <string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
++    <string name="voicein">Voice Input</string>
+     <string-array name="keysAll">
+         <item>A</item>
+         <item>B</item>
+Index: app/src/main/res/values-pa/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-pa/strings.xml	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/res/values-pa/strings.xml	(revision )
+@@ -324,6 +324,7 @@
+     <string name="youtubeselect" />
+     <string name="inboxtalk" />
+     <string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
++    <string name="voicein">Voice Input</string>
+ 
+     <string-array name="keysAll">
+         <item>A</item>
+Index: app/src/main/java/org/project/harsh/fblind/language.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/org/project/harsh/fblind/language.java	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/java/org/project/harsh/fblind/language.java	(revision )
+@@ -83,7 +83,7 @@
+                 GlobalVars.selectTextView(select,false);
+                 GlobalVars.selectTextView(gobacklang,true);
+                 //GlobalVars.talk(getResources().getString(R.string.layoutAlarmsCreateTimeHour2) + GlobalVars.alarmTimeHoursValues.get(hourValue) + getResources().getString(R.string.layoutAlarmsCreateHours));
+-                GlobalVars.talk(getResources().getString(R.string.backToPreviousMenu));
++                GlobalVars.talk(getResources().getString(R.string.backToMainMenu));
+                 break;
+         }
+     }
+Index: app/src/main/res/values-id/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-id/strings.xml	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/res/values-id/strings.xml	(revision )
+@@ -491,8 +491,9 @@
+     <string name="youtubeselect" />
+     <string name="inboxtalk" />
+ 	<string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
++    <string name="voicein">Voice Input</string>
+ 
+-	<string-array name="keysAll">
++    <string-array name="keysAll">
+ 		<item>A</item>
+ 		<item>B</item>
+ 		<item>C</item>
+Index: app/src/main/res/values-ru/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-ru/strings.xml	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/res/values-ru/strings.xml	(revision )
+@@ -491,8 +491,9 @@
+     <string name="youtubeselect" />
+     <string name="inboxtalk" />
+ 	<string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
++    <string name="voicein">Voice Input</string>
+ 
+-	<string-array name="keysAll">
++    <string-array name="keysAll">
+ 	    <item>А</item>
+ 	    <item>Б</item>
+ 	    <item>В</item>
+Index: app/src/main/res/values-it/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-it/strings.xml	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/res/values-it/strings.xml	(revision )
+@@ -491,8 +491,9 @@
+     <string name="youtubeselect" />
+     <string name="inboxtalk" />
+ 	<string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
++    <string name="voicein">Voice Input</string>
+ 
+-	<string-array name="keysAll">
++    <string-array name="keysAll">
+ 		<item>A</item>
+ 		<item>B</item>
+ 		<item>C</item>
+Index: app/src/main/res/values-fr/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-fr/strings.xml	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/res/values-fr/strings.xml	(revision )
+@@ -491,8 +491,9 @@
+     <string name="youtubeselect" />
+     <string name="inboxtalk" />
+ 	<string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
++    <string name="voicein">Voice Input</string>
+ 
+-	<string-array name="keysAll">
++    <string-array name="keysAll">
+ 		<item>A</item>
+ 		<item>B</item>
+ 		<item>C</item>
+Index: app/src/main/res/values-pt/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-pt/strings.xml	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/res/values-pt/strings.xml	(revision )
+@@ -491,8 +491,9 @@
+     <string name="youtubeselect" />
+     <string name="inboxtalk" />
+ 	<string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
++    <string name="voicein">Voice Input</string>
+ 
+-	<string-array name="keysAll">
++    <string-array name="keysAll">
+ 		<item>A</item>
+ 		<item>B</item>
+ 		<item>C</item>
+Index: app/src/main/res/values-bn/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-bn/strings.xml	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/res/values-bn/strings.xml	(revision )
+@@ -460,4 +460,5 @@
+     <string name="mainappicon">প্রধান অ্যাপ্লিকেশন</string>
+     <string name="inboxtalk" />
+     <string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
++    <string name="voicein">Voice Input</string>
+ </resources>
+Index: app/src/main/res/values-de/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-de/strings.xml	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/res/values-de/strings.xml	(revision )
+@@ -491,8 +491,9 @@
+     <string name="youtubeselect" />
+     <string name="inboxtalk" />
+ 	<string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
++    <string name="voicein">Voice Input</string>
+ 
+-	<string-array name="keysAll">
++    <string-array name="keysAll">
+ 		<item>A</item>
+ 		<item>B</item>
+ 		<item>C</item>
+Index: app/src/main/res/layout/yo.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/yo.xml	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/res/layout/yo.xml	(revision )
+@@ -42,7 +42,7 @@
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+-                android:text="@string/v1"
++                android:text="@string/voicein"
+                 android:textColor="#FFFFFF" />
+         </LinearLayout>
+ 
+@@ -217,7 +217,7 @@
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+-                android:text="@string/p1"
++                android:text="@string/playyo"
+                 android:textColor="#FFFFFF" />
+         </LinearLayout>
+ 
+Index: app/src/main/res/values-in/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-in/strings.xml	(revision a2766d99e6a0750ca5e4bab06509c5aad6080b30)
++++ app/src/main/res/values-in/strings.xml	(revision )
+@@ -491,8 +491,9 @@
+     <string name="youtubeselect" />
+     <string name="inboxtalk" />
+ 	<string name="inboxtalk1">We have successfully fetch all the messages , slide right and left to hear each one.</string>
++    <string name="voicein">Voice Input</string>
+ 
+-	<string-array name="keysAll">
++    <string-array name="keysAll">
+ 		<item>A</item>
+ 		<item>B</item>
+ 		<item>C</item>

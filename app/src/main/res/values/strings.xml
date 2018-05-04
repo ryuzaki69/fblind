@@ -4,7 +4,9 @@
 	<!--
 	<string name="layoutyoutubein">Voice input.</string>
 -->
+	<string name="contacts">Contacts, slide right to enter this menu</string>
 
+	<string name="MessagesComposeSend">Slide right to send message.</string>
 	<string name="v1">Voice Input</string>
 	<string name="r1">Related Results</string>
 	<string name="s1">Select</string>
@@ -39,9 +41,9 @@
 	<string name="layoutMusicPlayerPreviousTrack">Play</string>
 	<string name="layoutMusicPlayerHigherVolume">Stop</string>
 	<string name="welcometomusic">Welcome To Music. slide down to hear each option </string>
-	<string name="musicselect">Slide to Select</string>
-	<string name="musicplay">Play</string>
-	<string name="musicstop">Stop</string>
+	<string name="musicselect">Select, slide right to choose the song and then slide down</string>
+	<string name="musicplay">Play,slide right to play the song</string>
+	<string name="musicstop">Stop,slide right to stop the song</string>
 
 
 
@@ -52,7 +54,7 @@
 
 
 
-	<string name="mainWelcome">Welcome to the main menu, slide down to hear each option </string>
+	<string name="mainWelcome">Welcome to the main menu, slide up and down to hear each option </string>
 	<string name="mainMessages">Messages</string>
 	<string name="mainMessagesNew">new messages,slide right to enter this menu</string>
 	<string name="mainMessagesNoNew">Messages. No new messages,slide right to enter this menu</string>
@@ -135,7 +137,7 @@
 	<string name="layoutMainAlarms">Alarms</string>
 	<string name="layoutMainSettings">Settings</string>
 	<string name="layoutMainStatus">Status</string>
-	<string name="layoutMainOnResume">Now you are at the main menu, slide down to hear each option</string>
+	<string name="layoutMainOnResume">Now you are at the main menu, slide up and down to hear each option</string>
 
 	<string name="layoutAlarmsNotifierShutdown">Slide up or down to shutdown alarm</string>
 
@@ -190,12 +192,12 @@
 	<string name="layoutSettingsMinutes2">&#160;minutes of inactivity</string>
 	<string name="layoutSettingsPrivacyPolicy">Privacy policy</string>
 	<string name="layoutSettingsPrivacyPolicy2">hone, GPS, or any information stored within your device. b. Non-personal Information. I do not collect your non-personal information when you are using the App Blind Communicator or visiting my Website, including your device information, operation system, logs. c. Information you provide. I do not collect your information when you communicate with me. How I Use Information. a. Personal Information. I do not store Personal Information and therefore I do not disclose your Personal Information. b. Non-Personal Information. I do not sell, trade, or otherwise transfer to outside parties your information. I do not combine Non-Personal Information with Personal Information (such as combining your name with your unique User Device number). Contact Me. If you have any questions or comments about this Policy or our privacy practices, or to report any violations of the Policy or abuse of the App Blind Communicator or the Website, please contact me at contacto@lrusso.com.ar. Changes. This Privacy Policy may change which will not reduce your rights under this Privacy Policy from time to time, I will post any privacy policy changes on this page, so please review it periodically. If you do not agree to any modifications to this Policy, your could immediately stop all use of all the Services. Your continued use of the App Blind Communicator following the posting of any modifications to this Policy will constitute your acceptance of the revised Policy.</string>
-	<string name="layoutSettingsOnResume">Now you are at the settings menu,slide down to hear each option</string>
+	<string name="layoutSettingsOnResume">Now you are at the settings menu,slide up and down to hear each option</string>
 
 	<string name="layoutContactsList">Contacts</string>
 	<string name="layoutContactsCreate">Create contact</string>
 	<string name="layoutContactsOnResumeCreated">The contact was created and now you are at the contacts menu,slide down to hear each option</string>
-	<string name="layoutContactsOnResume">Now you are at the contacts menu,slide down to hear each option</string>
+	<string name="layoutContactsOnResume">Now you are at the contacts menu,slide up and down to hear each option</string>
 
 	<string name="layoutContactsCreateName">- input name -</string>
 	<string name="layoutContactsCreateName2">Contact name. Slide right to input.</string>
@@ -205,14 +207,14 @@
 	<string name="layoutContactsCreatePhone3">Phone number.&#160;</string>
 	<string name="layoutContactsCreateCreate">Create contact</string>
 	<string name="layoutContactsCreateErrorComplete">ERROR. You must complete every field in order to create a contact.</string>
-	<string name="layoutContactsCreateOnResume">Now you are at the create contact menu,slide down to hear each option</string>
+	<string name="layoutContactsCreateOnResume">Now you are at the create contact menu,slide up and down to hear each option</string>
 
 	<string name="layoutContactsListContactsList">Contacts</string>
 	<string name="layoutContactsListContactsList2">Contacts. Slide right or left to hear each one.</string>
 	<string name="layoutContactsListNoContacts">There are no contacts</string>
 	<string name="layoutContactsListWithThePhoneNumber">&#160;with the phone number&#160;</string>
 	<string name="layoutContactsListCall">Call</string>
-	<string name="layoutContactsListCall2">Call to selected contact</string>
+	<string name="layoutContactsListCall2">slide right to call the selected contact</string>
 	<string name="layoutContactsListSendMessage">Send a message</string>
 	<string name="layoutContactsListSendMessage2">Send a message to selected contact</string>
 	<string name="layoutContactsListDelete">Delete contact</string>
@@ -220,19 +222,19 @@
 	<string name="layoutContactsListError">First you must select a contact</string>
 	<string name="layoutContactsListPleaseWait">Please try again in a few moments when all the contacts has been processed.</string>
 	<string name="layoutContactsListOnResumeContactDeleted">The contact was deleted and now you are at the contact list menu,slide down to hear each option</string>
-	<string name="layoutContactsListOnResume">Now you are at the contact list menu,slide down to hear each option</string>
+	<string name="layoutContactsListOnResume">Now you are at the contact list menu,slide up and down to hear each option</string>
 	<string name="layoutContactsListOnResume2">The message was sent and now you are at the contact list menu,slide down to hear each option</string>
 
 	<string name="layoutContactsDeleteSelected">Selected contact for deletion.&#160;</string>
 	<string name="layoutContactsDeleteDelete">Confirm deletion</string>
-	<string name="layoutContactsDeleteOnResume">Now you are at the delete contact menu,slide down to hear each option</string>
+	<string name="layoutContactsDeleteOnResume">Now you are at the delete contact menu,slide up and down to hear each option</string>
 
 
 	<string name="layoutCallsMissedCallsList">Call logs , slide right to enter this menu.</string>
 	<string name="layoutCallsDeleteCallLogs">Delete logs </string>
 	<string name="layoutCallsDeleteCallLogs2">Delete all call logs , slide right to enter this menu.</string>
 	<string name="layoutCallsMakeCall">Make a call , slide right to enter and make a new call..</string>
-	<string name="layoutCallsOnResume">Now you are at the calls logs , slide down to hear each option and slide right to select.</string>
+	<string name="layoutCallsOnResume">Now you are at the calls logs , slide up and down to hear each option and slide right to select.</string>
 	<string name="layoutCallsOnResume2">All call logs has been deleted successfully and now you are at the calls menu,slide down to hear each option</string>
 
 	<string name="layoutCallsMakeCallPhone">- input phone number -</string>
@@ -263,29 +265,29 @@
 	<string name="layoutCallsLogsCallFrom">&#160;from&#160;</string>
 	<string name="layoutCallsLogsError">First you must select a log</string>
 	<string name="layoutCallsLogsPleaseTryAgain">Please try again in a few moments when all the call logs has been processed.</string>
-	<string name="layoutCallsLogsOnResume">Now you are at the call logs menu,slide down to hear each option</string>
+	<string name="layoutCallsLogsOnResume">Now you are at the call logs menu,slide up and down to hear each option</string>
 	<string name="layoutCallsLogsOnResume2">The message was sent and now you are at the call logs menu,slide down to hear each option</string>
 
 	<string name="layoutCallsLogsDelete">Delete call logs. Slide right to confirm.</string>
-	<string name="layoutCallsLogsDeleteOnResume">Now you are at the delete call logs menu,slide down to hear each option</string>
+	<string name="layoutCallsLogsDeleteOnResume">Now you are at the delete call logs menu,slide up and down to hear each option</string>
 
 	<string name="layoutMessagesInbox">Inbox</string>
-	<string name="layoutMessagesInboxNew">new messages</string>
+	<string name="layoutMessagesInboxNew">new messages,slide right or left to hear each one</string>
 	<string name="layoutMessagesInboxNoNew">Inbox. No new messages</string>
-	<string name="layoutMessagesInboxOneNew">Inbox. One new message</string>
+	<string name="layoutMessagesInboxOneNew">Inbox. One new message,slide right to hear</string>
 	<string name="layoutMessagesSent">Sent</string>
 	<string name="layoutMessagesMessageLogs">Message logs</string>
 	<string name="layoutMessagesMessageLogsDelete">Delete logs</string>
 	<string name="layoutMessagesMessageLogsDelete2">Delete all message logs</string>
 	<string name="layoutMessagesNew">Compose</string>
-	<string name="layoutMessagesNew2">Compose message</string>
-	<string name="layoutMessagesOnResume">Now you are at the messages menu, slide down to hear each option</string>
+	<string name="layoutMessagesNew2">Compose message,slide right to choose this option</string>
+	<string name="layoutMessagesOnResume">Now you are at the messages menu, slide up and down to hear each option</string>
 	<string name="layoutMessagesOnResume2">The message was sent and now you are at the messages menu,slide down to hear each option</string>
 
 	<string name="layoutMessagesDeleteNameFrom">Message to delete from&#160;</string>
 	<string name="layoutMessagesDeleteNameTo">Message to delete to&#160;</string>
 	<string name="layoutMessagesDeleteDelete">Confirm delete</string>
-	<string name="layoutMessagesDeleteOnResume">Now you are at the delete message menu,slide down to hear each option</string>
+	<string name="layoutMessagesDeleteOnResume">Now you are at the delete message menu,slide up and down to hear each option</string>
 
 	<string name="layoutMessagesSentSent">Sent</string>
 	<string name="layoutMessagesSentSent2">Sent messages. Slide right or left to hear each message.</string>
@@ -297,20 +299,20 @@
 	<string name="layoutMessagesSentTryAgain">Please try again in a few moments when all the sent messages has been processed.</string>
 	<string name="layoutMessagesSentNoMessages">There are no messages</string>
 	<string name="layoutMessagesSentError">First you must select a message</string>
-	<string name="layoutMessagesSentOnResume">Now you are at the sent messages menu,slide down to hear each option</string>
+	<string name="layoutMessagesSentOnResume">Now you are at the sent messages menu,slide up and down to hear each option</string>
 	<string name="layoutMessagesSentOnResume2">The message was deleted and now you are at the sent messages menu,slide down to hear each option</string>
 	<string name="layoutMessagesSentOnResume3">All sent messages were deleted successfully and now you are at the sent messages menu,slide down to hear each option</string>
 
 	<string name="layoutMessagesSentDeleteAllDelete">Delete all sent messages. Slide right to confirm.</string>
 	<string name="layoutMessagesSentDeleteAllDeleteDelete">Delete all sent messages</string>
-	<string name="layoutMessagesSentDeleteAllOnResume">Now you are at the delete all sent messages menu,slide down to hear each option</string>
+	<string name="layoutMessagesSentDeleteAllOnResume">Now you are at the delete all sent messages menu,slide up and down to hear each option</string>
 	<string name="MessagesSent">Message sent, slide right to select this menu</string>
 	<string name="layoutMessagesInboxInbox">Inbox</string>
 	<string name="layoutMessagesInboxInbox2">Inbox. Slide right or left to hear each message.</string>
 	<string name="layoutMessagesInboxReply">Compose message</string>
 	<string name="layoutMessagesInboxDelete">Delete message</string>
 	<string name="layoutMessagesInboxDeleteAll">Delete all received messages</string>
-	<string name="layoutMessagesInboxCallTo">Call to contact</string>
+	<string name="layoutMessagesInboxCallTo">Call to contact,slide right to call</string>
 	<string name="layoutMessagesInboxAddToNewContact">Add to new contact , Slide right to add above contact .</string>
 	<string name="layoutMessagesInboxMessageReceived">Received from&#160;</string>
 	<string name="layoutMessagesInboxMessageOn">&#160;on&#160;</string>
@@ -324,14 +326,14 @@
 	<string name="layoutMessagesInboxTryAgain">Please try again in a few moments when all the inbox messages has been processed.</string>
 	<string name="layoutMessagesInboxError">First you must select a message</string>
 	<string name="layoutMessagesInboxNoMessages">There are no messages</string>
-	<string name="layoutMessagesInboxOnResume">Now you are at the inbox messages menu,slide down to hear each option</string>
+	<string name="layoutMessagesInboxOnResume">Now you are at the inbox messages menu,slide up and down to hear each option</string>
 	<string name="layoutMessagesInboxOnResume2">The message was sent and now you are at the inbox messages menu,slide down to hear each option</string>
 	<string name="layoutMessagesInboxOnResume3">The message was deleted and now you are at the inbox messages menu,slide down to hear each option</string>
 	<string name="layoutMessagesInboxOnResume4">All received messages were deleted successfully and now you are at the inbox messages menu,slide down to hear each option</string>
 
 	<string name="layoutMessagesInboxDeleteAllDelete">Delete all received messages. Slide right to confirm.</string>
 	<string name="layoutMessagesInboxDeleteAllDeleteDelete">Delete all received messages</string>
-	<string name="layoutMessagesInboxDeleteAllOnResume">Now you are at the delete all received messages menu,slide down to hear each option</string>
+	<string name="layoutMessagesInboxDeleteAllOnResume">Now you are at the delete all received messages menu,slide up and down to hear each option</string>
 
 	<string name="layoutMessagesComposeAddressee">Addressee</string>
 	<string name="layoutMessagesComposeAddressee2">Addressee. Slide right or left to hear each contact.</string>
@@ -344,7 +346,7 @@
 	<string name="layoutMessagesComposeSendingError">Your message is being sent, please wait...</string>
 	<string name="layoutMessagesComposeSendingError2">The message could not be send, check your carrier status and try again later.</string>
 	<string name="layoutMessagesComposeErrorComplete">ERROR. You must complete every field in order to send a message.</string>
-	<string name="layoutMessagesComposeOnResume">Now you are at the compose message menu,slide down to hear each option</string>
+	<string name="layoutMessagesComposeOnResume">Now you are at the compose message menu,slide up and down to hear each option</string>
 
 	<string name="layoutInputKeysOnResume">Now you are at the input text mode by using the physical keyboard or the touchscreen. If you will use the touchscreen, slide up and down to select a character or key, slide right to confirm character or key and move to the next one and slide left to delete the last character.</string>
 	<string name="layoutInputKeysTips">Input text mode\n\n* Slide up and down to select character\n\n* Slide right to confirm character or key and move to the next one\n\n* Slide left to delete the last character\n\n* Physical keyboard compatible</string>
@@ -358,7 +360,8 @@
 	<string name="layoutInputKeysEmptyField">The text field is now empty</string>
 	<string name="layoutInputKeysEntered">&#160;entered</string>
 
-	<string name="layoutInputVoiceOnResume">Now you are at the input text mode using voice recognition menu</string>
+	<string name="slidedown">and then slide down</string>
+	<string name="layoutInputVoiceOnResume">Now you are at the input text mode using voice recognition menu, slide up and down to hear each option</string>
 	<string name="layoutInputVoiceStartRecognition">Start voice recognition</string>
 	<string name="layoutInputVoiceStartRecognition2">Voice recognition. Slide right and then speak</string>
 	<string name="layoutInputVoicePossibleResult">Result&#160;</string>
@@ -383,7 +386,9 @@
 	<string name="backToMainMenu">slide right to Go back to the main menu</string>
 
 
+	<string name="EnterSelectedResult">to select this result slide right</string>
 
+	<string name="ContactsCreate">create contacts , slide right to choose this option</string>
 	<string name="noselection" >Please select a song</string>
 	<string name="youtubeselect" >Please speak first and select</string>
 	<string name="tut" >Slide down and up to change the menu. Slide right to select the chosen option.</string>
